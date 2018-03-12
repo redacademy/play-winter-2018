@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Integrate_Play_Theme
  */
 
 ?><!DOCTYPE html>
