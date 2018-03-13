@@ -1,27 +1,36 @@
-// Burger menu functions
+// Hamburger Menu Functionality JS
+
 (function ($) {
-  $('.hamburger').on('click', function() {
-    $('.hamburger').addClass('is-active');
-
-    $('.main-navigation .search-field').hide();
- 
-    $('.main-navigation .icon-search').on('click', function(evt){
-      evt.preventDefault();
-   
-      $('.main-navigation .search-field').show('fast');
-      $('.main-navigation .search-field').focus();
-      
-    });
-   
-    $('.main-navigation .search-field').on('blur', function(){
-   
-      $('.main-navigation .search-field').hide('fast');
-    });
-  })
-
-  $('.hamburger').on('click', function() {
-    $('.hamburger').removeClass('is-active');
-  })
 
 
+  /**
+   * Check if something exists 
+   */
+  // if($('.cats').length){
+    // console.log($(this));
+  // }
+
+  /** Maybe better in media query */
+  // if(document.body.clientWidth < 600){
+
+  // } else {
+
+  // }
+
+  $('.menu-menu-1-container').hide();
+
+  $('#menu-toggle').on('click', function() {
+    $(this).toggleClass('is-active');
+
+  
+    $('.menu-menu-1-container').stop().slideToggle();
+
+    })
+
+    // if () {
+    //   $('.hamburger').addClass('is-active');
+    // } else {
+    //   $('.hamburger').removeClass('is-active');
+    // }
+  // })
 })(jQuery);
