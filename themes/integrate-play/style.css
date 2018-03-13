@@ -225,42 +225,6 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 .site-footer {
   background-color: blue;
@@ -605,7 +569,12 @@ a {
   width: 100%;
   background-color: yellow;
   font-family: "DIN condensed", sans-serif;
-  color: #190A6B; }
+  color: #190A6B;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
   .main-navigation .menu {
     display: -webkit-box;
     display: -ms-flexbox;
