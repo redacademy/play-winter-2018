@@ -29,7 +29,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 			
 
-							<button id="menu-toggle" class="hamburger hamburger--elastic" type="button" >
+							<button id="menu-toggle" class="hamburger hamburger--elastic menu-toggle" type="button" >
   							<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
 								</span>
