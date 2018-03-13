@@ -1,10 +1,30 @@
 // Hamburger Menu Functionality JS
 
 (function ($) {
+
+
+  /**
+   * Check if something exists 
+   */
+  // if($('.cats').length){
+    // console.log($(this));
+  // }
+
+  /** Maybe better in media query */
+  // if(document.body.clientWidth < 600){
+
+  // } else {
+
+  // }
+
   $('.menu-menu-1-container').hide();
 
-  $('.hamburger').on('click', function() {
-    $('.hamburger').toggleClass('is-active');
+  $('#menu-toggle').on('click', function() {
+    $(this).toggleClass('is-active');
+
+  
+    $('.menu-menu-1-container').stop().slideToggle();
+
     })
 
     // if () {

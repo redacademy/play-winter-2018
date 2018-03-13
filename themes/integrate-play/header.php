@@ -28,14 +28,9 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php 
-						esc_html( 'Primary Menu' );
-						 ?>
-					</button>
+			
 
-							<button class="hamburger hamburger--elastic menu-toggle" type="button" 
-							aria-label="Menu" role="navigation" aria-controls="primary-menu" aria-expanded="false">
+							<button id="menu-toggle" class="hamburger hamburger--elastic" type="button" >
   							<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
 								</span>
