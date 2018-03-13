@@ -5,17 +5,16 @@
 /* Buttons */
 
 	.btn,
-	button,
-	input[type="button"],
-	input[type="reset"],
-	input[type="submit"] {
-		display: block;
+	input[type="submit"]{
+			display: block;
 		width: 275px;
 		text-align: center;
 		color: white;
-		border-radius: 20px;
+		border-radius: 25px;
 		padding: 10px;
 		text-decoration: none;
+		border: none;
+		background: $color__brand-purple;
 	}
 
 	.orange{
@@ -31,6 +30,16 @@
 			background: darken($color__brand-purple, 10%)
 		}
 	}
+
+
+	button,
+	input[type="button"],
+	input[type="reset"],
+	 {
+		//leaving this blank for now so it doesn't conflict with the styles Eric is adding to the Hamburger button.
+	}
+
+
 
 /* Fields */
 
