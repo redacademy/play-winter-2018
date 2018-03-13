@@ -30,7 +30,9 @@ a {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	background-color: red;
+	background-color: yellow;
+	font-family: $font__header;
+	color:$color__brand-purple;
 	.menu {
 		display: flex;
 		flex-direction: column;
@@ -38,8 +40,10 @@ a {
 		padding: 10px;
 	}
 	a{
-		color:rgba(255,255,255,0.3),rgba(25,10,107,1);
 		text-decoration: none;
+		&:hover {
+		color:$color__brand-orange;
+		}
 	}
 	ul{
 		list-style: none;
