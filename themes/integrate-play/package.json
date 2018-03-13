@@ -1,7 +1,7 @@
 {
-  "name": "redstarter",
+  "name": "integrate-play",
   "version": "1.0.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": " WordPress theme for Integrate Play.",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
+    "url": "git+https://github.com/redacademy/play-winter-2018.git"
   },
-  "author": "mandiwise",
+  "author": "Eric, Rodrigo, Cliff",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": "https://github.com/redacademy/play-winter-2018/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://github.com/redacademy/play-winter-2018/"
 }

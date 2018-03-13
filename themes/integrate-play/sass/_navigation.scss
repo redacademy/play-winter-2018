@@ -28,9 +28,11 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	display: flex;
 	width: 100%;
+	border-bottom: 1px solid black;
+	background-color: yellow;
+	
 
 	ul {
 		display: none;
@@ -95,20 +97,6 @@ a {
 	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
 
 .comment-navigation,
 .posts-navigation,
@@ -130,3 +118,4 @@ a {
 		width: 50%;
 	}
 }
+

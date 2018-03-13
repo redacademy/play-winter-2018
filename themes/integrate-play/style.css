@@ -1,9 +1,9 @@
 /*!
-Theme Name: Integrate Play Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Rodrigo Samayoa, Eric Chan, Cliff Chan
-Author URI: http://www.integrateplay.com/
-Description: A WordPress theme for Integrate Play.
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -429,9 +429,12 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: yellow; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -462,17 +465,6 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
