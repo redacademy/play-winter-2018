@@ -14,7 +14,6 @@
 					<h2>Integrate Play Solutions</h2>
 					<h3>Vancouver, BC, Canada</h3>
 					<h3>604-773-2546</h3>
-					<a href="<?php echo esc_url( 'http://play.van.cp.academy.red/' ); ?>"></a>
 				</div><!-- .site-info -->	
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
