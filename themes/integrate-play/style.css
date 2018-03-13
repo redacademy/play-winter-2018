@@ -496,6 +496,23 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+.wpcf7 {
+  background: #F2F2F2;
+  width: 100%;
+  color: #190A6B; }
+  @media (min-width: 600px) {
+    .wpcf7 {
+      width: 70%; } }
+  .wpcf7 p {
+    padding: 0 50px;
+    margin: 0 auto; }
+  .wpcf7 label {
+    display: inline-block;
+    width: 100%; }
+  .wpcf7 .wpcf7-form-control-wrap {
+    width: 100%;
+    display: inline-block; }
+
 /* Buttons */
 .btn,
 input[type="submit"] {
@@ -528,7 +545,8 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 9px;
+  padding: 7px 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -536,17 +554,6 @@ textarea {
   input[type="search"]:focus,
   textarea:focus {
     color: #111; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
-
-textarea {
-  padding-left: 3px;
-  width: 100%; }
 
 /*--------------------------------------------------------------
 # Navigation
