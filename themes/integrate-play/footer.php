@@ -11,8 +11,11 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'http://play.van.cp.academy.red/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
+					<h2>Integrate Play Solutions</h2>
+					<h3>Vancouver, BC, Canada</h3>
+					<h3>604-773-2546</h3>
+					<a href="<?php echo esc_url( 'http://play.van.cp.academy.red/' ); ?>"></a>
+				</div><!-- .site-info -->	
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 		<?php wp_footer(); ?>
