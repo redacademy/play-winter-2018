@@ -10,12 +10,17 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<nav id="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav>
+
 				<div class="site-info">
 					<h2>Integrate Play Solutions</h2>
 					<h3>Vancouver, BC, Canada</h3>
 					<h3>604-773-2546</h3>
 				</div><!-- .site-info -->	
-			</footer><!-- #colophon -->
+
+				</footer><!-- #colophon -->
 		</div><!-- #page -->
 		<?php wp_footer(); ?>
 

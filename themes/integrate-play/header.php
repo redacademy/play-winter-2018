@@ -28,13 +28,13 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
 					
 
 
 						
 
-							<button class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
+							<button class="menu-toggle hamburger hamburger--elastic"  aria-controls="primary-menu" aria-expanded="false" type="button" aria-label="Menu" aria-controls="navigation">
   							<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
 								</span>

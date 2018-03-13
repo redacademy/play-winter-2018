@@ -227,9 +227,16 @@ th {
 --------------------------------------------------------------*/
 /* Footer */
 .site-footer {
-  background-color: blue;
-  height: 150px;
-  color: white; }
+  background-color: tomato;
+  height: auto;
+  color: black;
+  padding: 0px; }
+  .site-footer #primary-menu {
+    padding: 0px; }
+  .site-footer ul {
+    text-align: center;
+    list-style: none;
+    margin: 0px; }
   .site-footer .site-info {
     width: auto;
     padding: 1.75rem; }
