@@ -1,6 +1,29 @@
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+// Horizontal Form
+	.wpcf7{
+		background: #F2F2F2;
+		width: 100%;
+		color: $color__brand-purple;
+		@include desktop{
+			width: 70%;
+		}
+		p{
+			padding: 0 50px;
+			margin: 0 auto;
+		}
+		label{
+			display: inline-block;
+			width: 100%;
+		}
+		.wpcf7-form-control-wrap{
+			width: 100%;
+			display: inline-block;
+		}
+	}
+
+
 
 /* Buttons */
 
@@ -43,30 +66,20 @@
 
 /* Fields */
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	textarea {
+		color: #666;
+		border: 1px solid #ccc;
+		border-radius: 9px;
+		padding: 7px 3px;
 
-	&:focus {
-		color: #111;
+		&:focus {
+			color: #111;
+		}
 	}
-}
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 3px;
-}
 
-textarea {
-	padding-left: 3px;
-	width: 100%;
-}
