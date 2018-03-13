@@ -33,6 +33,8 @@ a {
 	background-color: yellow;
 	font-family: $font__header;
 	color:$color__brand-purple;
+	justify-content: space-around;
+	align-items: flex-end;
 	.menu {
 		display: flex;
 		flex-direction: column;
