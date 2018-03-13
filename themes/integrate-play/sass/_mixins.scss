@@ -10,3 +10,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+//Mixin for media queries
+@mixin desktop {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
