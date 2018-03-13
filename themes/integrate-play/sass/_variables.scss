@@ -4,25 +4,33 @@ $base__space-unit: 1.5rem;
 
 // Colors
 
-$color__background-body: #fff;
-$color__text-main: #404040;
+$color__brand-purple: #190A6B;
+$color__brand-orange: #FF5301;
+$color__brand-yellow: #FFC200;
+$color__brand-light-purple: #DEDDDB;
 
-$color__background-screen: #f1f1f1;
-$color__text-screen: #21759b;
+$color__text-main: #190A6B;
 
-$color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+  //These are default colors that come with the starter theme. 
+  $color__background-body: #fff;
+
+  $color__background-screen: #f1f1f1;
+  $color__text-screen: #21759b;
+
+  $color__background-hr: #ccc;
+  $color__background-pre: #eee;
+  $color__background-ins: #fff9c0;
+  $color__border-abbr: #666;
+
+  $color__link: royalblue;
+  $color__link-visited: purple;
+  $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__main: 'Muli', sans-serif;
+$font__header: 'DIN condensed', sans-serif;
+
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
