@@ -5,9 +5,20 @@
   height: auto;
   color: $color__brand-grey;
 
-  #navigation {
-    align-content: space-around;
-    padding-top: 3rem;
+    @include desktop {
+      display: flex;
+      height: 150px;
+      justify-content: space-between;
+    }
+
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop {
+      display: none;
+    }
   }
 
   #primary-menu {
@@ -38,6 +49,11 @@
     i {
       margin: 1rem;
     }
+
+    @include desktop {
+      order: 2;
+      margin: 2rem 1rem 0 0;
+    }
   }
 
   .site-info {
@@ -47,18 +63,28 @@
     .footer__company {
       font-size: 1.5rem;
     }
-
     .footer__contact {
       font-size: 1rem;
     }
-
     .footer__number {
-      visibility: hidden;
+      display: hidden;
+
+      @include desktop {
+        display: show; 
+      }
     }
 
   h2, h3 {
     margin: 0px;
     text-align: center;
+
+    @include desktop {
+    text-align: left;
+    }
+  }
+
+  @include desktop {
+    order: 1;
     }
   }
 }
