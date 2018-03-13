@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-// Horizontal Form
+// Form -- horizontal
 	div.wpcf7{
 		background: #F2F2F2;
 		width: 100%;
@@ -80,9 +80,9 @@
 	textarea,
 	select, {
 		color: #666;
-		border: 1px solid #ccc;
+		border: 1px solid $color__brand-purple;
 		border-radius: 9px;
-		padding: 7px 3px;
+		padding: 13px 3px;
 		width: 100%;
 
 		&:focus {
@@ -91,10 +91,10 @@
 	}
 
 	select{
-		height: 40px;
+		height: 50px;
 		border-radius: 9px;
 		appearance: none;
-		background: url("../../images/dropdown-arrow.svg") no-repeat 99%/25px 25px;
+		background: url("../../images/dropdown-arrow.svg") no-repeat 97%/15px 15px, white;
 	}
 
 
