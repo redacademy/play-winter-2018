@@ -60,7 +60,7 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
+@include desktop {
 	.menu-toggle {
 		display: none;
 	}

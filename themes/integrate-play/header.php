@@ -28,25 +28,14 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-<<<<<<< HEAD
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 						<?php 
 						esc_html( 'Primary Menu' );
 						 ?>
 					</button>
-			
 
 							<button class="hamburger hamburger--elastic menu-toggle" type="button" 
 							aria-label="Menu" role="navigation" aria-controls="primary-menu" aria-expanded="false">
-=======
-					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
-					
-
-
-						
-
-							<button class="menu-toggle hamburger hamburger--elastic"  aria-controls="primary-menu" aria-expanded="false" type="button" aria-label="Menu" aria-controls="navigation">
->>>>>>> a5ce6d63b75f2b3d4a12e6ea2e27179232b4cedd
   							<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
 								</span>
