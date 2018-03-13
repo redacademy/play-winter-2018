@@ -2,15 +2,16 @@
 # Forms
 --------------------------------------------------------------*/
 // Horizontal Form
-	.wpcf7{
+	div.wpcf7{
 		background: #F2F2F2;
 		width: 100%;
 		color: $color__brand-purple;
+		padding: 20px 0;
 		@include desktop{
 			width: 70%;
 		}
 		p{
-			padding: 0 50px;
+			padding: 10px 50px;
 			margin: 0 auto;
 		}
 		label{
@@ -20,6 +21,11 @@
 		.wpcf7-form-control-wrap{
 			width: 100%;
 			display: inline-block;
+		}
+		input[type="submit"]{
+			margin: 0 auto;
+			margin-top: 30px;
+
 		}
 	}
 
@@ -71,15 +77,24 @@
 	input[type="url"],
 	input[type="password"],
 	input[type="search"],
-	textarea {
+	textarea,
+	select, {
 		color: #666;
 		border: 1px solid #ccc;
 		border-radius: 9px;
 		padding: 7px 3px;
+		width: 100%;
 
 		&:focus {
 			color: #111;
 		}
+	}
+
+	select{
+		height: 40px;
+		border-radius: 9px;
+		appearance: none;
+		background: url("../../images/dropdown-arrow.svg") no-repeat 99%/25px 25px;
 	}
 
 
