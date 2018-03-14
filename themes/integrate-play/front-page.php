@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
     
     <header class="front-page-hero">
-      <h1>bring your team together</h1>
+      <h1 class="hero-text">bring your team together</h1>
     </header>
 
 
