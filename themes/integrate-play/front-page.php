@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
     
-    <header class="hero-banner">
+    <header class="front-page-hero">
       <h1>bring your team together</h1>
     </header>
 
