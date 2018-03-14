@@ -27,8 +27,10 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-			
-
+				
+				<div class="header-logo mobile-logo">	</div>
+					
+						<div class="nav-menu-wrapper">
 							<button id="menu-toggle" class="hamburger hamburger--elastic menu-toggle" type="button" >
   							<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
@@ -37,6 +39,7 @@
 							<nav id="navigation">
 								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							</nav>
+						</div>
 
 
 				</nav><!-- #site-navigation -->
