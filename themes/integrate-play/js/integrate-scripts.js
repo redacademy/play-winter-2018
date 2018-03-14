@@ -9,7 +9,7 @@
       // $('.header-logo').removeClass('desktop-logo');
       // $('.header-logo').addClass('mobile-logo');
       // $('.menu-menu-1-container').hide()
-      $('.menu-menu-1-container').css('display', 'none')
+      // $('.menu-menu-1-container').css('display', 'none')
 
     } else {
       // $('.header-logo').removeClass('mobile-logo');
@@ -22,6 +22,7 @@
 
   $('#menu-toggle').on('click', function () {
     $(this).toggleClass('is-active');
-    $('.menu-menu-1-container').stop().slideToggle();
+    // $('.menu-menu-1-container').stop().slideToggle();
+    $('.menu-menu-1-container').toggleClass('menu-expanded');
   })
 })(jQuery);
