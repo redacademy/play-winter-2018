@@ -51,6 +51,37 @@
 		}
 	}
 
+/* Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+select, {
+	color: #666;
+	border: 1px solid $color__brand-purple;
+	border-radius: 17px;
+	padding: 13px 3px;
+	width: 100%;
+	outline: none;
+
+	&:focus {
+		color: #111;
+	}
+}
+
+select{
+	height: 50px;
+	border-radius: 17px;
+	padding: 0 10px;
+	appearance: none;
+	background: url("../../images/dropdown-arrow.svg") no-repeat 97%/15px 15px, white;
+	outline: none;
+}
+
+
 
 
 /* Buttons */
@@ -93,34 +124,5 @@
 
 
 
-/* Fields */
-
-	input[type="text"],
-	input[type="email"],
-	input[type="url"],
-	input[type="password"],
-	input[type="search"],
-	textarea,
-	select, {
-		color: #666;
-		border: 1px solid $color__brand-purple;
-		border-radius: 17px;
-		padding: 13px 3px;
-		width: 100%;
-		outline: none;
-
-		&:focus {
-			color: #111;
-		}
-	}
-
-	select{
-		height: 50px;
-		border-radius: 17px;
-		padding: 0 10px;
-		appearance: none;
-		background: url("../../images/dropdown-arrow.svg") no-repeat 97%/15px 15px, white;
-		outline: none;
-	}
 
 
