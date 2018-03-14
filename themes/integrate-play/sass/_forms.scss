@@ -6,13 +6,36 @@
 		background: #F2F2F2;
 		width: 100%;
 		color: $color__brand-purple;
-		padding: 20px 0;
+		padding: 50px;
 		@include desktop{
 			width: 70%;
+			margin: 0 auto;
+			border-radius: 17px;
+		}
+		h2{
+			padding: 10px 0;
+			margin: 0;
+			flex-basis: 100%;
 		}
 		p{
-			padding: 10px 50px;
+			padding: 10px 0;
 			margin: 0 auto;
+			@include desktop{
+				display: inline-block;
+				padding: 10px 0;
+				&:nth-child(odd){
+					width: 54%;
+				}
+				&:nth-child(even){
+					width: 44%;
+				}
+				&:nth-child(7){
+					display: flex;
+					width: 100%;
+					text-align: right;
+					justify-content: flex-end;
+				}
+			}
 		}
 		label{
 			display: inline-block;
@@ -25,7 +48,6 @@
 		input[type="submit"]{
 			margin: 0 auto;
 			margin-top: 30px;
-
 		}
 	}
 
@@ -35,7 +57,7 @@
 
 	.btn,
 	input[type="submit"]{
-			display: block;
+		display: block;
 		width: 275px;
 		text-align: center;
 		color: white;
@@ -44,6 +66,7 @@
 		text-decoration: none;
 		border: none;
 		background: $color__brand-purple;
+		margin: 0 auto;
 	}
 
 	.orange{
@@ -81,9 +104,10 @@
 	select, {
 		color: #666;
 		border: 1px solid $color__brand-purple;
-		border-radius: 9px;
+		border-radius: 17px;
 		padding: 13px 3px;
 		width: 100%;
+		outline: none;
 
 		&:focus {
 			color: #111;
@@ -92,9 +116,11 @@
 
 	select{
 		height: 50px;
-		border-radius: 9px;
+		border-radius: 17px;
+		padding: 0 10px;
 		appearance: none;
 		background: url("../../images/dropdown-arrow.svg") no-repeat 97%/15px 15px, white;
+		outline: none;
 	}
 
 
