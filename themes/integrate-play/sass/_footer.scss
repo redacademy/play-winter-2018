@@ -5,7 +5,7 @@
   height: auto;
   color: $color__brand-grey;
 
-    @include desktop {
+  @include desktop {
       display: flex;
       height: 150px;
       justify-content: space-between;
@@ -39,6 +39,7 @@
     list-style: none;
     border: 2rem;
     margin: 0;
+    padding: 0px;
   }
 
   .social-media {
