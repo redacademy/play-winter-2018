@@ -14,6 +14,7 @@ get_header(); ?>
     </header>
 
     <h1 class="hero-text">bring your team together</h1>
+    <button class="btn">Contact Us</button>
 
     <!-- May not need next 7 lines of code -->
 		<!-- <?php if ( have_posts() ) : ?>

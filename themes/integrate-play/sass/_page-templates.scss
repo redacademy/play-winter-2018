@@ -11,8 +11,16 @@
   height: 300px;
 }
 
-.hero-text {
-  text-transform: uppercase;
-  width: 70%;
-  margin-left: 2rem;
+.home {
+  .site-main {
+    width: 100%;
+
+  .hero-text {
+    text-transform: uppercase;
+    }
+  
+    .btn {
+      justify-content: left;
+    }
+  }
 }
