@@ -17,12 +17,18 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__header;
+}
+
+h1 {
+	text-transform: uppercase;
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	font-family: $font__main;
 }
 
 dfn, cite, em, i {
