@@ -13,9 +13,10 @@ get_header(); ?>
     <header class="front-page-hero">
     </header>
 
+  <div class="content-container">
     <h1 class="hero-text">bring your team together</h1>
     <button class="btn">Contact Us</button>
-
+  </div>
     <!-- May not need next 7 lines of code -->
 		<!-- <?php if ( have_posts() ) : ?>
 
