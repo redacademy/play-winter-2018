@@ -39,11 +39,20 @@ a {
 	top:0px;
 
 	.menu-menu-1-container {
-		// display: none;
+		opacity: 0;
+		transform: scaleY(0);
+		transition: .5s;
 		@include desktop {
 			display: flex;
+			opacity: 1;
+			transform: none;
 		}
 	}
+	.menu-expanded {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+
 	.menu {
 		display: flex;
 		flex-direction: column;
@@ -143,13 +152,4 @@ a {
 
 
 
-.menu-menu-1-container {
-	opacity: 0;
-	transform: scaleY(0);
-	transition: .5s;
-}
 
-.menu-expanded {
-	opacity: 1;
-	transform: scaleY(1);
-}
