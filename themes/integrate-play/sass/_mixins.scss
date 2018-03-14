@@ -12,8 +12,14 @@
 }
 
 //Mixin for media queries
-@mixin desktop {
+@mixin tablet {
   @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 800px) {
     @content;
   }
 }
