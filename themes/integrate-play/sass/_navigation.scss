@@ -39,7 +39,7 @@ a {
 	top:0px;
 
 	.menu-menu-1-container {
-		display: none;
+		// display: none;
 		@include desktop {
 			display: flex;
 		}
@@ -61,6 +61,12 @@ a {
 		}
 		li {
 			padding: 10px;
+		}
+		.sub-menu {
+			display: none;
+			@include desktop{
+				position: absolute;
+			}
 		}
 	}
 	a {
@@ -133,4 +139,17 @@ a {
 		background-position: center;
 		height: 100px;
 	}
+}
+
+
+
+.menu-menu-1-container {
+	opacity: 0;
+	transform: scaleY(0);
+	transition: .5s;
+}
+
+.menu-expanded {
+	opacity: 1;
+	transform: scaleY(1);
 }
