@@ -29,7 +29,7 @@ a {
 	clear: both;
 	display: flex;
 	width: 100%;
-	background-color: yellow;
+	// background-color: yellow;
 	font-family: $font__header;
 	color: $color__brand-purple;
 	justify-content: space-between;
@@ -79,6 +79,9 @@ a {
 
 .menu-menu-1-container {
 	display: none;
+	@include desktop {
+		display: flex;
+	}
 }
 
 @include desktop {
@@ -90,9 +93,6 @@ a {
 		li {
 			padding: 10px;
 		}
-	}
-	.menu-menu-1-container {
-		display: block;
 	}
 }
 
@@ -118,18 +118,32 @@ a {
 	background: url('../../images/desktop-logo.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: center;
 	width: 400px;
 	height: 100px;
-	margin-top: 25px;
-	margin-left: 25px;
 }
 
 .mobile-logo {
 	background: url('../../images/mobile-logo.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: center;
 	width: 400px;
 	height: 100px;
-	margin-top: 25px;
-	margin-left: 25px;
+}
+
+.header-logo {
+	background: url('../../images/mobile-logo.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 25%;
+	height: 50px;
+	@include desktop {
+		background: url('../../images/desktop-logo.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		height: 100px;
+	}
 }

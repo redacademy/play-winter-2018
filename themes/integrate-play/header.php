@@ -28,7 +28,7 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 				
-				<div class="header-logo mobile-logo">	</div>
+				<div class="header-logo ">	</div>
 					
 						<div class="nav-menu-wrapper">
 							<button id="menu-toggle" class="hamburger hamburger--elastic menu-toggle" type="button" >
