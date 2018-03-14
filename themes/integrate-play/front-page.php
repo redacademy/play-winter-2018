@@ -11,10 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
     
     <header class="front-page-hero">
-      <h1 class="hero-text">bring your team together</h1>
     </header>
 
-
+    <h1 class="hero-text">bring your team together</h1>
 
     <!-- May not need next 7 lines of code -->
 		<!-- <?php if ( have_posts() ) : ?>
