@@ -22,9 +22,10 @@
     }
   
     .btn {
-      align-content: left;
+      justify-content: left;
       width: 65%;
       font-size: 1.25rem;
+      margin: 0px;
     }
   }
 }
@@ -32,6 +33,8 @@
 /* Contact Page */
 
 .page {
+  width: 100%;
+
   .entry-header {
     display: none;
   }
