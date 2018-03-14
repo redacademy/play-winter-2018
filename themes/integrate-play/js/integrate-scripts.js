@@ -2,14 +2,6 @@
 
 (function ($) {
 
-
-  /**
-   * Check if something exists 
-   */
-  // if($('.cats').length){
-  // console.log($(this));
-  // }
-
   /** Maybe better in media query */
 
   $(window).resize(function () { // grabbed from http://jsfiddle.net/UqYCr/
