@@ -36,8 +36,7 @@ a {
 	align-items: center;
 	position: fixed;
 	z-index: 10;
-	top:0px;
-
+	top: 0px;
 	.menu-menu-1-container {
 		opacity: 0;
 		transform: scaleY(0);
@@ -52,7 +51,6 @@ a {
 		opacity: 1;
 		transform: scaleY(1);
 	}
-
 	.menu {
 		display: flex;
 		flex-direction: column;
@@ -71,10 +69,23 @@ a {
 		li {
 			padding: 10px;
 		}
-		.sub-menu {
-			display: none;
-			@include desktop{
-				position: absolute;
+		.menu-item-45 {
+			.sub-menu {
+				opacity: 0;
+				transform: scaleY(0);
+				transition: .5s;
+				background-color: $color__brand-grey;
+				@include desktop {
+					position: absolute;
+				}
+			}
+			&:hover {
+				.sub-menu {
+					display: flex;
+					flex-direction: column;
+					opacity: 1;
+					transform: scaleY(1);
+				}
 			}
 		}
 	}
@@ -101,8 +112,6 @@ a {
 .main-navigation.toggled ul {
 	display: block;
 }
-
-
 
 @include desktop {
 	.menu-toggle {
@@ -149,7 +158,3 @@ a {
 		height: 100px;
 	}
 }
-
-
-
-
