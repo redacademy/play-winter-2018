@@ -5,7 +5,7 @@
   /** Maybe better in media query */
 
   $(window).resize(function () { // grabbed from http://jsfiddle.net/UqYCr/
-    if (document.body.clientWidth < 600) {
+    if (document.body.clientWidth < 800) {
       // $('.header-logo').removeClass('desktop-logo');
       // $('.header-logo').addClass('mobile-logo');
       // $('.menu-menu-1-container').hide()
