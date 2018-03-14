@@ -37,6 +37,7 @@ a {
 	position: fixed;
 	z-index: 10;
 	top:0px;
+
 	.menu-menu-1-container {
 		display: none;
 		@include desktop {
@@ -47,7 +48,6 @@ a {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		padding: 10px;
 		position: absolute;
 		z-index: 11;
 		right: 10px;
@@ -55,8 +55,9 @@ a {
 		@include desktop {
 			flex-direction: row;
 			align-items: flex-end;
-			position: relative;
 			background-color: transparent;
+			top: 25px;
+			right: 50px;
 		}
 		li {
 			padding: 10px;
