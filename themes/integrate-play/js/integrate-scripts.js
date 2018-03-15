@@ -11,6 +11,7 @@
       // $('.menu-menu-1-container').hide()
       // $('.menu-menu-1-container').css('display', 'none')
       // $('#menu-item-37').addClass('science-logo')
+
     } else {
       // $('.header-logo').removeClass('mobile-logo');
       // $('.header-logo').addClass('desktop-logo');
@@ -21,6 +22,15 @@
       
     }
   })
+
+  // if (document.body.clientWidth < 800) {
+  //   $('#menu-item-37').before("<div class='science-logo'>yo</div>");
+  //   $('#menu-item-45').before("<div class='services-logo'>yo</div>");
+  //   $('#menu-item-38').before("<div class='praise-logo'>yo</div>");
+  //   $('#menu-item-39').before("<div class='contact-logo'>yo</div>");
+  // } else {
+  //   // $('#menu-item-37').remove("<p>yo</p>");
+  // }
 
 
   $('#menu-toggle').on('click', function () {
