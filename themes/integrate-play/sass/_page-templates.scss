@@ -8,7 +8,7 @@
   background-image: url('../../images/hands.illo2.svg') ;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 .home {
@@ -26,15 +26,26 @@
   }
 }
 
-/* Contact Page */
+/* Contact Page + Praise Page */
 
-.page {
-  width: 100%;
+.page, .page-template-default {
+  .entry-content {
+    width: 80%;
+    margin: 0rem 1.25rem 0 3.5rem;
+    }
+  }
 
-  // .entry-header {
-  //   display: none;
-  // }
-}
+  .entry-title {
+    width: 40%;
+    margin-left: 2rem;
+    align-content: center;
+    text-align: left;
+  }
 
-/* Praise Page */
+  .btn {
+    width: auto;
+    font-size: 1.25rem;
+    padding: .5rem 2rem;
+    margin: 2rem 0rem 2rem 5rem;
+  }
 

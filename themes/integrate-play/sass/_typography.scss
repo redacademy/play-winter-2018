@@ -24,6 +24,24 @@ h1 {
 	text-transform: uppercase;
 }
 
+h2 {
+	width: 70%;
+	align-content: center;
+	text-align: left;
+}
+
+h5, h6 {
+	width: 90%;
+	display: flex;
+	margin: 0px;
+	justify-content: flex-end;
+}
+
+h6 {
+	font-style: none;
+	font-weight: lighter;
+}
+
 /* Copy */
 
 p {
