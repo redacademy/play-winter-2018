@@ -21,5 +21,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	<button class="btn orange">Get Info Package</button>
+
 <?php get_footer(); ?>
