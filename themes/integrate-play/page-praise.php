@@ -19,6 +19,7 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+		<?php echo CFS()->get('contact_form');?>	
 	</div><!-- #primary -->
 
 	<button class="btn orange">Get Info Package</button>

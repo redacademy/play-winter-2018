@@ -7,6 +7,7 @@
     $('#colophon').hide();
     $('#main').hide();
     $('#primary').css( "padding", "0" );
+    $('.mobile-btn').hide();
     $('.mobile-contact-form').show();
   });
 
@@ -15,6 +16,7 @@
     $('#colophon').show();
     $('#main').show();
     $('#primary').css( "padding", "" );
+    $('.mobile-btn').show();
     $('.mobile-contact-form').hide();
   });
 
