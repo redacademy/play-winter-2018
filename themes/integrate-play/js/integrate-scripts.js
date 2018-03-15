@@ -10,19 +10,21 @@
       // $('.header-logo').addClass('mobile-logo');
       // $('.menu-menu-1-container').hide()
       // $('.menu-menu-1-container').css('display', 'none')
-
+      // $('#menu-item-37').addClass('science-logo')
     } else {
       // $('.header-logo').removeClass('mobile-logo');
       // $('.header-logo').addClass('desktop-logo');
       // $('.menu-menu-1-container').show();
-      $('.menu-menu-1-container').css('display', 'flex')
+      $('.menu-menu-1-container').css('display', 'flex');
+      $('.menu-menu-1-container').removeClass('menu-expanded');
+      $('#menu-toggle').removeClass('is-active');
+      
     }
   })
 
 
   $('#menu-toggle').on('click', function () {
     $(this).toggleClass('is-active');
-    // $('.menu-menu-1-container').stop().slideToggle();
     $('.menu-menu-1-container').toggleClass('menu-expanded');
   })
 })(jQuery);
