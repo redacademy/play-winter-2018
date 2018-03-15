@@ -2,7 +2,7 @@
 
 (function ($) {
 
-  $('#mobile-btn').on('click',function(){
+  $('.mobile-btn').on('click',function(){
     $('#masthead').hide();
     $('#colophon').hide();
     $('#main').hide();
