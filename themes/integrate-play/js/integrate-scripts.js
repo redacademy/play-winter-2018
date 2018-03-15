@@ -17,9 +17,9 @@
     $(this).toggleClass('is-active');
     $('.menu-menu-1-container').toggleClass('menu-expanded');
   })
-  
+
   $('#menu-item-37').prepend('<div class="science-logo"></div>');
-  $('#menu-item-45').prepend('<div class="services-logo"></div>');
+  $('#menu-item-78').prepend('<div class="services-logo"></div>');
   $('#menu-item-38').prepend('<div class="praise-logo"></div>');
   $('#menu-item-39').prepend('<div class="contact-logo"></div>');
 
