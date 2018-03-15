@@ -1,7 +1,7 @@
 <?php
 /**
 /* Template Name: Front-Page */
- *
+/*
  * @package Integrate_Play_Theme
  */
 
