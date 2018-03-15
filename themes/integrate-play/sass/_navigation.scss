@@ -86,15 +86,12 @@ a {
 					position: absolute;
 				}
 			}
-
-		}
-		@include desktop {
 			&:hover {
 				.sub-menu {
 					opacity: 1;
 					transform: scaleY(1);
 				}
-			}
+			} 
 		}
 	}
 	a {
