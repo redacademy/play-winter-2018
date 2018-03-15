@@ -1,6 +1,6 @@
 <?php
 /**
- * The front page template file.
+/* Template Name: Front-Page */
  *
  * @package Integrate_Play_Theme
  */
@@ -14,7 +14,7 @@ get_header(); ?>
     </header>
 
   <div class="content-container">
-    <h1 class="hero-text">bring your team together</h1>
+    <h1>bring your team together</h1>
     <button class="btn">Contact Us</button>
   </div>
     <!-- May not need next 7 lines of code -->
@@ -25,9 +25,7 @@ get_header(); ?>
           <!-- <h1 class="page-title screen-reader-text"><?php single_post_title(); ?>
         </header>
       <?php endif; ?> -->
-      
-
-
+			
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

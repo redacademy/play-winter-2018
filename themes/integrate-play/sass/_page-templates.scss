@@ -5,10 +5,11 @@
 /* Front page */
 
 .front-page-hero {
-  background-image: url('../../images/hands.illo2.svg') ;
-  background-size: cover;
-  width: 100%;
-  height: auto;
+  background-image: url('../../images/hands.illo2.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  // width: 100%;
+  height: 50vh;
 }
 
 .home {

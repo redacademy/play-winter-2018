@@ -22,6 +22,6 @@ get_header(); ?>
 		<?php echo CFS()->get('contact_form');?>	
 	</div><!-- #primary -->
 
-	<button class="btn orange">Get Info Package</button>
+	<button id="mobile-btn" class="btn orange">Get Info Package</button>
 
 <?php get_footer(); ?>

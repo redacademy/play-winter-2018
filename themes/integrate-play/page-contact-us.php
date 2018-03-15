@@ -22,5 +22,4 @@ get_header(); ?>
 		<?php echo CFS()->get('contact_form');?>
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

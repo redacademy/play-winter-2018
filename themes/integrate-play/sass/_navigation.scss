@@ -54,7 +54,7 @@ a {
 		opacity: 1;
 		transform: scaleY(1);
 	}
-	.menu {
+	.menu { //Nav bar 
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -83,7 +83,7 @@ a {
 			display: flex;
 			text-align: center;
 		}
-		.menu-item-45 {
+		.menu-item-45 { // Sub menu for services
 			.sub-menu {
 				opacity: 0;
 				transform: scaleY(0);
@@ -125,7 +125,7 @@ a {
 }
 
 @include desktop {
-	.menu-toggle {
+	.menu-toggle { //Removing the burger in desktop
 		display: none;
 	}
 	.main-navigation ul {
@@ -154,7 +154,8 @@ a {
 	}
 }
 
-.header-logo {
+/* Company nav logo */
+.header-logo { 
 	background: url('../../images/mobile-logo.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -225,3 +226,6 @@ a {
 			background: none;
 		}
 	}
+
+/* Services breadcrumb bar* /
+
