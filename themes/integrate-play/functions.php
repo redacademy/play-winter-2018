@@ -93,6 +93,7 @@ function integrate_play_scripts() {
 	wp_enqueue_style('oswald-font-cdn','https://fonts.googleapis.com/css?family=Oswald:700');
 	
 	wp_enqueue_script( 'integrate-scripts', get_template_directory_uri() . '/build/js/integrate-scripts.min.js', array(), '23', true );
+	wp_enqueue_script( 'buttons', get_template_directory_uri() . '/build/js/buttons.min.js', array(), '23', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
