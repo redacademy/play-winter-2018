@@ -15,11 +15,18 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-
-
 			<?php endwhile; // End of the loop. ?>
 
-
+			<div>
+			<?php echo CFS()->get('contact_form');?>	
+			</div>
+					
 
 		</main><!-- #main -->
+
+		
+
 	</div><!-- #primary -->
+
+	
+<?php get_footer(); ?>
