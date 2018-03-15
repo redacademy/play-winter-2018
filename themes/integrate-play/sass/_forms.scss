@@ -1,87 +1,110 @@
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-// Form -- horizontal
-	div.wpcf7{
-		background: #F2F2F2;
-		width: 100%;
-		color: $color__brand-purple;
-		padding: 50px;
-		@include desktop{
-			width: 70%;
-			margin: 0 auto;
-			border-radius: 17px;
-		}
-		h2{
-			padding: 10px 0;
-			margin: 0;
-			flex-basis: 100%;
-		}
-		p{
-			padding: 10px 0;
-			margin: 0 auto;
-			@include desktop{
+// Form -- mobile
+
+		.mobile-contact-form{
+			display: none;
+			position: absolute;
+			z-index: 100;
+			background: #F2F2F2;
+			width: 100vw;
+			min-height: 100vh;
+			color: $color__brand-purple;
+			@include tablet{
+				display: none;
+			}
+			.form-header{
+				width: 100%;
+				background: white;
+				min-height: 30vh;
+				padding: 10%;
+			}
+			i{
+				display: block;
+				text-align: right;
+			}
+			h2{
+				margin: 6% 0;
+				flex-basis: 100%;
+			}
+			.form-content{
+				padding: 10%;
+				padding-bottom: 0;
+			}
+			p{
+				margin: 0 auto;
+				padding: 3% 0;
+			}
+			label{
 				display: inline-block;
-				padding: 10px 0;
-				&:nth-child(odd){
-					width: 54%;
-				}
-				&:nth-child(even){
-					width: 44%;
-				}
-				&:nth-child(7){
-					display: flex;
-					width: 100%;
-					text-align: right;
-					justify-content: flex-end;
-				}
+				width: 100%;
+			}
+			.wpcf7-form-control-wrap{
+				width: 100%;
+				display: inline-block;
+			}
+			input[type="submit"]{
+				margin: 0 auto;
+				margin-top: 30px;
 			}
 		}
-		label{
-			display: inline-block;
-			width: 100%;
-		}
-		.wpcf7-form-control-wrap{
-			width: 100%;
-			display: inline-block;
-		}
-		input[type="submit"]{
-			margin: 0 auto;
-			margin-top: 30px;
-		}
-	}
+
+			// @include tablet{
+			// 	display: block;
+			// 	width: 70%;
+			// 	margin: 0 auto;
+			// 	border-radius: 17px;
+			// }
+
+			// p{
+			// 	@include desktop{
+			// 		display: inline-block;
+			// 		padding: 10px 0;
+			// 		&:nth-child(odd){
+			// 			width: 54%;
+			// 		}
+			// 		&:nth-child(even){
+			// 			width: 44%;
+			// 		}
+			// 		&:nth-child(7){
+			// 			display: flex;
+			// 			width: 100%;
+			// 			text-align: right;
+			// 			justify-content: flex-end;
+			// 		}
+			// 	}
+			// }
 
 /* Fields */
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea,
-select, {
-	color: #666;
-	border: 1px solid $color__brand-purple;
-	border-radius: 17px;
-	padding: 13px 3px;
-	width: 100%;
-	outline: none;
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	textarea,
+	select, {
+		color: #666;
+		border: 1px solid $color__brand-purple;
+		border-radius: 17px;
+		padding: 13px 3px;
+		width: 100%;
+		outline: none;
 
-	&:focus {
-		color: #111;
+		&:focus {
+			color: #111;
+		}
 	}
-}
 
-select{
-	height: 50px;
-	border-radius: 17px;
-	padding: 0 10px;
-	appearance: none;
-	background: url("../../images/dropdown-arrow.svg") no-repeat 97%/15px 15px, white;
-	outline: none;
-}
-
-
+	select{
+		height: 50px;
+		border-radius: 17px;
+		padding: 0 10px;
+		appearance: none;
+		background: url("../../images/dropdown-arrow.svg") no-repeat 97%/15px 15px, white;
+		outline: none;
+	}
 
 
 /* Buttons */
@@ -96,7 +119,7 @@ select{
 		padding: 10px;
 		text-decoration: none;
 		border: none;
-		background: $color__brand-purple;
+		background: $color__brand-orange;
 		margin: 0 auto;
 	}
 
@@ -114,12 +137,10 @@ select{
 		}
 	}
 
-
-	button,
-	input[type="button"],
-	input[type="reset"],
-	 {
-		//leaving this blank for now so it doesn't conflict with the styles Eric is adding to the Hamburger button.
+	.mobile-btn{
+		@include tablet{
+			display: none;
+		}
 	}
 
 

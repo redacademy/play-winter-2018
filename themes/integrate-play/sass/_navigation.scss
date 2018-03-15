@@ -3,16 +3,19 @@
 --------------------------------------------------------------*/
 
 /* Links */
-
 a {
-	color: $color__link;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $color__brand-purple;
 	&:visited {
-		color: $color__link-visited;
+		color: $color__brand-purple;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color__brand-orange;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -35,7 +38,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	z-index: 10;
+	z-index: 2;
 	top: 0px;
 	.menu-menu-1-container {
 		opacity: 0;
@@ -56,7 +59,7 @@ a {
 		flex-direction: column;
 		align-items: flex-start;
 		position: absolute;
-		z-index: 11;
+		z-index: 2;
 		right: 10px;
 		background-color: $color__background-body;
 		list-style: none;
@@ -105,15 +108,6 @@ a {
 					transform: scaleY(1);
 				}
 			} 
-		}
-	}
-	a {
-		text-decoration: none;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		&:hover {
-			color: $color__brand-orange;
 		}
 	}
 }
@@ -167,6 +161,7 @@ a {
 	background-position: center;
 	width: 25%;
 	height: 50px;
+	z-index: 3;
 	@include tablet {
 		background: url('../../images/desktop-logo.svg');
 		background-repeat: no-repeat;
