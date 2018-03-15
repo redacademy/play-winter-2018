@@ -50,29 +50,100 @@
 			}
 		}
 
-			// @include tablet{
-			// 	display: block;
-			// 	width: 70%;
-			// 	margin: 0 auto;
-			// 	border-radius: 17px;
-			// }
+//Form -- horizontal
+.horizontal-contact-form{
+	display: none;
+	background: #F2F2F2;
+	color: $color__brand-purple;
+	margin: 0 auto;
+	padding-bottom: 2%;
+	border-radius: 17px;
+	@include tablet{
+		display: block;
+		width: 90%;
+	}
+	@include desktop{
+		width: 80%;
+	}
+	.form-header{
+		width: 100%;
+		padding: 5% 10% 0 10%;
+		// @include tablet{
+		// 	padding: 5% 10% 0 10%;
+		// }
+		@include desktop{
+			padding: 3% 5% 0 5%;
+		}
+	}
+	i{
+		display: block;
+		text-align: right;
+	}
+	h2{
+		margin: 6% 0;
+		flex-basis: 100%;
+		@include tablet{
+			margin: 3% 0;
+		}
+		@include tablet{
+			margin: 2% 0;
+		}
+	}
+	.form-content{
+		padding: 0 10% 0 10%;
+		@include desktop{
+			padding: 0% 5% 0 5%;
+		}
+		p{
+			margin: 0 auto;
+			padding: 3% 0;
+			@include desktop{
+				display: inline-block;
+				&:nth-child(odd){
+					width: 54%;
+					padding-right: 3%;
+				}
+				&:nth-child(even){
+					width: 44%;
+				}
+			}
+		}
+	}
+
+	.contact-form-submit{ //this block styles the form submit button wrapper
+		padding: 0 5%;
+		margin: 3% 0;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		text-align: right;
+		justify-content: flex-end;
+		align-content: flex-end;
+		align-items: center;
+	}
+	
+	label{
+		display: inline-block;
+		width: 100%;
+	}
+	.wpcf7-form-control-wrap{
+		width: 100%;
+		display: inline-block;
+	}
+	input[type="submit"]{
+		// margin-top: 30px;
+		display: block;
+		margin: 0;
+	}
+}
+
+
 
 			// p{
 			// 	@include desktop{
 			// 		display: inline-block;
 			// 		padding: 10px 0;
-			// 		&:nth-child(odd){
-			// 			width: 54%;
-			// 		}
-			// 		&:nth-child(even){
-			// 			width: 44%;
-			// 		}
-			// 		&:nth-child(7){
-			// 			display: flex;
-			// 			width: 100%;
-			// 			text-align: right;
-			// 			justify-content: flex-end;
-			// 		}
+			// 		
 			// 	}
 			// }
 
@@ -138,6 +209,7 @@
 	}
 
 	.mobile-btn{
+		margin: 0 auto;
 		@include tablet{
 			display: none;
 		}
