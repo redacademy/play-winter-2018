@@ -1,6 +1,6 @@
 <?php
 /**
- * The front page template file.
+/* Template Name: Front-Page */
  *
  * @package Integrate_Play_Theme
  */
