@@ -12,6 +12,17 @@
   height: 50vh;
 }
 
+.happy-clients {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  img {
+    width: auto;
+    height: 150px;
+  }
+}
+
 .home {
 
   .content-container {
