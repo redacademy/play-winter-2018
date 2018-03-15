@@ -59,16 +59,26 @@ a {
 		z-index: 11;
 		right: 10px;
 		background-color: $color__background-body;
+		list-style: none;
+		text-transform: uppercase;
+		padding: 0px;
+		margin: 0px;
+		width: 182px;
 		@include desktop {
 			flex-direction: row;
 			align-items: flex-end;
 			background-color: transparent;
 			top: 25px;
 			right: 50px;
+			width: 90%;
+			justify-content: flex-end;
 			
 		}
+		
 		li {
 			padding: 10px;
+			display: flex;
+			text-align: center;
 		}
 		.menu-item-45 {
 			.sub-menu {
@@ -94,23 +104,16 @@ a {
 					transform: scaleY(1);
 				}
 			} 
-			&:before {
-				background: url('../../images/mobile-services.svg');
-				background-repeat: no-repeat;
-				background-size: contain;
-				background-position: center;
-			}
 		}
 	}
 	a {
 		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		&:hover {
 			color: $color__brand-orange;
 		}
-	}
-	ul {
-		list-style: none;
-		text-transform: uppercase;
 	}
 }
 
@@ -174,11 +177,18 @@ a {
 
 
 /* Mobile Nav Logos*/
+
 	.science-logo {
 		background: url('../../images/mobile-science.svg');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
+		min-width: 40px;
+		min-height: 40px;
+		margin: 5px;
+		@include desktop {
+			background: none;
+		}
 	}
 
 	.services-logo {
@@ -186,6 +196,12 @@ a {
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
+		min-width: 40px;
+		min-height: 40px;
+		margin: 5px;
+		@include desktop {
+			background: none;
+		}
 	}
 
 	.praise-logo {
@@ -193,6 +209,12 @@ a {
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
+		min-width: 40px;
+		min-height: 40px;
+		margin: 5px;
+		@include desktop {
+			background: none;
+		}
 	}
 
 	.contact-logo {
@@ -200,4 +222,10 @@ a {
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
+		min-width: 40px;
+		min-height: 40px;
+		margin: 5px;
+		@include desktop {
+			background: none;
+		}
 	}
