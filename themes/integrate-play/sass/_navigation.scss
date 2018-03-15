@@ -35,7 +35,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	z-index: 10;
+	z-index: 2;
 	top: 0px;
 	.menu-menu-1-container {
 		opacity: 0;
@@ -56,7 +56,7 @@ a {
 		flex-direction: column;
 		align-items: flex-start;
 		position: absolute;
-		z-index: 11;
+		z-index: 2;
 		right: 10px;
 		background-color: $color__background-body;
 		list-style: none;
@@ -115,6 +115,9 @@ a {
 		&:hover {
 			color: $color__brand-orange;
 		}
+		&::visited {
+			color: $color__brand-purple;
+		}
 	}
 }
 
@@ -167,6 +170,7 @@ a {
 	background-position: center;
 	width: 25%;
 	height: 50px;
+	z-index: 3;
 	@include tablet {
 		background: url('../../images/desktop-logo.svg');
 		background-repeat: no-repeat;
