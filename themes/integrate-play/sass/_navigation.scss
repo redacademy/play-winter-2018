@@ -3,16 +3,19 @@
 --------------------------------------------------------------*/
 
 /* Links */
-
 a {
-	color: $color__link;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $color__brand-purple;
 	&:visited {
-		color: $color__link-visited;
+		color: $color__brand-purple;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color__brand-orange;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -105,18 +108,6 @@ a {
 					transform: scaleY(1);
 				}
 			} 
-		}
-	}
-	a {
-		text-decoration: none;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		&:hover {
-			color: $color__brand-orange;
-		}
-		&::visited {
-			color: $color__brand-purple;
 		}
 	}
 }
