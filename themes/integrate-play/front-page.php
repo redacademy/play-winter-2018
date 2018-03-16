@@ -25,11 +25,15 @@ get_header(); ?>
           <!-- <h1 class="page-title screen-reader-text"><?php single_post_title(); ?>
         </header>
 			<?php endif; ?> -->
-			
+
 			<div class="main-carousel">
-			<div>jdnaljwd</div>
-			<div>dowahdaiwdhal</div>
+<!-- start for each loop here -->
+				<div class="carousel-cell">...</div>
+				<div class="carousel-cell">...</div>
+				<div class="carousel-cell">...</div>
+<!-- end for each loop here -->
 			</div>
+
 
 		<div class="content-container">
 			<h1>Happy Clients</h1>

@@ -87,12 +87,17 @@ function integrate_play_scripts() {
 	wp_enqueue_style( 'integrate-play-style', get_stylesheet_uri() );
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'integrate-play-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	
+	wp_enqueue_script( 'flickity',   get_template_directory_uri().'/js/lib/flickity.js', array('jquery'), false, true  );	
+	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/build/js/carousel.min.js', array('jquery', 'flickity'), '', true );
+
+
 	wp_enqueue_style('font-awesome-cdn','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(),
 	'4.7.0'); 
 	wp_enqueue_style('muli-font-cdn','https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
 	wp_enqueue_style('oswald-font-cdn','https://fonts.googleapis.com/css?family=Oswald:700');
-	
-	wp_enqueue_script( 'flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array());
+
+
 	wp_enqueue_script( 'integrate-scripts', get_template_directory_uri() . '/build/js/integrate-scripts.min.js', array(), '23', true );
 	wp_enqueue_script( 'buttons', get_template_directory_uri() . '/build/js/buttons.min.js', array(), '23', true );
 
