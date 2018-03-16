@@ -18,6 +18,22 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+			<div class="client-quotes">
+				<?php
+					$quotes = CFS()->get( 'client_quotes' );
+					foreach ( $quotes as $quote ) {
+							$quote = $quote['quote'];
+							$name = $quote['client_name'];
+							$company = $quote['client_company'];?> 
+							<p class="quote"><?php echo $quote ?></p>
+							<p class="client-name"><?php echo $name ?></p>
+							<p class="client-company"><?php echo $company ?></p>
+							
+							<?php
+					}
+					?>
+			</div>
+
 		</main><!-- #main -->
 		<?php echo CFS()->get('contact_form');?>	
 	</div><!-- #primary -->
