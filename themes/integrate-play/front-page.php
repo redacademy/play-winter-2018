@@ -24,7 +24,13 @@ get_header(); ?>
 				<header>
           <!-- <h1 class="page-title screen-reader-text"><?php single_post_title(); ?>
         </header>
-      <?php endif; ?> -->
+			<?php endif; ?> -->
+			
+			<div class="main-carousel">
+			<div>jdnaljwd</div>
+			<div>dowahdaiwdhal</div>
+			</div>
+
 		<div class="content-container">
 			<h1>Happy Clients</h1>
 		</div>

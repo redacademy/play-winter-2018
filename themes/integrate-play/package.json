@@ -4,6 +4,7 @@
   "description": " WordPress theme for Integrate Play.",
   "main": "gulpfile.js",
   "dependencies": {
+    "flickity": "^2.1.0",
     "hamburgers": "^0.9.3",
     "npm": "^5.7.1"
   },
