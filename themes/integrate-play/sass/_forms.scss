@@ -153,10 +153,10 @@
 			border-radius: 17px;
 			display: block;
 			width: 80%;
-			min-width: 400px;
+			// min-width: 400px;
 		}
 		@include desktop{
-			width: 45%;
+			width: 100%;
 		}
 		.form-header{
 			width: 100%;
@@ -280,6 +280,9 @@
 
 //Contact us page ------- Make sure to transfer to page-templates--------
 	.page-id-34{
+		.site-content{
+			padding: 0 50px;
+		}
 		.content-area{
 			max-width: 1200px;
 			margin: 0 auto;
@@ -292,7 +295,7 @@
 			padding: 0 48px;
 			@include desktop{
 				width: 49%;
-				padding-right: 0;
+				padding: 50px 25px 0 0;
 			}
 		}
 		.hide-on-mobile{
@@ -315,6 +318,9 @@
 			@include tablet{
 				justify-content: space-around;
 			}
+			@include desktop{
+				width: 60%;
+			}
 		}
 		.icon-frame{
 			width: 50px;
@@ -330,7 +336,7 @@
 			}
 			@include desktop{
 				width: 49%;
-
+				padding-left: 25px;
 			}
 			h2{
 				margin: 0;
