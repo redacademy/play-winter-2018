@@ -20,15 +20,16 @@ get_header(); ?>
 
 			<div class="client-quotes">
 				<?php
-					$quotes = CFS()->get( 'client_quotes' );
-					foreach ( $quotes as $quote ) {
-							$quote = $quote['quote'];
-							$name = $quote['client_name'];
-							$company = $quote['client_company'];?> 
-							<p class="quote"><?php echo $quote ?></p>
-							<p class="client-name"><?php echo $name ?></p>
-							<p class="client-company"><?php echo $company ?></p>
-							
+					$fields = CFS()->get( 'client_quotes' );
+					foreach ( $fields as $field ) {
+							$quote = $field['quote'];
+							$name = $field['client_name'];
+							$company = $field['client_company'];?> 
+							<div class="single-quote">
+								<p class="quote"><?php echo $quote ?></p>
+								<p class="client-name"><?php echo $name ?></p>
+								<p class="client-company"><?php echo $company ?></p>
+							</div>
 							<?php
 					}
 					?>
