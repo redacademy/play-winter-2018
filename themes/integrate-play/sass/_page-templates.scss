@@ -4,62 +4,62 @@
 
 /* Front page */
 
-.front-page-hero {
-  background-image: url('../../images/hands.illo2.svg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  // width: 100%;
-  height: 30vh;
-}
-
-.happy-clients {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem;
-  padding: 1rem;
-  align-items: center;
-
-  img {
-    width: 150px;
-    height: auto;
+  .front-page-hero {
+    background-image: url('../../images/hands.illo2.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // width: 100%;
+    height: 30vh;
   }
-}
 
-.home {
+  .happy-clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
 
-  .content-container {
-    width: 70%;
-    margin-left: 2rem;
-  
-    .btn {
-      justify-content: left;
-      width: 65%;
-      font-size: 1.25rem;
-      margin: 0px;
+    img {
+      width: 150px;
+      height: auto;
     }
   }
-}
+
+  .home {
+
+    .content-container {
+      width: 70%;
+      margin-left: 2rem;
+    
+      .btn {
+        justify-content: left;
+        width: 65%;
+        font-size: 1.25rem;
+        margin: 0px;
+      }
+    }
+  }
 
 /* Contact Page + Praise Page */
 
-.page, .page-template-default {
-  .entry-content {
-    // width: 80%;
-    margin: 0 auto;
+  .page, .page-template-default {
+    .entry-content {
+      // width: 80%;
+      margin: 0 auto;
+      }
     }
-  }
 
-  .entry-title {
-    width: 40%;
-    margin-left: 2rem;
-    align-content: center;
-    text-align: left;
-  }
+    .entry-title {
+      width: 40%;
+      margin-left: 2rem;
+      align-content: center;
+      text-align: left;
+    }
 
-  .btn {
-    width: auto;
-    font-size: 1.25rem;
-    padding: .5rem 2rem;
-    margin: 2rem auto;
-  }
+    .btn {
+      width: auto;
+      font-size: 1.25rem;
+      padding: .5rem 2rem;
+      margin: 2rem auto;
+    }
 

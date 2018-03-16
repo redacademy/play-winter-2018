@@ -146,19 +146,22 @@
 		color: $color__brand-purple;
 		margin: 0 auto;
 		padding-bottom: 2%;
-		border-radius: 17px;
-		width: 100%;
+		border-radius: 0;
+		
+		width: 100vw;
 		@include tablet{
+			border-radius: 17px;
 			display: block;
-			width: 50%;
+			width: 80%;
 			min-width: 400px;
 		}
 		@include desktop{
-			width: 40%;
+			width: 45%;
 		}
 		.form-header{
 			width: 100%;
 			padding: 5% 10% 0 10%;
+			text-align: center;
 			@include desktop{
 				padding: 5% 5% 0 5%;
 			}
@@ -192,21 +195,20 @@
 
 
 // Form -- contact us page
-		.page-id-34{
-			.vertical-contact-form{
-				display: block;
-				width: 100vw;
-				border-radius: 0;
-				@include tablet{
-					border-radius: 17px;
-					width: 50%;
-					min-width: 400px;
-				}
-				@include desktop{
-					width: 40%;
-				}
-			}
-		}
+		// .page-id-34{
+		// 	.vertical-contact-form{
+		// 		display: block;
+
+		// 		@include tablet{
+		// 			border-radius: 17px;
+		// 			width: 80%;
+		// 			min-width: 400px;
+		// 		}
+		// 		@include desktop{
+		// 			width: 45%;
+		// 		}
+		// 	}
+		// }
 
 /* Fields */
 
@@ -281,10 +283,17 @@
 		.content-area{
 			max-width: 1200px;
 			margin: 0 auto;
-			
+			@include desktop{
+				display: flex;
+				flex-flow: row nowrap;
+			}
 		}
 		.site-main{
 			padding: 0 48px;
+			@include desktop{
+				width: 49%;
+				padding-right: 0;
+			}
 		}
 		.hide-on-mobile{
 			display: none;
@@ -303,6 +312,9 @@
 			display: flex;
 			justify-content: space-between;
 			font-size: 2rem;
+			@include tablet{
+				justify-content: space-around;
+			}
 		}
 		.icon-frame{
 			width: 50px;
@@ -313,16 +325,37 @@
 			color: white;
 		}
 		.contact-form-wrapper{
+			@include tablet{
+				margin-top: 50px;
+			}
+			@include desktop{
+				width: 49%;
+
+			}
 			h2{
 				margin: 0;
 				padding: 50px;
+				@include tablet{
+					display: none;
+				}
 			}
 			.form-header{
 				display: none;
+				@include tablet{
+					display: block;
+					h2{
+						display: block;
+						padding: 50px 0;
+						padding-bottom: 0;
+					}
+				}
 			}
 			.form-content{
 				padding: 10%;
 			}
+		}
+		.vertical-contact-form{
+			display: block;
 		}
 	}
 
