@@ -228,11 +228,18 @@ a {
 	}
 /*Services Page Content */
 .page-template-page-services {
+	.content-area {
+		padding-top: 200px;
+	}
 	.main-navigation {
-		height: 300px;
+		height: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		.header-logo {
 			position: absolute;
 			top: 2px;
+			left: 0px;
 		}
 		.nav-menu-wrapper {
 			position: absolute;
@@ -242,8 +249,14 @@ a {
 				top: 0px;
 				width: 3000px;
 			}
-			.menu {
-				width: 200%;
+		}
+		.breadcrumb-bar {
+			display: flex;
+			position: absolute;
+			bottom: 0;
+			 .bread-btn{
+				padding: 20px;
+				border-bottom: 5px solid $color__brand-grey;
 			}
 		}
 	}
