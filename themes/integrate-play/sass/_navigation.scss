@@ -239,7 +239,8 @@ a {
 			top: 20px;
 			right: 2px;
 			@include desktop {
-				top: 10px;
+				top: 0px;
+				width: 3000px;
 			}
 			.menu {
 				width: 200%;
