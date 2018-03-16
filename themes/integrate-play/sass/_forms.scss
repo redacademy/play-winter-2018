@@ -109,7 +109,6 @@
 				}
 			}
 		}
-
 		.contact-form-submit{ //this block styles the form submit button wrapper
 			padding: 0 5%;
 			margin: 3% 0;
@@ -120,6 +119,9 @@
 			justify-content: flex-end;
 			align-content: flex-end;
 			align-items: center;
+			.wpcf7-submit{
+				background: $color__brand-purple;
+			}
 		}
 		
 		label{
@@ -145,17 +147,21 @@
 		margin: 0 auto;
 		padding-bottom: 2%;
 		border-radius: 17px;
+		width: 100%;
 		@include tablet{
 			display: block;
+			width: 50%;
+			min-width: 400px;
+		}
+		@include desktop{
 			width: 40%;
 		}
 		.form-header{
 			width: 100%;
 			padding: 5% 10% 0 10%;
-		}
-		i{
-			display: block;
-			text-align: right;
+			@include desktop{
+				padding: 5% 5% 0 5%;
+			}
 		}
 		h2{
 			margin: 6% 0;
@@ -175,6 +181,29 @@
 			p{
 				margin: 0 auto;
 				padding: 3% 0;
+				}
+			}
+			.contact-form-submit{ //this block styles the form submit button wrapper
+				.wpcf7-submit{
+					background: $color__brand-purple;
+				}
+			}
+		}
+
+
+// Special styling for Contact-Us page form
+		.page-id-34{
+			.vertical-contact-form{
+				display: block;
+				width: 100%;
+				border-radius: 0;
+				@include tablet{
+					border-radius: 17px;
+					width: 50%;
+					min-width: 400px;
+				}
+				@include desktop{
+					width: 40%;
 				}
 			}
 		}
