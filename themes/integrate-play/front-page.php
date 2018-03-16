@@ -25,8 +25,10 @@ get_header(); ?>
           <!-- <h1 class="page-title screen-reader-text"><?php single_post_title(); ?>
         </header>
       <?php endif; ?> -->
-
-		<div class="happy-clients">
+		<div class="content-container">
+			<h1>Happy Clients</h1>
+		</div>
+			<div class="happy-clients">
 			<?php
 						$fields = CFS()->get( 'companies' );
 			foreach ( $fields as $field ) {
