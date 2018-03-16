@@ -29,9 +29,9 @@
 
   /* Button generation for breadcrumb bar */
     $('.page-template-page-services').find('#site-navigation').append('<div class="breadcrumb-bar">' +
-      '<a id="bread-workshop" href="#workshop" class="bread-btn">Workshops</a>' +
-      '<a id="bread-speak" href="#speaking" class="bread-btn">Speaking</a>' +
-      '<a id="bread-coach" href="#coaching" class="bread-btn">Coaching</a>'
+      '<a id="bread-workshop" href="#workshop" class="bread-btn work-btn">Workshops</a>' +
+      '<a id="bread-speak" href="#speaking" class="bread-btn speak-btn">Speaking</a>' +
+      '<a id="bread-coach" href="#coaching" class="bread-btn coach-btn">Coaching</a>'
     );
   /* Breadcrumb click functions */
     $('#bread-workshop').on('click', function() {
@@ -51,7 +51,18 @@
       $('.speaking-wrapper').css('display', 'none');
       $('.coaching-wrapper').css('display', 'block');
     });
-
+  /* Logic for breadcrumb bar animation */
+    if ( $('.workshops-wrapper').css('display','block') === true ) 
+    {
+      $('.work-btn').css('border-bottom', '5px solid $color__brand-orange');
+    } 
+    else if ($('.speaking-wrapper').css('display', 'block') === true)  {
+      $('.speak-btn').css('border-bottom', '5px solid $color__brand-orange');
+    } 
+    else {
+      $('.coach-btn').css('border-bottom', '5px solid $color__brand-orange');      
+    }
+    
 /* Default services layout */
   $('.workshops-wrapper').css('display', 'block');
   $('.speaking-wrapper').css('display', 'none');
