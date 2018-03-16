@@ -281,7 +281,7 @@
 //Contact us page ------- Make sure to transfer to page-templates--------
 	.page-id-34{
 		.site-content{
-			padding: 0 50px;
+			// padding: 0 48px;
 		}
 		.content-area{
 			max-width: 1200px;
@@ -331,6 +331,7 @@
 			color: white;
 		}
 		.contact-form-wrapper{
+			width: 100vw;
 			@include tablet{
 				margin-top: 50px;
 			}
