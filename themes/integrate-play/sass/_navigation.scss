@@ -92,8 +92,8 @@ a {
 				display: none;
 				padding: 0;
 				margin: 0;
-				top: 44px;
-				right: 249px;
+				top: 40px;
+				right: 148px;
 				flex-direction: column;
 				transform-origin: top;
 				@include desktop {
@@ -184,7 +184,7 @@ a {
 		min-height: 40px;
 		margin: 5px;
 		@include desktop {
-			background: none;
+			display: none;
 		}
 	}
 
@@ -197,7 +197,7 @@ a {
 		min-height: 40px;
 		margin: 5px;
 		@include desktop {
-			background: none;
+			display: none;
 		}
 	}
 
@@ -210,7 +210,7 @@ a {
 		min-height: 40px;
 		margin: 5px;
 		@include desktop {
-			background: none;
+			display: none;
 		}
 	}
 
@@ -223,6 +223,27 @@ a {
 		min-height: 40px;
 		margin: 5px;
 		@include desktop {
-			background: none;
+			display: none;
 		}
 	}
+/*Services Page Content */
+.page-template-page-services {
+	.main-navigation {
+		height: 300px;
+		.header-logo {
+			position: absolute;
+			top: 2px;
+		}
+		.nav-menu-wrapper {
+			position: absolute;
+			top: 20px;
+			right: 2px;
+			@include desktop {
+				top: 10px;
+			}
+			.menu {
+				width: 200%;
+			}
+		}
+	}
+}
