@@ -92,6 +92,7 @@ function integrate_play_scripts() {
 	wp_enqueue_style('muli-font-cdn','https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
 	wp_enqueue_style('oswald-font-cdn','https://fonts.googleapis.com/css?family=Oswald:700');
 	
+	wp_enqueue_script( 'flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array());
 	wp_enqueue_script( 'integrate-scripts', get_template_directory_uri() . '/build/js/integrate-scripts.min.js', array(), '23', true );
 	wp_enqueue_script( 'buttons', get_template_directory_uri() . '/build/js/buttons.min.js', array(), '23', true );
 
@@ -110,3 +111,25 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+/**
+ * Button generation for navigation bar for services page
+ */
+// function button_gen() {
+
+// 	if ( ! is_page_template('page-services.php')) {
+// 		return;
+// 	}
+// 	$banner_css = ".page-template-about .site-header {
+// 		background:	
+// 		linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), 
+// 		url({$image}) no-repeat center bottom;
+// 		background-size: cover cover;
+// 		height: 100vh;
+// 	}";
+
+// 	wp_add_inline_style ('inhabitent-style', $banner_css);
+
+// }
+// add_action( 'wp_enqueue_scripts', 'button_gen');
