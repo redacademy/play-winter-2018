@@ -22,4 +22,18 @@
       $('.mobile-contact-form').hide();
     });
   });
+
+//This shows full quote on the praise page when user clicks on See More
+  $('.read-more').on('click', function(e){
+    e.preventDefault();
+    // console.log('button works');
+    $(this).parent().parent().hide();
+    $(this).parent().parent().prev().show();
+  })
+  
+  $('.read-less').on('click', function(e){
+    e.preventDefault();
+       $(this).parent().hide();
+       $(this).parent().next().show();
+  })
 })(jQuery);

@@ -114,3 +114,43 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+//Function to change the names of the archive pages
+function my_theme_archive_title( $title ) {
+	if ( is_category() ) {
+			$title = single_cat_title( '', false );
+	} elseif ( is_tag() ) {
+			$title = single_tag_title( '', false );
+	} elseif ( is_author() ) {
+			$title = '<span class="vcard">' . get_the_author() . '</span>';
+	} elseif ( is_post_type_archive() ) {
+			$title = post_type_archive_title( '', false );
+	} elseif ( is_tax() ) {
+			$title = single_term_title( '', false );
+	}
+
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
+
+//Function to change the excerpt length
+/**
+ * Filter the except length to 100 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+	return 80;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+//Function to change the Read More excerpt text
+function new_excerpt_more($more) {
+	global $post;
+	return '<a class="read-more" 
+	href="">... See More</a>';
+ }
+ add_filter('excerpt_more', 'new_excerpt_more');

@@ -1,7 +1,7 @@
 <?php
 /**
- /*
- /* @package Integrate_Play_Theme
+ *
+ * @package Integrate_Play_Theme
  */
 
 get_header(); ?>

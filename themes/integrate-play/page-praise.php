@@ -18,8 +18,60 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-			<div class="client-quotes">
+			
+
+		</main><!-- #main -->
+		<!-- insert testimonials -->
+		<div class="testimonials">
 				<?php
+				// The Query
+				$args = array(
+					'post_type' => 'testimonials',
+					'posts_per_page' => 5
+				);
+				$testimonial = get_posts( $args );
+
+				// The Loop
+				if ( ! empty ($testimonial) ) :?>
+
+					
+						<?php foreach ($testimonial as $post) : setup_postdata ($post); ?>
+							<div class="single-quotes">
+
+								<div class="full-quote">
+									<?php the_content(); ?>
+									<a href="" class="read-less">Show Less</a>
+								</div>
+									
+								<div class="quote-excerpt">
+									<?php the_excerpt(); ?>
+								</div>
+
+								
+
+								<p class="client-name">
+									<?php echo CFS()->get('test_author');?>
+								</p>
+
+								<p class="client-company">
+									<?php echo CFS()->get('test_company');?>
+								</p>
+							</div>
+						<?php endforeach;
+						wp_reset_postdata(); ?>
+					
+				<?php endif?>
+			</div> <!-- Testimonial Posts-->
+		<?php echo CFS()->get('contact_form');?>	
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>
+
+
+<!-- delete the code below once Praise page is fully functional -->
+
+			<!-- <div class="client-quotes">
+			<?php
 					$fields = CFS()->get( 'client_quotes' );
 					foreach ( $fields as $field ) {
 							$quote = $field['quote'];
@@ -33,10 +85,4 @@ get_header(); ?>
 							<?php
 					}
 					?>
-			</div>
-
-		</main><!-- #main -->
-		<?php echo CFS()->get('contact_form');?>	
-	</div><!-- #primary -->
-
-<?php get_footer(); ?>
+			</div> -->

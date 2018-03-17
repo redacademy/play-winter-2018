@@ -1,13 +1,34 @@
 //Styles for the Praise page
   .page-id-32{
+    .site-content{
+      @include desktop{
+        margin-top: 50px;
+      }
+    }
+    .content-area{
+      @include desktop{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "featuredquote quotes"
+          "form quotes";
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        padding: 50px;
+      }
+    }
     .site-main{
       padding: 0 48px;
-      @include tablet{
+      @include desktop{
         padding: 0;
       }
     }
     article{
       margin-bottom: 50px;
+      @include desktop{
+        grid-area: featuredquote;
+      }
     }
     .entry-title {
     width: 40%;
@@ -16,20 +37,70 @@
     .entry-content{
       padding: 0 8%;
     }
-    .quote{
-      display: block;
-      height: auto;
-      max-height: 200px;
-      text-overflow: ellipsis;
-      white-space: wrap;
-      overflow: hidden;
+
+    .testimonials{
+      padding: 0 50px;
+      @include desktop{
+        grid-area: quotes;
+        position: relative;
+        padding: 0;
+      }
     }
+
+    .full-quote{
+      display: none;
+      transition: all 0.5s linear;
+    }
+
     .client-name, .client-company{
       padding-left: 60px;
       margin: 5px 0;
     }
     .client-name{
       font-weight: bold;
+      margin-bottom: 0;
+      @include tablet{
+        &::before{
+          content: "- ";
+        }
+        padding-left: 290px;
+      }
+      @include desktop{
+        padding-left: 50%;
+      }
+    }
+
+    .client-company{
+      font-style: italic;
+      font-size: 0.9rem;
+      margin: 0;
+      @include tablet{
+        padding-left: 300px;
+      }
+      @include desktop{
+        padding-left: 51%;
+      }
+    }
+
+    .read-more, .read-less{
+      display: inline;
+      font-weight: bold;
+    }
+
+    .single-quotes{
+      margin-bottom: 50px;
+    }
+
+    .quote-excerpt{
+      p{
+        margin-bottom: 10px;
+      }
+    }
+
+    .wpcf7{
+      @include desktop{
+        grid-area: form;
+      }
     }
   }
 
