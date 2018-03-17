@@ -92,10 +92,13 @@ a {
 				display: none;
 				padding: 0;
 				margin: 0;
-				top: 40px;
-				right: 148px;
+				top: 30px;
+				right: 157px;
 				flex-direction: column;
 				transform-origin: top;
+				font-family: $font__main;
+				font-size: 14px;
+				text-transform: capitalize;
 				@include desktop {
 					display: flex;
 					position: absolute;
@@ -263,3 +266,4 @@ a {
 			// 	border-bottom: 5px solid $color__brand-orange;
 		}
 	}
+}

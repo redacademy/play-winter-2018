@@ -33,7 +33,7 @@
     $('.coaching-wrapper').css('display', 'none');
 
 
-  /* Services layout */ 
+  /* Services layout for Hashed URl */ 
     $(window).on('popstate', function () {
       if (window.location.hash === '#workshop') 
       {
