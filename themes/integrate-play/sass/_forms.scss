@@ -23,6 +23,7 @@
 			i{
 				display: block;
 				text-align: right;
+				font-size: 2.7rem;
 			}
 			h2{
 				margin: 6% 0;
@@ -48,7 +49,9 @@
 				margin: 0 auto;
 				margin-top: 30px;
 			}
+			transition: height 0.5s ease-in;
 		}
+		
 
 //Form -- horizontal
 	.horizontal-contact-form{
