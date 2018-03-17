@@ -12,7 +12,7 @@ function testimonials() {
 	$labels = array(
 		'name'                  => 'Testimonials',
 		'singular_name'         => 'Testimonial',
-		'menu_name'             => 'Tertimonials',
+		'menu_name'             => 'Testimonials',
 		'name_admin_bar'        => 'Testimonials',
 		'archives'              => 'Testimonial Archives',
 		'attributes'            => 'Testimonial Attributes',
