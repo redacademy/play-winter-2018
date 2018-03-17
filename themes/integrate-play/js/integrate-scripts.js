@@ -63,7 +63,7 @@
     });
 
   /* Content Display via Menu link fix */
-    $(window).load(function (){ 
+    $(window).on('load', function (){ 
       if (window.location.hash === '#workshop') 
       {
         $('#bread-workshop').css('border-bottom', '5px solid #FF5301'); 
