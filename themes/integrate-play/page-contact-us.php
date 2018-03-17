@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying the Contact Us Page.
  *
  * @package Integrate_Play_Theme
  */

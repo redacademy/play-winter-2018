@@ -1,5 +1,9 @@
 <?php
-/* Template Name: Services Page */
+/**
+ * The template for displaying the Services Page.
+ *
+ * @package Integrate_Play_Theme
+ */
 get_header(); ?>
 
 <div id="primary" class="content-area">
