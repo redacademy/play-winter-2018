@@ -6,14 +6,18 @@ get_header(); ?>
   <main id="main" class="site-main" role="main">
 
     <div class="workshops-wrapper">
-        <?php echo CFS()->get('services_workshops');?>
-        <?php echo CFS()->get('workshop_banner');?>
-        <?php echo CFS()->get('workshop_serious_play');?>
-        <?php echo CFS()->get('workshop_ways_to_play');?>
+        <div class="work-banner">
+            <?php echo CFS()->get('workshop_banner');?>
+        </div>
+        <div class="serious-play">
+            <?php echo CFS()->get('workshop_serious_play');?>
+        </div>
+        <div class="ways-to-play">
+            <?php echo CFS()->get('workshop_ways_to_play');?>
+        </div>
     </div>
 
     <div class="speaking-wrapper">
-        <?php echo CFS()->get('services_speaking');?>
         <?php echo CFS()->get('speaking_banner');?>
         <?php echo CFS()->get('speaking_international_speaker');?>
         <?php echo CFS()->get('speaking_highlights');?>
@@ -21,7 +25,6 @@ get_header(); ?>
     </div>
 
     <div class="coaching-wrapper">
-        <?php echo CFS()->get('services_coaching');?>
         <?php echo CFS()->get('coaching_banner');?>
         <?php echo CFS()->get('coaching_here_for_you');?>
         <?php echo CFS()->get('coaching_advice');?>
