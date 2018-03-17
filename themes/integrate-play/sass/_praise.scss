@@ -1,0 +1,36 @@
+//Styles for the Praise page
+  .page-id-32{
+    .site-main{
+      padding: 0 48px;
+      @include tablet{
+        padding: 0;
+      }
+    }
+    article{
+      margin-bottom: 50px;
+    }
+    .entry-title {
+    width: 40%;
+    text-align: left;
+    }
+    .entry-content{
+      padding: 0 8%;
+    }
+    .quote{
+      display: block;
+      height: auto;
+      max-height: 200px;
+      text-overflow: ellipsis;
+      white-space: wrap;
+      overflow: hidden;
+    }
+    .client-name, .client-company{
+      padding-left: 60px;
+      margin: 5px 0;
+    }
+    .client-name{
+      font-weight: bold;
+    }
+  }
+
+  
