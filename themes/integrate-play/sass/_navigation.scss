@@ -38,6 +38,7 @@
 		position: fixed;
 		z-index: 2;
 		top: 0px;
+		height: 100px;
 		.menu-menu-1-container {
 			opacity: 0;
 			transform: scaleY(0);
@@ -110,6 +111,11 @@
 			}
 		}
 	}
+	.logged-in {
+		.main-navigation {
+			top: 32px;
+		}
+	}
 	.nav-menu-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -162,6 +168,7 @@
 			background-size: contain;
 			background-position: center;
 			height: 100px;
+			top: 0px;
 		}
 	}
 /* Mobile Nav Logos*/
@@ -226,13 +233,16 @@
 			transition: .5s;
 			.header-logo {
 				position: absolute;
-				top: 2px;
 				left: 0px;
+				top: 26px;
+				@include tablet {
+					top: 0px;
+				}
 			}
 			.nav-menu-wrapper {
 				position: absolute;
 				top: 20px;
-				right: 2px;
+				right: 0px;
 				@include desktop {
 					top: 0px;
 					width: 3000px;
