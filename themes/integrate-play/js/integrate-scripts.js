@@ -88,22 +88,18 @@
       $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
     });
   /* Header Scroll Auto-Sizing Function */
-  function serviceHeaderResize() {
-    var docYval = window.pageYOffset;
-    var headerResize = 50;
-
-    if (docYval > headerResize) {
-      $('.page-template-page-services').find('#site-navigation').addClass('header-resized');
-      $('.header-resized').css('height','150px');
-    } else {
-      $('.page-template-page-services').find('#site-navigation').removeClass('header-resized');
-      $('.page-template-page-services').find('#site-navigation').css('height','200px');
+    function serviceHeaderResize() {
+      var docYval = window.pageYOffset;
+      var headerResize = 50;
+      if (docYval > headerResize) {
+        $('.page-template-page-services').find('#site-navigation').addClass('header-resized');
+        $('.header-resized').css('height','150px');
+      } else {
+        $('.page-template-page-services').find('#site-navigation').removeClass('header-resized');
+        $('.page-template-page-services').find('#site-navigation').css('height','200px');
+      }
     }
-
-
-    
-  }
-  window.addEventListener('scroll',serviceHeaderResize);
+    window.addEventListener('scroll',serviceHeaderResize);
 
 
 })(jQuery);
