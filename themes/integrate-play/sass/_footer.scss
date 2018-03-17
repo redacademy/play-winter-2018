@@ -23,12 +23,14 @@
 
   .menu {
     padding: 0px;
+    text-transform: uppercase;
 
     li {
-    margin: 3rem;
+    margin: 1rem;
     }
 
     a {
+      padding: 20px 10px;
       text-decoration: none;
       color: $color__brand-grey;
     }
