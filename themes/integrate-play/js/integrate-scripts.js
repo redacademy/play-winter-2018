@@ -87,21 +87,17 @@
       $('.coaching-wrapper').css('display', 'block');
       $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
     });
-  /* Logic for breadcrumb bar animation */
-
-   
-    // if ($('.workshops-wrapper').css('display') == 'block') {
-    //   console.log('Workshop');
-     
-    // } 
-    // else if ($('.speaking-wrapper').css('display') == 'block') {
-    //   console.log('Speaking');
-    // } 
-    // else {
-    //   console.log('Coaching');      
-    // }
-    
-
+  /* Header Scroll Auto-Sizing Function */
+    function serviceHeaderResize() {
+      var docYval = window.pageYOffset;
+      var headerResize = 20;
+      if (docYval > headerResize) {
+        $('.page-template-page-services').find('#site-navigation').addClass('header-resized');
+      } else {
+        $('.page-template-page-services').find('#site-navigation').removeClass('header-resized');
+      }
+    }
+    window.addEventListener('scroll',serviceHeaderResize);
 
 
 })(jQuery);
