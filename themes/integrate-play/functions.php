@@ -114,25 +114,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-
-/**
- * Button generation for navigation bar for services page
- */
-// function button_gen() {
-
-// 	if ( ! is_page_template('page-services.php')) {
-// 		return;
-// 	}
-// 	$banner_css = ".page-template-about .site-header {
-// 		background:	
-// 		linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), 
-// 		url({$image}) no-repeat center bottom;
-// 		background-size: cover cover;
-// 		height: 100vh;
-// 	}";
-
-// 	wp_add_inline_style ('inhabitent-style', $banner_css);
-
-// }
-// add_action( 'wp_enqueue_scripts', 'button_gen');
