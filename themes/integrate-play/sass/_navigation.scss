@@ -254,10 +254,12 @@ a {
 			display: flex;
 			position: absolute;
 			bottom: 0;
+			z-index: -1;
 			 .bread-btn{
 				padding: 20px;
 				border-bottom: 5px solid $color__brand-grey;
-				}
 			}
+			// .work-btn {
+			// 	border-bottom: 5px solid $color__brand-orange;
 		}
 	}
