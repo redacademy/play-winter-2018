@@ -1,4 +1,6 @@
 (function ($) {
+  $( document ).ready(function() {
+    
 /* Hamburger Menu Functionality JS */
   $(window).on('resize', function () { /* Function triggers on menu sizing*/
     if (document.body.clientWidth < 800) {
@@ -101,5 +103,5 @@
     }
     window.addEventListener('scroll',serviceHeaderResize);
 
-
+  });
 })(jQuery);
