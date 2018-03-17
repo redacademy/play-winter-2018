@@ -24,7 +24,7 @@
 
 /* Services Page Content */
   /* Button generation for breadcrumb bar */
-    $('.page-template-page-services').find('#site-navigation').append('<div class="breadcrumb-bar">' +
+    $('.page-id-68').find('#site-navigation').append('<div class="breadcrumb-bar">' +
       '<a id="bread-workshop" href="#workshop" class="bread-btn work-btn">Workshops</a>' +
       '<a id="bread-speak" href="#speaking" class="bread-btn speak-btn">Speaking</a>' +
       '<a id="bread-coach" href="#coaching" class="bread-btn coach-btn">Coaching</a>'
@@ -114,18 +114,14 @@
       var docYval = window.pageYOffset;
       var headerResize = 50;
       if (docYval > headerResize) {
-        $('.page-template-page-services').find('#site-navigation').addClass('header-resized');
+        $('.page-id-68').find('#site-navigation').addClass('header-resized');
         $('.header-resized').css('height','150px');
       } else {
-        $('.page-template-page-services').find('#site-navigation').removeClass('header-resized');
-        $('.page-template-page-services').find('#site-navigation').css('height','200px');
+        $('.page-id-68').find('#site-navigation').removeClass('header-resized');
+        $('.page-id-68').find('#site-navigation').css('height','200px');
       }
     }
     window.addEventListener('scroll',serviceHeaderResize);
 
   });
- 
- 
-
-
 })(jQuery);
