@@ -6,6 +6,7 @@
  */
 
 // Testimonials Custom Post Type
+// Register Custom Post Type
 function testimonials() {
 
 	$labels = array(
@@ -41,7 +42,7 @@ function testimonials() {
 		'label'                 => 'Testimonial',
 		'description'           => 'Testimonial posts',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'custom-fields' ),
+		'supports'              => array( 'title', 'editor' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
