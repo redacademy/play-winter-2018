@@ -61,30 +61,56 @@
         $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
       }
     });
+
+  /* Content Display via Menu link fix */
+    $(window).load(function (){ 
+      if (window.location.hash === '#workshop') 
+      {
+        $('#bread-workshop').css('border-bottom', '5px solid #FF5301'); 
+        $('#bread-speak , #bread-coach').css('border-bottom', '5px solid #DEDDDB');
+        $('.workshops-wrapper').css('display', 'block');
+        $('.speaking-wrapper , .coaching-wrapper').css('display', 'none');
+      }
+      else if (window.location.hash === '#speaking') 
+      {
+        $('#bread-speak').css('border-bottom', '5px solid #FF5301');
+        $('#bread-coach , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
+        $('.speaking-wrapper').css('display', 'block');
+        $('.workshops-wrapper , .coaching-wrapper').css('display', 'none');
     
+      } 
+      else if (window.location.hash === '#coaching') 
+      {
+        $('#bread-coach').css('border-bottom', '5px solid #FF5301');
+        $('#bread-speak , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
+        $('.coaching-wrapper').css('display', 'block');
+        $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
+      }
+    })
+
   /* Breadcrumb click functions */
-    $('#bread-workshop').on('click', function() {
+    $('#bread-workshop').on('click', function () {
       $('#bread-workshop').css('border-bottom', '5px solid #FF5301'); 
       $('#bread-speak , #bread-coach').css('border-bottom', '5px solid #DEDDDB');
       $('.workshops-wrapper').css('display', 'block');
       $('.speaking-wrapper , .coaching-wrapper').css('display', 'none');
     });
 
-    $('#bread-speak').on('click', function() {
+    $('#bread-speak').on('click', function () {
       $('#bread-speak').css('border-bottom', '5px solid #FF5301');
       $('#bread-coach , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
       $('.speaking-wrapper').css('display', 'block');
       $('.workshops-wrapper , .coaching-wrapper').css('display', 'none');
     });
     
-    $('#bread-coach').on('click', function() {
+    $('#bread-coach').on('click', function () {
       $('#bread-coach').css('border-bottom', '5px solid #FF5301');
       $('#bread-speak , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
       $('.coaching-wrapper').css('display', 'block');
       $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
     });
   /* Header Scroll Auto-Sizing Function */
-    function serviceHeaderResize() {
+    function serviceHeaderResize () {
       var docYval = window.pageYOffset;
       var headerResize = 50;
       if (docYval > headerResize) {
@@ -98,4 +124,8 @@
     window.addEventListener('scroll',serviceHeaderResize);
 
   });
+ 
+ 
+
+
 })(jQuery);
