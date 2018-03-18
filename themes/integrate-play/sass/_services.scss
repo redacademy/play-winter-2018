@@ -1,7 +1,75 @@
 /* Styling Template for Services Page*/
 
-.workshops-wrapper {
-  .work-banner h1 img {
-    position: relative;
+.page-id-68 {
+  .content-area {
+    padding-top: 150px;
+  }
+  .site-main {
+    padding: 0px;
+  }
+/* Workshop Content */
+    .workshops-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .Y0NH2b {
+        font-size: .7rem;
+        justify-content: flex-start;
+        padding: 0 5px;
+      }
+    /* Workshop Banner */
+      .work-banner {
+        position: relative;
+        h1 {
+          text-transform: none;
+          position: absolute;
+          top: 24%;
+          width: 40%;
+          left: 6%;
+        }
+      }
+    /* Serious Play Content */
+      .serious-play {
+        h2 {
+          // width: 100%;
+          padding: 0 8%;
+          display: none;
+          @include tablet {
+            display: block;
+          }
+        }
+
+        p {
+          padding: 0 8%;
+        }
+      }
+    /* Ways to Play Content */
+      .ways-to-play {
+        display: inline;
+        padding: 0 8%;
+        h3 {
+          display: flex;
+          justify-content: flex-start;
+        }
+        
+
+      }
+    }
+
+/* Speaking Content Display */
+    .speaking-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+/* Coaching Content Display */
+  .coaching-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

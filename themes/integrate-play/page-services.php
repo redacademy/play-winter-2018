@@ -19,6 +19,7 @@ get_header(); ?>
         <div class="ways-to-play">
             <?php echo CFS()->get('workshop_ways_to_play');?>
         </div>
+    
     </div>
 
     <div class="speaking-wrapper">

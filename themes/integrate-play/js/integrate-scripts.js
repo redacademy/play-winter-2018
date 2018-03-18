@@ -4,7 +4,7 @@
 /* Hamburger Menu Functionality JS */
   $(window).on('resize', function () { /* Function triggers on menu sizing*/
     if (document.body.clientWidth < 800) {
-      $('.menu-menu-1-container').css('display', 'flex');
+      $('.menu-menu-1-container').css('display', 'block');
       $('.menu-menu-1-container').removeClass('menu-expanded');
       $('#menu-toggle').removeClass('is-active');
     }
@@ -24,15 +24,17 @@
 
 /* Services Page Content */
   /* Button generation for breadcrumb bar */
-    $('.page-id-68').find('#site-navigation').append('<div class="breadcrumb-bar">' +
+    $('.page-id-68').find('#site-navigation').append( '<header class="service-header">Services</header>' +
+      '<div class="breadcrumb-bar">' +
       '<a id="bread-workshop" href="#workshop" class="bread-btn work-btn">Workshops</a>' +
       '<a id="bread-speak" href="#speaking" class="bread-btn speak-btn">Speaking</a>' +
-      '<a id="bread-coach" href="#coaching" class="bread-btn coach-btn">Coaching</a>'
+      '<a id="bread-coach" href="#coaching" class="bread-btn coach-btn">Coaching</a>' +
+      '</div>'
     );
   /* Default services layout */
     $('#bread-workshop').css('border-bottom', '5px solid #FF5301'); 
     $('#bread-speak , #bread-coach').css('border-bottom', '5px solid #DEDDDB');
-    $('.workshops-wrapper').css('display', 'block');
+    $('.workshops-wrapper').css('display', 'flex');
     $('.speaking-wrapper , .coaching-wrapper').css('display', 'none');
 
 
@@ -42,14 +44,14 @@
       {
         $('#bread-workshop').css('border-bottom', '5px solid #FF5301'); 
         $('#bread-speak , #bread-coach').css('border-bottom', '5px solid #DEDDDB');
-        $('.workshops-wrapper').css('display', 'block');
+        $('.workshops-wrapper').css('display', 'flex');
         $('.speaking-wrapper , .coaching-wrapper').css('display', 'none');
       }
       else if (window.location.hash === '#speaking') 
       {
         $('#bread-speak').css('border-bottom', '5px solid #FF5301');
         $('#bread-coach , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
-        $('.speaking-wrapper').css('display', 'block');
+        $('.speaking-wrapper').css('display', 'flex');
         $('.workshops-wrapper , .coaching-wrapper').css('display', 'none');
     
       } 
@@ -57,7 +59,7 @@
       {
         $('#bread-coach').css('border-bottom', '5px solid #FF5301');
         $('#bread-speak , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
-        $('.coaching-wrapper').css('display', 'block');
+        $('.coaching-wrapper').css('display', 'flex');
         $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
       }
     });
@@ -68,14 +70,14 @@
       {
         $('#bread-workshop').css('border-bottom', '5px solid #FF5301'); 
         $('#bread-speak , #bread-coach').css('border-bottom', '5px solid #DEDDDB');
-        $('.workshops-wrapper').css('display', 'block');
+        $('.workshops-wrapper').css('display', 'flex');
         $('.speaking-wrapper , .coaching-wrapper').css('display', 'none');
       }
       else if (window.location.hash === '#speaking') 
       {
         $('#bread-speak').css('border-bottom', '5px solid #FF5301');
         $('#bread-coach , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
-        $('.speaking-wrapper').css('display', 'block');
+        $('.speaking-wrapper').css('display', 'flex');
         $('.workshops-wrapper , .coaching-wrapper').css('display', 'none');
     
       } 
@@ -83,7 +85,7 @@
       {
         $('#bread-coach').css('border-bottom', '5px solid #FF5301');
         $('#bread-speak , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
-        $('.coaching-wrapper').css('display', 'block');
+        $('.coaching-wrapper').css('display', 'flex');
         $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
       }
     })
@@ -92,21 +94,21 @@
     $('#bread-workshop').on('click', function () {
       $('#bread-workshop').css('border-bottom', '5px solid #FF5301'); 
       $('#bread-speak , #bread-coach').css('border-bottom', '5px solid #DEDDDB');
-      $('.workshops-wrapper').css('display', 'block');
+      $('.workshops-wrapper').css('display', 'flex');
       $('.speaking-wrapper , .coaching-wrapper').css('display', 'none');
     });
 
     $('#bread-speak').on('click', function () {
       $('#bread-speak').css('border-bottom', '5px solid #FF5301');
       $('#bread-coach , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
-      $('.speaking-wrapper').css('display', 'block');
+      $('.speaking-wrapper').css('display', 'flex');
       $('.workshops-wrapper , .coaching-wrapper').css('display', 'none');
     });
     
     $('#bread-coach').on('click', function () {
       $('#bread-coach').css('border-bottom', '5px solid #FF5301');
       $('#bread-speak , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
-      $('.coaching-wrapper').css('display', 'block');
+      $('.coaching-wrapper').css('display', 'flex');
       $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
     });
   /* Header Scroll Auto-Sizing Function */
@@ -123,5 +125,20 @@
     }
     window.addEventListener('scroll',serviceHeaderResize);
 
+  /* CFS Content Modifier */
+
+  var wayPlayHeader= $('.ways-to-play').find('h2');
+  $(window).on('resize', function () { /* Function triggers on menu sizing*/
+    if (document.body.clientWidth < 600) {
+     
+    }
+    else {
+      $(wayPlayHeader).text('WAYS to PLAY');
+    }
+  })
+  // $('.page-id-68').find($('p').val('&nbsp;')).css('display', 'none');
+
+  var nbsp = '&nbsp;';
+  $(p).val('');
   });
 })(jQuery);
