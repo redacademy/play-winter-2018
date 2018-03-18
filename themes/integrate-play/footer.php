@@ -25,7 +25,7 @@
 					<h2 class="footer__company">Integrate Play Solutions</h2>
 					<h3 class="footer__contact">Vancouver, BC, Canada</h3>
 					<h3 class="footer__number">604-773-2546</h3>
-				</div><!-- .site-info -->	
+				</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
 		</div><!-- #page -->

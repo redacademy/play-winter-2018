@@ -9,7 +9,7 @@
 			top:0;
 			right: 0;
 			z-index: 100;
-			background: #F2F2F2;
+			background: $color__brand-light-grey;
 			width: 100vw;
 			min-height: 100vh;
 			color: $color__brand-purple;
@@ -58,7 +58,7 @@
 //Form -- horizontal
 	.horizontal-contact-form{
 		display: none;
-		background: #F2F2F2;
+		background: $color__brand-light-grey;
 		color: $color__brand-purple;
 		margin: 0 auto;
 		padding-bottom: 2%;
@@ -147,7 +147,7 @@
 // Form -- Vertical
 	.vertical-contact-form{
 		display: none;
-		background: #F2F2F2;
+		background: $color__brand-light-grey;
 		color: $color__brand-purple;
 		margin: 0 auto;
 		padding-bottom: 2%;
