@@ -122,6 +122,7 @@
       /* International Speaker */
         .inter-speaker {
           padding: 0 8%;
+          transition: .5s;
         }
       /* Highlights */
         .highlights {
@@ -142,6 +143,7 @@
           p {
             width: 220px;
           }
+        /* Sizzle Reel button*/
           .cfs-hyperlink {
             position: absolute;
             width: 125px;
@@ -156,7 +158,7 @@
             margin: 0 auto;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.36);
             transition:.5s;
-            left: 43%;
+            left: 39vw;
             .text {
               padding: 0 7px;
             }

@@ -101,6 +101,7 @@
       $('#bread-speak , #bread-coach').css('border-bottom', '5px solid #DEDDDB');
       $('.workshops-wrapper').css('display', 'flex');
       $('.speaking-wrapper , .coaching-wrapper').css('display', 'none');
+      window.scrollTo(0,0);
     });
 
     $('#bread-speak').on('click', function () {
@@ -108,6 +109,7 @@
       $('#bread-coach , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
       $('.speaking-wrapper').css('display', 'flex');
       $('.workshops-wrapper , .coaching-wrapper').css('display', 'none');
+      window.scrollTo(0,0);
     });
     
     $('#bread-coach').on('click', function () {
@@ -115,6 +117,7 @@
       $('#bread-speak , #bread-workshop').css('border-bottom', '5px solid #DEDDDB');
       $('.coaching-wrapper').css('display', 'flex');
       $('.speaking-wrapper , .workshops-wrapper').css('display', 'none');
+      window.scrollTo(0,0);
     });
   /* Header Scroll Auto-Sizing Function */
     function serviceHeaderResize () {
