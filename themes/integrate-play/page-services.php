@@ -36,6 +36,7 @@ get_header(); ?>
 
         <div class="highlights">
             <?php echo CFS()->get('speaking_highlights');?>
+            <?php echo CFS()->get('sizzle_reel_link'); ?>
         </div>
 
         <div class="keynotes">

@@ -126,9 +126,15 @@
       /* Highlights */
         .highlights {
           width: 100%;
+          position: relative;
           padding: 5% 8%;
           color: $color__background-body;
           background-color: $color__services-highlights;
+          height: 736px;
+          transition: .5s;
+          @include desktop {
+            height: 650px;
+          }
           h2 {
             margin-bottom: 5%;
             width: 220px;
@@ -136,6 +142,41 @@
           p {
             width: 220px;
           }
+          .cfs-hyperlink {
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            text-align: center;
+            color: white;
+            border-radius: 100%;
+            padding: 10px;
+            text-decoration: none;
+            border: none;
+            background: $color__brand-orange;
+            margin: 0 auto;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.36);
+            transition:.5s;
+            left: 43%;
+            .text {
+              padding: 0 7px;
+            }
+            &:hover{
+              background: darken($color__brand-orange, 10%)
+            }
+            @include desktop {
+              top: 10%;
+              right: 15%;
+            }
+          }
+        }
+      /* Keynotes */
+        .keynotes {
+          width: 100%;
+          position: relative;
+          padding: 5% 8%;
+          color: $color__background-body;
+          background-color: $color__brand-orange;
+          transition: .5s;
         }
     }
 

@@ -31,11 +31,16 @@
       '<a id="bread-coach" href="#coaching" class="bread-btn coach-btn">Coaching</a>' +
       '</div>'
     );
+
+    $('.page-id-68').find('#mobile-btn').removeClass('purple');
+    $('.page-id-68').find('#mobile-btn').addClass('orange');
+
   /* Default services layout */
     $('#bread-workshop').css('border-bottom', '5px solid #FF5301'); 
     $('#bread-speak , #bread-coach').css('border-bottom', '5px solid #DEDDDB');
     $('.workshops-wrapper').css('display', 'flex');
     $('.speaking-wrapper , .coaching-wrapper').css('display', 'none');
+
 
 
   /* Services layout for Hashed URl */ 
