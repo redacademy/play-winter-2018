@@ -45,9 +45,17 @@ get_header(); ?>
     </div>
 
     <div class="coaching-wrapper">
-        <?php echo CFS()->get('coaching_banner');?>
-        <?php echo CFS()->get('coaching_here_for_you');?>
-        <?php echo CFS()->get('coaching_advice');?>
+        <div class="coach-banner">
+            <?php echo CFS()->get('coaching_banner');?>
+        </div>
+        
+        <div class="here-for-you-wrapper">
+            <?php echo CFS()->get('coaching_here_for_you');?>
+        </div> 
+
+        <div class="advice-wrapper">
+            <?php echo CFS()->get('coaching_advice');?>
+        </div>
     </div>
 
     <div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>
