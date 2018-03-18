@@ -124,21 +124,5 @@
       }
     }
     window.addEventListener('scroll',serviceHeaderResize);
-
-  /* CFS Content Modifier */
-
-  var wayPlayHeader= $('.ways-to-play').find('h2');
-  $(window).on('resize', function () { /* Function triggers on menu sizing*/
-    if (document.body.clientWidth < 600) {
-     
-    }
-    else {
-      $(wayPlayHeader).text('WAYS to PLAY');
-    }
-  })
-  // $('.page-id-68').find($('p').val('&nbsp;')).css('display', 'none');
-
-  var nbsp = '&nbsp;';
-  $(p).val('');
   });
 })(jQuery);

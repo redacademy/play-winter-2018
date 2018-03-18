@@ -1,9 +1,6 @@
 /* Styling Template for Services Page*/
 
 .page-id-68 {
-  .content-area {
-    padding-top: 150px;
-  }
   .site-main {
     padding: 0px;
   }
@@ -24,15 +21,22 @@
         h1 {
           text-transform: none;
           position: absolute;
-          top: 24%;
-          width: 40%;
-          left: 6%;
+          top: 3%;
+          width: 33%;
+          left: 6%; 
+          transition: .5s;
+          @include tablet {
+            font-size: 3rem;
+            transition: .5s;
+          }
+          @include desktop {
+            font-size: 4rem;
+          }
         }
       }
     /* Serious Play Content */
       .serious-play {
         h2 {
-          // width: 100%;
           padding: 0 8%;
           display: none;
           @include tablet {
@@ -59,10 +63,80 @@
 
 /* Speaking Content Display */
     .speaking-wrapper {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      /*Speaking Banner */
+        .speak-banner {
+          color: $color__background-body;
+          background-color: $color__brand-purple;
+          width: 100%;
+          height: 150px;
+          display: flex;
+          align-items: center;
+            @include tablet {
+              height: 200px;
+            }
+          h1 {
+            padding-left: 8%;
+            width: 30%;
+            transition: .5s;
+            @include tablet {
+              font-size: 3rem;
+            }
+          }
+          p {
+            position: absolute;
+            top: 2%;
+            right: 9%;
+            width: 150px;
+            color: transparent;
+            transition: .5s;
+            @include tablet {
+              color: $color__background-body;
+              display: flex;
+            }
+            @include desktop {
+              right: 10%;
+            }
+          }
+        }
+      /* Get Info Package Button*/
+        .service-info {
+          display: block;
+          margin-top: 30px;
+          @include tablet {
+            margin: 0;
+            position: absolute;
+            top: 7.5%;
+            right: 12%; 
+            width: 150px;
+          }
+          @include desktop {
+            padding: 0px;
+            transition: .5s;
+          }
+        }
+      /* International Speaker */
+        .inter-speaker {
+          padding: 0 8%;
+        }
+      /* Highlights */
+        .highlights {
+          width: 100%;
+          padding: 5% 8%;
+          color: $color__background-body;
+          background-color: $color__services-highlights;
+          h2 {
+            margin-bottom: 5%;
+            width: 220px;
+          }
+          p {
+            width: 220px;
+          }
+        }
     }
 
 /* Coaching Content Display */
@@ -71,5 +145,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
   }
 }

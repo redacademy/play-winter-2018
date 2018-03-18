@@ -19,14 +19,28 @@ get_header(); ?>
         <div class="ways-to-play">
             <?php echo CFS()->get('workshop_ways_to_play');?>
         </div>
-    
     </div>
 
+    
+    
     <div class="speaking-wrapper">
-        <?php echo CFS()->get('speaking_banner');?>
-        <?php echo CFS()->get('speaking_international_speaker');?>
-        <?php echo CFS()->get('speaking_highlights');?>
-        <?php echo CFS()->get('speaking_keynote_topics');?>
+        <div class="speak-banner">
+            <?php echo CFS()->get('speaking_banner');?>
+        </div>
+
+        <a class="service-info btn orange" href="<?php echo esc_url(home_url( '/contact-us/'))?>">Get Info Package</a> 
+        
+        <div class="inter-speaker">
+          <?php echo CFS()->get('speaking_international_speaker');?>
+        </div>
+
+        <div class="highlights">
+            <?php echo CFS()->get('speaking_highlights');?>
+        </div>
+
+        <div class="keynotes">
+          <?php echo CFS()->get('speaking_keynote_topics');?>
+        </div>
     </div>
 
     <div class="coaching-wrapper">
