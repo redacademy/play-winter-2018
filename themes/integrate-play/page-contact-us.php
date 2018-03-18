@@ -21,12 +21,13 @@ get_header(); ?>
 			</article><!-- #post-## -->
 
 			<?php endwhile; // End of the loop. ?>
-			<div class="social-icons">
+			<!-- <div class="social-icons">
 				<a href="https://twitter.com/KirstenatPlay" target="_blank" class="icon-frame"><i class="fa fa-twitter"></i></a>
 				<a href="https://www.instagram.com/explore/locations/160361740973203/integrate-play-solutions/" target="_blank" class="icon-frame"><i class="fa fa-instagram"></i></a>
 				<a href="https://www.facebook.com/IntegratePlaySolutions/" target="_blank" class="icon-frame"><i class="fa fa-facebook-f"></i></a>
 				<a href="https://www.linkedin.com/in/kirsten-anderson-910a7314/" target="_blank" class="icon-frame"><i class="fa fa-linkedin"></i></a>
-			</div>
+			</div> -->
+			<?php echo CFS()->get('social_media');?>
 		</main><!-- #main -->
 
 		<?php echo CFS()->get('contact_form');?>
