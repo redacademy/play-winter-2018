@@ -15,10 +15,10 @@
 				</nav>
 
 				<div class="social-media">
-					<i class="fa fa-linkedin"></i>
-					<i class="fa fa-twitter"></i>
-					<i class="fa fa-instagram"></i>
-					<i class="fa fa-facebook-f"></i>
+					<i class="fab fa-linkedin-in"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-facebook-f"></i>
 				</div>
 
 				<div class="site-info">

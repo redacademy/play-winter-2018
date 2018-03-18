@@ -7,6 +7,7 @@
       // $('body').append('<div class="lbox">L Box</div>');
       $('#masthead').hide();
       $('#colophon').hide();
+      $('.testimonials').hide();
       $('#main').hide(); //make sure button and form are outside the #main content area
       $('#primary').css( "padding", "0" );
       $('.mobile-btn').hide();
@@ -17,6 +18,7 @@
     $('#close-btn').on('click',function(){
       $('#masthead').show();
       $('#colophon').show();
+      $('.testimonials').show();
       $('#main').show();
       $('#primary').css( "padding", "" );
       $('.mobile-btn').show();
