@@ -28,7 +28,7 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 				
-				<a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">	</a>
+				<a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Integrate Play Logo</a>
 					
 						<div class="nav-menu-wrapper">
 							<button id="menu-toggle" class="hamburger hamburger--elastic menu-toggle" type="button" >

@@ -163,6 +163,10 @@
 		width: 25%;
 		height: 50px;
 		z-index: 3;
+		color: transparent;
+		 &:hover {
+			 color: transparent;
+		 }
 		@include tablet {
 			background: url('../../images/desktop-logo.svg');
 			background-repeat: no-repeat;
@@ -259,6 +263,11 @@
 				position: absolute;
 				bottom: 0;
 				z-index: -1;
+				font-size: .8rem;
+				transition: .5s;
+				 @include tablet {
+					 font-size: 1rem;
+				 }
 				.bread-btn{
 					padding: 20px;
 					border-bottom: 5px solid $color__brand-grey;
