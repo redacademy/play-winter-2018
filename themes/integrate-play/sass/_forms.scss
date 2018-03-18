@@ -243,6 +243,9 @@
 		border: none;
 		background: $color__brand-orange;
 		margin: 0 auto;
+		&:visited{
+			color: white;
+		}
 	}
 
 	.orange{
@@ -255,7 +258,7 @@
 	.purple{
 		background: $color__brand-purple;
 		&:hover{
-			background: darken($color__brand-purple, 10%)
+			background: lighten($color__brand-purple, 20%)
 		}
 	}
 
