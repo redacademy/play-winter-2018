@@ -16,7 +16,10 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php integrate_play_posted_on(); ?> / <?php integrate_play_comment_count(); ?> / <?php integrate_play_posted_by(); ?>
+			<p><?php integrate_play_posted_on(); ?></p>
+			<p><?php integrate_play_posted_by(); ?></p>
+			
+			
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

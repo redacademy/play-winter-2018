@@ -61,3 +61,47 @@
     padding: 0 50px;
   }
   
+
+//Blog Post styling
+.single{
+  @include desktop{
+    .site-content{
+      display: flex;
+      flex-flow: row nowrap;
+      padding-top: 100px;
+    }
+    .content-area{
+      width: 69%;
+      padding: 0;
+    }
+    .widget-area{
+      width: 29%;
+      padding: 0;
+    }
+  }
+  .post-navigation{
+    a{
+      &::after{
+        content: "\2192"
+      }
+    }
+  }
+  .author{
+    font-weight: bold;
+  }
+}
+
+.widget-area{
+  padding: 0 50px;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li{
+    padding: 10px 20px;
+  }
+  a{
+    display: inline
+  }
+}
