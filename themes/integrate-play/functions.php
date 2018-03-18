@@ -151,6 +151,6 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 function new_excerpt_more($more) {
 	global $post;
 	return '<a class="read-more" 
-	href="">... See More</a>';
+	href="' . get_permalink() . '">... Read More</a>';
  }
  add_filter('excerpt_more', 'new_excerpt_more');

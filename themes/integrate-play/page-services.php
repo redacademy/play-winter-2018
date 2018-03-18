@@ -50,7 +50,7 @@ get_header(); ?>
         <?php echo CFS()->get('coaching_advice');?>
     </div>
 
-    <?php echo CFS()->get('contact_form');?>
+    <div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>
  
 
   </main><!-- #main -->

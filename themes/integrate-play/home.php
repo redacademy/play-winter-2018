@@ -17,7 +17,7 @@ get_header(); ?>
 					<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'large' ); ?>
 					<?php endif; ?>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1 class="page-title"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
 

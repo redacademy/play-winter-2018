@@ -26,6 +26,8 @@
   });
 
   //This shows full quote on the praise page when user clicks on See More
+
+  if($('body').is('.page-id-32')){
     $('.read-more').on('click', function(e){
       e.preventDefault();
       // console.log('button works');
@@ -38,4 +40,7 @@
         $(this).parent().hide();
         $(this).parent().next().show();
     })
+  }
+
+    
 })(jQuery);

@@ -60,7 +60,7 @@ get_header(); ?>
 					
 				<?php endif?>
 			</div> <!-- Testimonial Posts-->
-		<?php echo CFS()->get('contact_form');?>	
+			<div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>	
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

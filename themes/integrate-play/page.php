@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-		<?php echo CFS()->get('contact_form');?>	
+		<div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
