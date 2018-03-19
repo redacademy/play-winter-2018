@@ -35,9 +35,17 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>		
 			
-			<div class="science-block science-block-1"><?php echo CFS()->get('science_content_block_1');?>	</div>
-			<div class="science-block science-block-2"><?php echo CFS()->get('science_content_block_2');?>	</div>
-			<div class="science-block science-block-3"><?php echo CFS()->get('science_content_block_3');?>	</div>
+			<div class="science-block science-block-1">
+				<div class="science-cfs-container"><?php echo CFS()->get('science_content_block_1');?>	</div>
+			</div>
+
+			<div class="science-block science-block-2">
+				<div class="science-cfs-container"><?php echo CFS()->get('science_content_block_2');?>	</div>
+			</div>
+
+			<div class="science-block science-block-3">
+				<div class="science-cfs-container"><?php echo CFS()->get('science_content_block_3');?>	</div>
+			</div>
 
 		</main><!-- #main -->
 

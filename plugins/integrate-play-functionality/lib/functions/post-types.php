@@ -48,7 +48,7 @@ function testimonials() {
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
-		'menu_position'         => 5,
+		'menu_position'         => 10,
 		'menu_icon'             => 'dashicons-smiley',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
@@ -61,4 +61,5 @@ function testimonials() {
 	register_post_type( 'testimonials', $args );
 
 }
+
 add_action( 'init', 'testimonials', 0 );
