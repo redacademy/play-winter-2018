@@ -107,11 +107,6 @@
       p:nth-child(4){
         margin-right: 25%;
       }
-      @include tablet{
-        // h2{
-        //   max-width: 400px;
-        // }
-      }
       @include desktop{
           h2:nth-child(1){
             margin-left: 35%;
@@ -128,5 +123,30 @@
             margin-right: 25%;
           }
         }
+    }
+
+//Content block 3 -- Let's get down to business
+    .science-block-3{
+      .science-cfs-container{
+        max-width: 1000px;
+      }
+      @include desktop{
+        background: $color__brand-purple;
+        color: white;
+        h2:nth-child(1){
+          margin-left: 35%;
+        }
+        p:nth-child(2){
+          margin-left: 35%;
+        }
+        h2:nth-child(3){
+          margin-left: 10%;
+          margin-right: 25%;
+        }
+        p:nth-child(4){
+          margin-left: 10%;
+          margin-right: 25%;
+        }
+      }
     }
   }
