@@ -66,21 +66,3 @@ get_header(); ?>
 <?php get_footer(); ?>
 
 
-<!-- delete the code below once Praise page is fully functional -->
-
-			<!-- <div class="client-quotes">
-			<?php
-					$fields = CFS()->get( 'client_quotes' );
-					foreach ( $fields as $field ) {
-							$quote = $field['quote'];
-							$name = $field['client_name'];
-							$company = $field['client_company'];?> 
-							<div class="single-quote">
-								<p class="quote"><?php echo $quote ?></p>
-								<p class="client-name"><?php echo $name ?></p>
-								<p class="client-company"><?php echo $company ?></p>
-							</div>
-							<?php
-					}
-					?>
-			</div> -->
