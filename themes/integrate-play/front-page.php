@@ -15,7 +15,21 @@ get_header(); ?>
   <div class="content-container">
     <h1>bring your team together</h1>
     <button class="btn purple">Contact Us</button>
-  </div>
+	</div>
+	
+	<section class="circle-text-container">
+		<div class="circle-text science-text">
+			<p>SCIENCE of PLAY</p>
+		</div>
+
+		<div class="circle-text saying-text">
+			<p>WHAT PEOPLE are SAYING</p>
+		</div>
+
+		<div class="circle-text services-text">
+			<p>SERVICES</p>
+		</div>
+	</section>
 
 	<div class="main-carousel">
 		<?php 
