@@ -12,10 +12,6 @@
     height: 30vh;
   }
 
-  .main-carousel {
-    display: flex;
-  }
-
   .happy-clients {
     display: flex;
     flex-wrap: wrap;
@@ -52,62 +48,26 @@
     }
   }
 
+/* Contact Page + Praise Page */
 
-
-
-
-//General Page styling
-  .site-main{
-    padding: 0 50px;
-  }
-  
-
-//Blog Post styling
-.single{
-  @include desktop{
-    .site-content{
-      display: flex;
-      flex-flow: row nowrap;
-      padding-top: 100px;
-    }
-    .content-area{
-      width: 69%;
-      padding: 0;
-      @include desktop{
-        border-right: 1px solid $color__brand-grey;
+  .page, .page-template-default {
+    .entry-content {
+      // width: 80%;
+      margin: 0 auto;
       }
     }
-    .widget-area{
-      width: 29%;
-      padding: 0;
-      @include desktop{
-        margin-left: 50px;
-      }
-    }
-  }
-  .post-navigation{
-    a{
-      &::after{
-        content: "\2192"
-      }
-    }
-  }
-  .author{
-    font-weight: bold;
-  }
-}
 
-.widget-area{
-  padding: 0 50px;
-  ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  li{
-    padding: 10px 20px;
-  }
-  a{
-    display: inline
-  }
-}
+    .entry-title {
+      width: 40%;
+      margin-left: 2rem;
+      align-content: center;
+      text-align: left;
+    }
+
+    .btn {
+      width: auto;
+      font-size: 1.25rem;
+      padding: .5rem 2rem;
+      margin: 2rem auto;
+    }
+

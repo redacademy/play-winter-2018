@@ -22,9 +22,9 @@
 				</div>
 
 				<div class="site-info">
-					<h2 class="footer__company">Integrate Play Solutions</h2>
-					<h3 class="footer__contact">Vancouver, BC, Canada</h3>
-					<h3 class="footer__number">604-773-2546</h3>
+					<p class="footer__company">Integrate Play <strong class="secondary-text">Solutions</strong></p>
+					<p class="footer__contact">Vancouver, BC, Canada</p>
+					<p class="footer__number">604-773-2546</p>
 				</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
