@@ -1,4 +1,7 @@
   .page-id-23{
+    .site-content{
+      max-width: none;
+    }
     .site-main{
       padding: 0;
     }
@@ -23,11 +26,15 @@
       }
       @include tablet{
         padding: 0 50px;
-        height: 50vh;
+        height: 80vh;
         display: flex;
         flex-flow: row nowrap;
+        left:50%;
+        top:0;
+        transform:translate(-50%,0);
+        background: $color__brand-yellow;
         img{
-          width: 100%;
+          min-height: 100%;
           height: auto;
         }
       }
