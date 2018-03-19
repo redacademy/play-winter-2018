@@ -14,7 +14,11 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>					
+			<?php endwhile; // End of the loop. ?>		
+			
+			<div class="science-block-1"><?php echo CFS()->get('science_content_block_1');?>	</div>
+			<div class="science-block-2"><?php echo CFS()->get('science_content_block_2');?>	</div>
+			<div class="science-block-3"><?php echo CFS()->get('science_content_block_3');?>	</div>
 
 		</main><!-- #main -->
 
