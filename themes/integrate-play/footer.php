@@ -25,10 +25,11 @@
 					<p class="footer__company">Integrate Play <strong class="secondary-text">Solutions</strong></p>
 					<p class="footer__contact">Vancouver, BC, Canada</p>
 					<p class="footer__number">604-773-2546</p>
-				</div><!-- .site-info -->
+				</div>
 
 				</footer><!-- #colophon -->
 		</div><!-- #page -->
+		<?php get_sidebar(); ?>
 		<?php wp_footer(); ?>
 
 	</body>
