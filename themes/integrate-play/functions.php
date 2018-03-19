@@ -88,7 +88,7 @@ function integrate_play_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'integrate-play-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	
-	wp_enqueue_script( 'flickity',   get_template_directory_uri().'/build/js/flickity.min.js', array('jquery'), false, true  );	
+	wp_enqueue_script( 'flickity',   get_template_directory_uri().'/js/lib/flickity.js', array('jquery'), false, true  );	
 	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/build/js/carousel.min.js', array('jquery', 'flickity'), '', true );
 
 
