@@ -16,6 +16,9 @@ get_header(); ?>
 				<div class="content-container">
 					<h1>bring your team together</h1>
 					<button class="btn purple">Contact Us</button>
+				<div class="play-exerpt">
+					<p>Integrate Play serves businesses by providing tried solutions to problems in communication, collaboration, and innovation through organized Play.</p>
+				</div>
 				</div>
 			</header>
 
