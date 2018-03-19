@@ -31,15 +31,12 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<div class="main-carousel">
-		<?php 
-			$quotes = CFS()->get('client_quotes');
-			foreach ( $quotes as $quote ) {
-			echo $quote['quote'];
-			}
-		?>
-	</div>
 
+	<div class="main-carousel">
+		<div class="carousel-cell">...</div>
+  	<div class="carousel-cell">...</div>
+  	<div class="carousel-cell">...</div>
+	</div>
 
 	<div class="content-container">
 		<h1>Happy Clients</h1>
