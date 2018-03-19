@@ -18,15 +18,15 @@ get_header(); ?>
 	</div>
 	
 	<section class="circle-text-container">
-		<div class="circle-text science-text">
+		<div class="btn science-circle">
 			<p>SCIENCE of PLAY</p>
 		</div>
 
-		<div class="circle-text saying-text">
+		<div class="btn saying-circle">
 			<p>WHAT PEOPLE are SAYING</p>
 		</div>
 
-		<div class="circle-text services-text">
+		<div class="btn services-circle">
 			<p>SERVICES</p>
 		</div>
 	</section>
