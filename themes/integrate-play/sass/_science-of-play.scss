@@ -11,6 +11,11 @@
         width: 90%;
       }
     }
+    .science-cfs-container{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+//hero Banner
     article{
       position: relative;
       overflow: hidden;
@@ -71,23 +76,57 @@
         right: 10%;
       }
     }
+
+//Content block 1 -- Why Play?
+    .science-block-1{
+      
+    }
+//Content block 2 -- Cognitive Benefits of Play
     .science-block-2{
+      .science-cfs-container{
+        max-width: 1000px;
+      }
       background: $color__brand-purple;
       color: white;
-      padding: 
+      h2{
+        width: auto;
+        max-width: 200px;
+      }
+      p{
+        max-width: 600px;
+      }
       h2:nth-child(1){
-        padding-left: 20%;
-        text-align: center;
+        margin-left: 25%;
       }
       p:nth-child(2){
-        padding-left: 20%;
+        margin-left: 25%;
       }
       h2:nth-child(3){
-        padding-right: 20%;
+        margin-right: 25%;
       }
       p:nth-child(4){
-        padding-right: 20%;
+        margin-right: 25%;
       }
-
+      @include tablet{
+        // h2{
+        //   max-width: 400px;
+        // }
+      }
+      @include desktop{
+          h2:nth-child(1){
+            margin-left: 35%;
+          }
+          p:nth-child(2){
+            margin-left: 35%;
+          }
+          h2:nth-child(3){
+            margin-left: 10%;
+            margin-right: 25%;
+          }
+          p:nth-child(4){
+            margin-left: 10%;
+            margin-right: 25%;
+          }
+        }
     }
   }
