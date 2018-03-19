@@ -234,7 +234,8 @@
 	.btn,
 	input[type="submit"]{
 		display: block;
-		width: 275px;
+		width: 100%;
+		max-width: 275px;
 		text-align: center;
 		color: white;
 		border-radius: 25px;

@@ -15,24 +15,11 @@
       position: relative;
       overflow: hidden;
       img{
-        width: auto;
-        min-width: 100vw;
-        max-width: none;
-        height: 30vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -100;
+        width: 100%;
+        height: auto;
       }
       @include tablet{
-        padding: 0 50px;
-        height: 80vh;
-        display: flex;
-        flex-flow: row nowrap;
-        left:50%;
-        top:0;
-        transform:translate(-50%,0);
-        background: $color__brand-yellow;
+        
         img{
           min-height: 100%;
           height: auto;
@@ -42,39 +29,46 @@
     .entry-header{
       display: flex;
       align-items: center;
-      // padding: 0 50px;
       color: white;
-      height: 30vh;
+      position: absolute;
+      top: 12%;
+      left: 10%;
       h1{
         width: 250px;
+        margin: 0;
       }
       @include tablet{
-        padding: 0 25px 0 0;
-        height: auto;
-        width: 50%;
         justify-content: center;
-        h1{
-          width: 50%;
-        }
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%;
+      }
+      @include desktop{
+        left: 15%;
       }
     }
     .entry-content{
-      padding: 0 50px;
       margin: 0;
       background: transparent;
       h3{
         display: none;
       }
       @include tablet{
-        padding: 0 0 0 25px;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5%;
         h3{
           display: block;
           text-align: center;
         }
+      }
+      @include desktop{
+        right: 10%;
       }
     }
     .science-block-2{
