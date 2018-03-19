@@ -26,32 +26,43 @@
   }
 
 .circle-text-container {
-  background-color: skyblue;
-  padding: 1rem;
+  display: inline-block;
+  width: 100%;
+  padding: 5rem 1rem;
   .btn {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     text-decoration: none;
     background: $color__brand-orange;
-    transition:.5s;
+    transition: .5s;
+    margin: 1rem;
 
     p {
-      font-size: 2.5rem;
-      padding: 0;
+      font-size: 1.75rem;
+      font-weight: 800;
+      padding: 5px;
+      margin: auto;
     }
   }
   
   .science-circle {
-    background: tomato;
+    display: flex;
+    background: #ffc200;
+    float: right;
   }
 
   .saying-circle {
-    background: lightblue;
+    display: flex;
+    background:#FF5301;
   }
 
   .services-circle {
-    background: navajowhite;
+    display: flex;
+    background: #190A6B;
+    float: right;
+    width: 175px;
+    height: 175px;
   }
 }
 
@@ -94,10 +105,10 @@
       text-align: left;
     }
 
-    .btn {
-      width: auto;
-      font-size: 1.25rem;
-      padding: .5rem 2rem;
-      margin: 2rem auto;
-    }
+    // .btn {
+    //   width: auto;
+    //   font-size: 1.25rem;
+    //   padding: .5rem 2rem;
+    //   margin: 2rem auto;
+    // }
 
