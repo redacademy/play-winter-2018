@@ -257,6 +257,11 @@
 				font-size: 2rem;
 				text-transform: uppercase;
 				padding-top: 10px;
+				opacity: 1;
+				transition: .5s;
+				@include tablet {
+					opacity: 0;
+				}
 			}
 			.breadcrumb-bar {
 				display: flex;

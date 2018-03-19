@@ -47,6 +47,7 @@ get_header(); ?>
     <div class="coaching-wrapper">
         <div class="coach-banner">
             <?php echo CFS()->get('coaching_banner');?>
+            <a class="coach-info btn purple" href="<?php echo esc_url(home_url( '/contact-us/'))?>">Get Info Package</a> 
         </div>
         
         <div class="here-for-you-wrapper">
