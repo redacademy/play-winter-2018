@@ -76,10 +76,10 @@
       font-size: 1rem;
     }
     .footer__number {
-      display: hidden;
+      display: show;
 
       @include desktop {
-        display: show; 
+        display: none; 
       }
     }
 
