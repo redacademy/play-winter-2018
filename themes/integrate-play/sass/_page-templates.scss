@@ -16,7 +16,7 @@
     }
 
   .front-page-hero {
-    background-image: url('../../images/hands.illo2.svg');
+    background-image: url('../../images/hands.illo.highres.png');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -47,12 +47,12 @@
 
 .circle-text-container {
   display: inline-block;
-  width: 100%;
   padding: 5rem 1rem;
+
   .btn {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 100%;
     text-decoration: none;
     background: $color__brand-orange;
     transition: .5s;
@@ -79,7 +79,6 @@
   .services-circle {
     display: flex;
     background: #190A6B;
-    float: right;
     width: 175px;
     height: 175px;
   }
