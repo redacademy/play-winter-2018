@@ -57,12 +57,11 @@ get_header(); ?>
         <div class="advice-wrapper">
             <?php echo CFS()->get('coaching_advice');?>
         </div>
-    </div>
-
-    <div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>
- 
+    </div> 
 
   </main><!-- #main -->
+  <div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>
+
 </div><!-- #primary -->
 
 <?php get_footer(); ?>
