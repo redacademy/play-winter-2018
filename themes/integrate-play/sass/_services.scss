@@ -282,10 +282,32 @@
       }
     /* Advice */
       .advice-wrapper {
-        padding: 0 8%;
-        p{
+        display: flex;
+        flex-direction: column;
+        h2 {
+          display: flex;
+          background: $color__brand-yellow;
+          width: 100vw;
           padding: 0 8%;
-          margin-bottom: 20%;
+          height: 150px;
+          color: $color__background-body;
+          align-items: center;
+          font-size: 2rem;
+        }
+        h3 {
+          text-align: center;
+          padding: 0 8%;
+        }
+        p{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 8%;
+          transition: .5s;
+          @include tablet {
+            padding: 0 20%;
+          }
+
         }
       }
   }
