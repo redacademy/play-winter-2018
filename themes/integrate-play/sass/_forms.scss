@@ -269,5 +269,11 @@
 		}
 	}
 
-
+	.desktop-btn{
+		margin: 0 auto;
+		display: none;
+		@include tablet{
+			display: block;
+		}
+	}
 
