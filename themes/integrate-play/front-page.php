@@ -8,14 +8,17 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-    
-    <header class="front-page-hero">
-    </header>
+		
+			<header class="header-banner">
+				<section class="front-page-hero">
+				</section>
 
-  <div class="content-container">
-    <h1>bring your team together</h1>
-    <button class="btn purple">Contact Us</button>
-	</div>
+				<div class="content-container">
+					<h1>bring your team together</h1>
+					<button class="btn purple">Contact Us</button>
+				</div>
+			</header>
+
 	
 	<section class="circle-text-container">
 		<div class="btn science-circle">
