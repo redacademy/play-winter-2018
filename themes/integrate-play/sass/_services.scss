@@ -42,6 +42,7 @@
           transition: .5s;
           height: 0px;
           position: absolute;
+          display: flex;
           @include tablet {
             opacity: 1;
             height: auto;

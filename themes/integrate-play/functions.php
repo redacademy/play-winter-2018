@@ -65,6 +65,15 @@ function integrate_play_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name' => 'Footer Sidebar ',
+		'id' => 'footer-sidebar',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
 }
 add_action( 'widgets_init', 'integrate_play_widgets_init' );
 
