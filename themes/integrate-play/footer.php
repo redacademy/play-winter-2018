@@ -13,7 +13,12 @@
 
 				</footer><!-- #colophon -->
 		</div><!-- #page -->
-		<?php get_sidebar(); ?>
+
+	<?php if ( is_active_sidebar( 'footer-sidebar') ) : ?>
+	<?php dynamic_sidebar( 'footer-sidebar' ); ?>
+	<?php endif; ?>
+
+		<?php get_sidebar('footer-sidebar'); ?>
 		<?php wp_footer(); ?>
 
 	</body>
