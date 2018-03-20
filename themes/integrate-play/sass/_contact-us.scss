@@ -1,7 +1,7 @@
 //Contact us page ------- Make sure to transfer to page-templates--------
 .page-id-34{
   .content-area{
-    max-width: 1200px;
+    
     margin: 0 auto;
     @include desktop{
       display: flex;
@@ -49,6 +49,7 @@
   }
   .contact-form-wrapper{
     width: 100vw;
+    z-index: -100;
     @include tablet{
       margin-top: 50px;
     }
@@ -80,6 +81,32 @@
   }
   .vertical-contact-form{
     display: block;
+  }
+//bubble positioning
+  .bubble-4{
+    bottom: 5%;
+    left: 10%;
+    @include tablet{
+      bottom: -100px;
+      left: 10%;
+    }
+  }
+  .bubble-3{
+    bottom: 20%;
+    left: 20%;
+    @include tablet{
+      bottom: 5%;
+    }
+  }
+
+  .bubble-2{
+    right: 5%;
+    top: 20%;
+  }
+
+  .bubble-1{
+    top: 30%;
+    right: 10%;
   }
 }
 
