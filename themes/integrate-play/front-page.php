@@ -56,7 +56,7 @@ get_header(); ?>
 				<div class= "carousel-secondary-text">
 					<p class="flickity-author-text"><?php echo $frontPageAuthor?></p>
 					<p><?php echo "," ?></p>
-					<p><?php echo $frontPageCompany?></p>
+					<p class="flickity-company-text"><?php echo $frontPageCompany?></p>
 				</div>
 			</div>
 
