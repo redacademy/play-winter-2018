@@ -149,4 +149,35 @@
         }
       }
     }
+
+//Bubbles sandbox
+    .bubbles{
+      display: block;
+      border-radius: 100%;
+      background: $color__brand-orange;
+    }
+    .small{
+      width: 15px;
+      height: 15px;
+    }
+    .medium{
+      width: 30px;
+      height: 30px;
+    }
+    .large{
+      width: 60px;
+      height: 60px;
+    }
+    .xl{
+      width: 150px;
+      height: 150px;
+    }
+    .xxl{
+      width: 240px;
+      height: 240px;
+    }
+    .orange-bubble{
+
+    }
+    
   }
