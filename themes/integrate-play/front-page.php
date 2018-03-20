@@ -38,40 +38,6 @@ get_header(); ?>
 	</section>
 
 
-<!-- insert testimonials -->
-<div class="testimonials">
-                <?php
-                // The Query
-                $args = array(
-                    'post_type' => 'testimonials',
-                    'posts_per_page' => 3
-                );
-                $testimonial = get_posts( $args );
-                // The Loop
-                if ( ! empty ($testimonial) ) :?>
-                    
-                        <?php foreach ($testimonial as $post) : setup_postdata ($post); ?>
-
-                                    <?php the_content(); ?>
-                                    
-                                    <?php the_excerpt(); ?>
-                                
-                                <p>
-                                    <?php echo CFS()->get('test_author');?>
-                                </p>
-                                <p>
-                                    <?php echo CFS()->get('test_company');?>
-                                </p>
-                            </div>
-                        <?php endforeach;
-                        wp_reset_postdata(); ?>
-                    
-                <?php endif?>
-            </div> <!-- Testimonial Posts-->
-
-
-
-	
 	<div class="main-carousel">
 		<div class="carousel-cell">...</div>
   	<div class="carousel-cell">...</div>
