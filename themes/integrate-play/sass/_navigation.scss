@@ -25,6 +25,12 @@
 		}
 	}
 /* Menus */
+	.site-header{
+		height: 80px;
+		width: 100%;
+		position: fixed;
+		z-index: 99;
+	}
 	.main-navigation {
 		clear: both;
 		display: flex;
@@ -34,10 +40,10 @@
 		color: $color__brand-purple;
 		justify-content: space-between;
 		align-items: center;
-		position: fixed;
+		// position: fixed;
 		z-index: 2;
 		top: 0px;
-		height: 100px;
+		height: 80px;
 		.menu-menu-1-container {
 			opacity: 0;
 			transform: scaleY(0);
@@ -111,11 +117,6 @@
 		}
 	}
 	// Logged in Header CSS
-	.logged-in {
-		.hfeed {
-			padding-top: 32px;
-		}
-	}
 	.nav-menu-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -155,15 +156,18 @@
 	}
 /* Company nav logo */
 	.header-logo { 
+		margin-left: 20px;
 		background: url('../../images/mobile-logo.svg');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
-		width: 25%;
-		height: 50px;
+		height: 90%;
 		z-index: 3;
 		color: transparent;
 		 &:hover {
+			 color: transparent;
+		 }
+		 &:active{
 			 color: transparent;
 		 }
 		@include tablet {
@@ -171,7 +175,8 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: center;
-			height: 100px;
+			width: 25%;
+			max-height: 80%;
 			top: 0px;
 		}
 	}
@@ -224,13 +229,23 @@
 			display: none;
 		}
 	}
+
+//Pushing down Site Content to uncover it
+	.site-main{
+		margin-top:80px;
+		padding-top: 0;
+	}
+
 /*Services Page Content */
 .page-id-68 {
 		.content-area {
 			padding-top: 200px;
 		}
-		.main-navigation {
+		.site-header{
 			height: 200px;
+			background: blue;
+		}
+		.main-navigation {
 			display: flex;
 			justify-content: center;
 			align-items: center;
