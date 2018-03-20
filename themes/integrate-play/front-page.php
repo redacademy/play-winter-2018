@@ -48,11 +48,15 @@ get_header(); ?>
 				?>
 
 			<div class="carousel-cell">
-				<h2><?php echo $frontPageQuotes?></h2>
+				<div class="carousel-primary-text">
+					<i class="fas fa-quote-left"></i>
+					<p><?php echo $frontPageQuotes?></p>
+				</div>
 
-				<div>
-					<?php echo $frontPageAuthor?>
-					<?php echo $frontPageCompany?>
+				<div class= "carousel-secondary-text">
+					<p class="flickity-author-text"><?php echo $frontPageAuthor?></p>
+					<p><?php echo "," ?></p>
+					<p><?php echo $frontPageCompany?></p>
 				</div>
 			</div>
 
