@@ -23,60 +23,61 @@ get_header(); ?>
 			</header>
 
 	
-	<section class="circle-text-container">
-		<div class="btn science-circle">
-			<p>SCIENCE of PLAY</p>
-		</div>
+			<section class="circle-text-container">
+				<div class="btn science-circle">
+					<p>SCIENCE of PLAY</p>
+				</div>
 
-		<div class="btn saying-circle">
-			<p>WHAT PEOPLE are SAYING</p>
-		</div>
+				<div class="btn saying-circle">
+					<p>WHAT PEOPLE are SAYING</p>
+				</div>
 
-		<div class="btn services-circle">
-			<p>SERVICES</p>
-		</div>
-	</section>
-
-
-	<div class="main-carousel">
-			<?php
-				$fields = CFS()->get( 'quotes_loop' );
-				foreach ( $fields as $field ) {
-					$frontPageQuotes = $field['front_page_quotes'];
-					$frontPageAuthor = $field['front_page_author'];
-					$frontPageCompany = $field['front_page_company'];
-			?>
-
-		<div class="carousel-cell">
-			<h2><?php echo $frontPageQuotes?></h2>
-
-			<div>
-				<?php echo $frontPageAuthor?>
-				<?php echo $frontPageCompany?>
-			</div>
-		</div>
-
-	
-			<?php
-				}
-			?>
-	</div>
+				<div class="btn services-circle">
+					<p>SERVICES</p>
+				</div>
+			</section>
 
 
-	<div class="content-container">
-		<h1>Happy Clients</h1>
-	</div>
-		<div class="happy-clients">
-		<?php
-			$fields = CFS()->get( 'companies' );
-			foreach ( $fields as $field ) {
-				$companyLogos = $field['company_logo'];
-				?><img src="<?php echo $companyLogos?>">
+		<div class="main-carousel">
 				<?php
-			}
-		?>
+					$fields = CFS()->get( 'quotes_loop' );
+					foreach ( $fields as $field ) {
+						$frontPageQuotes = $field['front_page_quotes'];
+						$frontPageAuthor = $field['front_page_author'];
+						$frontPageCompany = $field['front_page_company'];
+				?>
+
+			<div class="carousel-cell">
+				<h2><?php echo $frontPageQuotes?></h2>
+
+				<div>
+					<?php echo $frontPageAuthor?>
+					<?php echo $frontPageCompany?>
+				</div>
+			</div>
+
+		
+				<?php
+					}
+				?>
 		</div>
-		</div>
+
+
+			<div class="content-container">
+				<h1>Happy Clients</h1>
+			</div>
+
+				<div class="happy-clients">
+				<?php
+					$fields = CFS()->get( 'companies' );
+					foreach ( $fields as $field ) {
+						$companyLogos = $field['company_logo'];
+						?><img src="<?php echo $companyLogos?>">
+						<?php
+					}
+				?>
+				</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
