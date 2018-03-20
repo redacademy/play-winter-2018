@@ -39,7 +39,6 @@ get_header(); ?>
 
 
 	<div class="main-carousel">
-		<div class="carousel-cell">
 			<?php
 				$fields = CFS()->get( 'quotes_loop' );
 				foreach ( $fields as $field ) {
@@ -47,15 +46,22 @@ get_header(); ?>
 					$frontPageAuthor = $field['front_page_author'];
 					$frontPageCompany = $field['front_page_company'];
 			?>
-					<?php echo $frontPageQuotes?>
-					<?php echo $frontPageAuthor?>
-					<?php echo $frontPageCompany?>
-					
+
+		<div class="carousel-cell">
+			<h2><?php echo $frontPageQuotes?></h2>
+
+			<div>
+				<?php echo $frontPageAuthor?>
+				<?php echo $frontPageCompany?>
+			</div>
 		</div>
-	</div>
+
+	
 			<?php
 				}
 			?>
+	</div>
+
 
 	<div class="content-container">
 		<h1>Happy Clients</h1>
