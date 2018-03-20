@@ -7,6 +7,8 @@
     }
     .science-block{
       padding: 20px 50px;
+      position: relative;
+      z-index: -2;
       h2{
         width: 90%;
       }
@@ -14,6 +16,9 @@
     .science-cfs-container{
       max-width: 1200px;
       margin: 0 auto;
+      h2{
+        width:200px;
+      }
     }
 //hero Banner
     article{
@@ -76,105 +81,103 @@
 
 //Content block 1 -- Why Play?
     .science-block-1{
-      
+      min-height: 300px;
     }
 //Content block 2 -- Cognitive Benefits of Play
     .science-block-2{
-      .science-cfs-container{
-        max-width: 1000px;
-      }
-      background: $color__brand-purple;
       color: white;
-      h2{
-        width: auto;
-        max-width: 200px;
+      background: $color__brand-purple;
+      .science-cfs-container{
+        
+        display: grid;
+        grid-template:
+          ". float-right float-right"
+          "float-left float-left ."; 
       }
-      p{
-        max-width: 600px;
+      .science-right-float{
+        grid-area: float-right;
       }
-      h2:nth-child(1){
-        margin-left: 25%;
+      .science-left-float{
+        grid-area: float-left;
       }
-      p:nth-child(2){
-        margin-left: 25%;
-      }
-      h2:nth-child(3){
-        margin-right: 25%;
-      }
-      p:nth-child(4){
-        margin-right: 25%;
-      }
-      @include desktop{
-          h2:nth-child(1){
-            margin-left: 35%;
-          }
-          p:nth-child(2){
-            margin-left: 35%;
-          }
-          h2:nth-child(3){
-            margin-left: 10%;
-            margin-right: 25%;
-          }
-          p:nth-child(4){
-            margin-left: 10%;
-            margin-right: 25%;
-          }
-        }
+      
+      
+        
     }
 
 //Content block 3 -- Let's get down to business
     .science-block-3{
-      .science-cfs-container{
-        max-width: 1000px;
-      }
       @include desktop{
         background: $color__brand-purple;
+        z-index: -3;
+        display: grid;
+        grid-template: ". float-right float-right"/auto 33% 33%;
+        margin-bottom: 100px
+      }
+      .science-cfs-container{
+      @include desktop{
         color: white;
-        h2:nth-child(1){
-          margin-left: 35%;
-        }
-        p:nth-child(2){
-          margin-left: 35%;
-        }
-        h2:nth-child(3){
-          margin-left: 10%;
-          margin-right: 25%;
-        }
-        p:nth-child(4){
-          margin-left: 10%;
-          margin-right: 25%;
-        }
+        grid-area: float-right;
+      }
       }
     }
 
-//Bubbles sandbox
-    .bubbles{
+//Bubble Positioning
+  .bubble-1{
+    top: 10%;
+    left: -30px;
+  }
+  .bubble-2{
+    bottom: 5%;
+    right: 15%;
+  }
+  .bubble-3{
+    bottom: 50%;
+    right: -10px;
+  }
+  .bubble-4{
+    bottom: 20%;
+    right: 10%;
+  }
+  .bubble-5{
+    top: 20%;
+    left: 20%;
+  }
+  .bubble-6{
+    bottom: 10%;
+    right: 15%;
+  }
+  .bubble-7{
+    top: 5%;
+    left: 10%;;
+  }
+  .bubble-8{
+    bottom: 45%;
+    left: 8%;
+  }
+  .bubble-9{
+    bottom: 0;
+    left: -110px;
+  }
+  .bubble-10{
+    bottom: -100px;
+    right: 10%;
+  }
+  .bubble-11{
+    bottom: -50px;
+    left: 20%;
+    display: none;
+    @include desktop{
       display: block;
-      border-radius: 100%;
-      background: $color__brand-orange;
     }
-    .small{
-      width: 15px;
-      height: 15px;
+  }
+  .bubble-12{
+    bottom: 0;
+    right: -110px;
+    display: none;
+    @include desktop{
+      display: block;
     }
-    .medium{
-      width: 30px;
-      height: 30px;
-    }
-    .large{
-      width: 60px;
-      height: 60px;
-    }
-    .xl{
-      width: 150px;
-      height: 150px;
-    }
-    .xxl{
-      width: 240px;
-      height: 240px;
-    }
-    .orange-bubble{
-
-    }
+  }
 
   }

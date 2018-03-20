@@ -11,15 +11,15 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 
-				</footer><!-- #colophon -->
 		</div><!-- #page -->
 
 	<?php if ( is_active_sidebar( 'footer-sidebar') ) : ?>
 	<?php dynamic_sidebar( 'footer-sidebar' ); ?>
 	<?php endif; ?>
 
-		<?php get_sidebar('footer-sidebar'); ?>
-		<?php wp_footer(); ?>
+		</footer><!-- #colophon -->
 
 	</body>
+	<?php get_sidebar('footer-sidebar'); ?>
+	<?php wp_footer(); ?>
 </html>
