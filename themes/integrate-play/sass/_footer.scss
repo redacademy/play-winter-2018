@@ -1,6 +1,6 @@
 /* Footer */
 
-.widget-area {
+.site-footer {
   background-color: $color__brand-purple;
   height: auto;
   color: $color__brand-grey;
@@ -52,7 +52,7 @@
 
   .social-media {
     display: flex;
-    width: 90%;
+    margin: 1rem;
     color: white;
     text-align: center;
     justify-content: space-between;

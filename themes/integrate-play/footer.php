@@ -11,7 +11,6 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 
-				</footer><!-- #colophon -->
 		</div><!-- #page -->
 
 	<?php if ( is_active_sidebar( 'footer-sidebar') ) : ?>
@@ -20,6 +19,7 @@
 
 		<?php get_sidebar('footer-sidebar'); ?>
 		<?php wp_footer(); ?>
+		</footer><!-- #colophon -->
 
 	</body>
 </html>
