@@ -48,12 +48,10 @@ get_header(); ?>
 									
 								<div class="quote-excerpt">
 									<?php the_excerpt(); ?>
-								</div>
-
-								
+								</div>	
 
 								<p class="client-name">
-									<?php echo CFS()->get('test_author');?>
+									<?php echo CFS()->get('praise_client_name');?>
 								</p>
 
 								<p class="client-company">

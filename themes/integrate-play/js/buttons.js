@@ -4,11 +4,11 @@
   $( document ).ready(function() {
   //function to make modal contact form on mobile to appear when users click buttons
     $('.mobile-btn').on('click',function(){
-      $('#masthead').hide();
-      $('#colophon').hide();
+      // $('#masthead').hide();
+      // $('#colophon').hide();
       $('.testimonials').hide();
-      $('#main').hide(); //make sure button and form are outside the #main content area
-      $('#primary').css( 'padding', '0' );
+      // $('#main').hide(); //make sure button and form are outside the #main content area
+      // $('#primary').css( 'padding', '0' );
       $('.mobile-btn').hide();
       $('.mobile-contact-form').show();
     });
