@@ -8,13 +8,18 @@
     margin-bottom: 70px;
   }
 
-  .page-content{
+  .links{
+    display: flex;
+    flex-flow: column;
     a{
       display: block;
       font-weight: bold;
       font-size: 1.3rem;
       line-height: 1.5rem;
       text-align: left;
+      padding: 10px 0 10px 20px;
+      display: inline;
+      width: auto;
     }
   }
 }
