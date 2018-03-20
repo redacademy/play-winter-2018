@@ -3,6 +3,10 @@
   .content-area{
     
     margin: 0 auto;
+    @include tablet{
+      padding-right: 5%;
+      padding-left: 5%;
+    }
     @include desktop{
       display: flex;
       flex-flow: row nowrap;

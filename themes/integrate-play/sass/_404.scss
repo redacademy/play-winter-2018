@@ -1,0 +1,20 @@
+//Styling for 404 page
+
+.error404{
+  .site-content{
+    padding: 0 5%;
+  }
+  .content-area{
+    margin-bottom: 70px;
+  }
+
+  .page-content{
+    a{
+      display: block;
+      font-weight: bold;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      text-align: left;
+    }
+  }
+}
