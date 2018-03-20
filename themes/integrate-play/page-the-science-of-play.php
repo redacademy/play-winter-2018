@@ -42,21 +42,40 @@ get_header(); ?>
 			
 			<div class="science-block science-block-1">
 				<div class="science-cfs-container"><?php echo CFS()->get('science_content_block_1');?>	</div>
+				<div class="bubbles small yellow bubble-2"></div>
+				<div class="bubbles medium yellow bubble-3"></div>
+				<div class="bubbles medium orange bubble-4"></div>
+				<div class="bubbles large yellow bubble-1 "></div>
 			</div>
 
 			<div class="science-block science-block-2">
-				<div class="science-cfs-container"><?php echo CFS()->get('science_content_block_2');?>	</div>
+				<div class="science-cfs-container">
+					<div class="science-right-float"><?php echo CFS()->get('science_content_block_2_right');?>	</div>
+					<div class="science-left-float"><?php echo CFS()->get('science_content_block_2_left');?>	</div>
+				</div>
+				<div class="bubbles large purple-x-light  bubble-5"></div>
+				<div class="bubbles xl purple-x-light bubble-6"></div>			
+				<div class="bubbles medium purple-light bubble-7"></div>
+				<div class="bubbles xl purple-light bubble-8"></div>
+				<div class="bubbles xxl purple bubble-9"></div>
 			</div>
 
 			<div class="science-block science-block-3">
-				<div class="science-cfs-container"><?php echo CFS()->get('science_content_block_3');?>	</div>
+				<div class="science-cfs-container">
+					<?php echo CFS()->get('science_content_block_3');?>	
+					<div class="bubbles large purple bubble-10"></div>
+					<div class="bubbles xl purple-x-light bubble-11"></div>
+					<div class="bubbles xxl purple bubble-12"></div>
+				</div>
+				
 			</div>
 
-			<div class="bubbles small"></div>
-			<div class="bubbles medium"></div>
-			<div class="bubbles large"></div>
-			<div class="bubbles xl"></div>
-			<div class="bubbles xxl"></div>
+
+			
+			
+			
+
+
 		</main><!-- #main -->
 
 		<div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>
