@@ -13,13 +13,13 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 
-			<?php if ( has_post_thumbnail() ) : ?>
+					<?php if ( has_post_thumbnail() ) : ?>
 							<?php $p_img = get_the_post_thumbnail_url(  ); 
 							?>
 					<?php endif; ?>	
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
-				style="background:url('<?php echo $p_img; ?>'); width: 100%; height: 300px;">
+				style="background:url('<?php echo $p_img; ?>'), #F6C31E; background-size: auto 100%; background-position: right bottom; background-repeat: no-repeat; ">
 				
 					<header class="entry-header">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
