@@ -5,6 +5,7 @@
 /* Links */
 	a {
 		text-decoration: none;
+		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: $color__brand-purple;
@@ -32,14 +33,14 @@
 		z-index: 99;
 	}
 	.main-navigation {
-		clear: both;
+		// clear: both;
 		display: flex;
 		width: 100%;
 		background-color:  $color__background-body;
 		font-family: $font__header;
 		color: $color__brand-purple;
 		justify-content: space-between;
-		align-items: center;
+		align-items: top;
 		// position: fixed;
 		z-index: 2;
 		top: 0px;
@@ -61,16 +62,20 @@
 		.menu { //Nav bar 
 			display: flex;
 			flex-direction: column;
+			justify-content: space-around;
 			align-items: flex-start;
 			position: absolute;
 			z-index: 2;
-			right: 10px;
-			background-color: $color__background-body;
+			top:0;
+			right: 0;
+			background-color: $color__brand-light-grey;
 			list-style: none;
 			text-transform: uppercase;
 			padding: 0px;
 			margin: 0px;
-			width: 182px;
+			width: 65vw;
+			height: 87vh;
+			border-top-left-radius: 20px;
 			@include desktop {
 				flex-direction: row;
 				align-items: flex-end;
@@ -103,7 +108,7 @@
 					text-transform: capitalize;
 					@include desktop {
 						display: flex;
-						position: absolute;
+						// position: absolute;
 						background-color: $color__background-body;
 					}
 				}
@@ -118,17 +123,27 @@
 	}
 	// Logged in Header CSS
 	.nav-menu-wrapper {
+		width: 50%;
+		// margin-top: 300px;
+		position: static;
 		display: flex;
 		flex-direction: column;
 	}
 /* Small menu. */
 	.menu-toggle,
 	.main-navigation.toggled ul {
-		display: block;
+		display: flex;
+		justify-content: flex-end;
+		&:focus{
+			outline: none;
+		}
 	}
 	@include desktop {
 		.menu-toggle { //Removing the burger in desktop
 			display: none;
+			.hamburger-box{
+				margin-top: 10px;
+			}
 		}
 		.main-navigation ul {
 			display: flex;
@@ -188,7 +203,7 @@
 		background-position: center;
 		min-width: 40px;
 		min-height: 40px;
-		margin: 5px;
+		margin: 0 5px;
 		@include desktop {
 			display: none;
 		}
@@ -200,7 +215,7 @@
 		background-position: center;
 		min-width: 40px;
 		min-height: 40px;
-		margin: 5px;
+		margin: 0 5px;
 		@include desktop {
 			display: none;
 		}
@@ -212,7 +227,7 @@
 		background-position: center;
 		min-width: 40px;
 		min-height: 40px;
-		margin: 5px;
+		margin: 0 5px;
 		@include desktop {
 			display: none;
 		}
@@ -224,7 +239,7 @@
 		background-position: center;
 		min-width: 40px;
 		min-height: 40px;
-		margin: 5px;
+		margin: 0 5px;
 		@include desktop {
 			display: none;
 		}
@@ -242,26 +257,19 @@
 			padding-top: 200px;
 		}
 		.site-header{
-			height: 200px;
-			background: blue;
+			height: auto;
 		}
 		.main-navigation {
 			display: flex;
-			justify-content: center;
+			flex-flow: row wrap;
+			justify-content: space-around;
 			align-items: center;
 			transition: .5s;
 			.header-logo {
-				position: absolute;
-				left: 0px;
-				top: 26px;
-				@include tablet {
-					top: 0px;
-				}
+				flex-basis: 50%;
 			}
 			.nav-menu-wrapper {
-				position: absolute;
-				top: 20px;
-				right: 0px;
+				flex-basis: 50%;
 				@include desktop {
 					top: 0px;
 					width: 3000px;
