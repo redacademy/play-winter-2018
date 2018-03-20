@@ -1,0 +1,46 @@
+//global bubble values
+  .bubbles{
+    display: block;
+    border-radius: 100%;
+    background: $color__brand-orange;
+    position: absolute;
+    z-index: -1;
+  }
+  .small{
+    width: 15px;
+    height: 15px;
+  }
+  .medium{
+    width: 30px;
+    height: 30px;
+  }
+  .large{
+    width: 60px;
+    height: 60px;
+  }
+  .xl{
+    width: 150px;
+    height: 150px;
+  }
+  .xxl{
+    width: 240px;
+    height: 240px;
+  }
+
+  .orange{
+    background: lighten($color__brand-orange, 10%);
+  }
+
+  .yellow{
+    background: lighten($color__brand-yellow, 10%);
+  }
+
+  .purple{
+    background: lighten($color__brand-purple, 10%);
+  }
+  .purple-light{
+    background: lighten($color__brand-purple, 20%);
+  }
+  .purple-x-light{
+    background: lighten($color__brand-purple, 30%);
+  }
