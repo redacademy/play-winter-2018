@@ -12,12 +12,11 @@
 			color: $color__brand-purple;
 		}
 		&:hover,
-		&:focus,
-		&:active {
+		&:focus{
 			color: $color__brand-orange;
 		}
 		&:focus {
-			outline: thin dotted;
+			outline: none;
 		}
 		&:hover,
 		&:active {
@@ -59,12 +58,14 @@
 			position: absolute;
 			z-index: 2;
 			right: 10px;
-			background-color: $color__background-body;
+			background-color: $color__brand-light-grey;
 			list-style: none;
 			text-transform: uppercase;
 			padding: 0px;
 			margin: 0px;
-			width: 182px;
+			width: 60vw;
+			height: 90vh;
+			border-top-left-radius: 20px;
 			@include desktop {
 				flex-direction: row;
 				align-items: flex-end;
@@ -72,10 +73,11 @@
 				top: 25px;
 				right: 50px;
 				width: 90%;
+				height: 70px;
 				justify-content: flex-end;				
 			}
 			li {
-				padding: 10px;
+				padding: 30px 10px;
 				display: flex;
 				text-align: center;
 			}
@@ -88,7 +90,7 @@
 					display: none;
 					padding: 0;
 					margin: 0;
-					top: 30px;
+					top: 40px;
 					right: 157px;
 					flex-direction: column;
 					transform-origin: top;
@@ -121,6 +123,9 @@
 		flex-direction: column;
 	}
 /* Small menu. */
+	.menu-toggle:focus{
+		outline: none;
+	}
 	.menu-toggle,
 	.main-navigation.toggled ul {
 		display: block;
@@ -163,15 +168,19 @@
 		height: 50px;
 		z-index: 3;
 		color: transparent;
-		 &:hover {
+		margin-left: 30px;
+		 &:hover, &:focus, &:active {
 			 color: transparent;
+			 outline: none;
+			 border: none;
 		 }
 		@include tablet {
 			background: url('../../images/desktop-logo.svg');
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: center;
-			height: 100px;
+			max-height: 90%;
+			// margin-left: 20px;
 			top: 0px;
 		}
 	}
@@ -239,6 +248,7 @@
 				position: absolute;
 				left: 0px;
 				top: 26px;
+				margin-top: 20px;
 				@include tablet {
 					top: 0px;
 				}
