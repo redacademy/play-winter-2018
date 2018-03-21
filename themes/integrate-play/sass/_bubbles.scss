@@ -1,5 +1,5 @@
 //making bubbles not visible outside of site content
-  body{
+  body, .site-content{
     overflow-x: hidden;
   }
 //global bubble values
