@@ -76,19 +76,31 @@
 			width: 65vw;
 			height: 87vh;
 			border-top-left-radius: 20px;
+			padding-right: 30px;
 			@include desktop {
 				flex-direction: row;
 				align-items: flex-end;
 				background-color: transparent;
-				top: 25px;
-				right: 50px;
-				width: 90%;
+				// top: 25px;
+				// right: 50px;
+				height: 100%;
+				max-width: 60%;
 				justify-content: flex-end;				
 			}
-			li {
+			li{
 				padding: 10px;
 				display: flex;
 				text-align: center;
+				width: 100%;
+				@include desktop{
+					height: 100%;
+					width: auto;
+					padding: 0 20px;
+					justify-content: center;
+					li:nth-child(2){
+						position: relative;
+					}
+				}
 			}
 			.menu-item-78 { // Sub menu for services
 				.sub-menu {
@@ -99,6 +111,7 @@
 					display: none;
 					padding: 0;
 					margin: 0;
+					margin-top: 50px;
 					top: 30px;
 					right: 157px;
 					flex-direction: column;
@@ -106,10 +119,17 @@
 					font-family: $font__main;
 					font-size: 14px;
 					text-transform: capitalize;
+					
 					@include desktop {
+						position: absolute;
+						width: 200px;
 						display: flex;
-						// position: absolute;
 						background-color: $color__background-body;
+						li{
+							width: 100px;
+							padding: 20px 0;
+							font-weight: bold;
+						}
 					}
 				}
 				&:hover {
@@ -253,27 +273,39 @@
 
 /*Services Page Content */
 .page-id-68 {
-		.content-area {
-			padding-top: 200px;
+		.site-main {
+			margin-top: 200px;
 		}
 		.site-header{
 			height: auto;
 		}
 		.main-navigation {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-around;
-			align-items: center;
+			// display: flex;
+			// flex-flow: row wrap;
+			// justify-content: center;
+			// align-items: center;
+			grid-template:
+				"logo service service service hamburger" 3fr 
+				". breadcrump ." 2fr
+    		/ 1fr 1fr 1fr 1fr 1fr;
 			transition: .5s;
 			.header-logo {
-				flex-basis: 50%;
+				// flex-basis: 49%;
+				grid-area: logo;
+				@include desktop{
+					width: 49%;
+					margin: 0;
+				}
 			}
 			.nav-menu-wrapper {
 				flex-basis: 50%;
 				@include desktop {
 					top: 0px;
-					width: 3000px;
+					width: 50%;
 				}
+			}
+			.menu{
+				position: static;
 			}
 			.service-header {
 				font-size: 2rem;
@@ -287,9 +319,9 @@
 			}
 			.breadcrumb-bar {
 				display: flex;
-				position: absolute;
+				// position: absolute;
 				bottom: 0;
-				z-index: -1;
+				// z-index: -1;
 				font-size: .8rem;
 				transition: .5s;
 				 @include tablet {
