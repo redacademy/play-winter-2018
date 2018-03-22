@@ -262,6 +262,9 @@
         p {
           width: 100vw;
         }
+        P:nth-child(1){
+          margin: 0;
+        }
         @include tablet {
           justify-content: space-around;
           flex-direction: row;
@@ -281,9 +284,9 @@
         }
         h3 {
           position: absolute;
-          top: 2%;
+          top: 20%;
           right: 9%;
-          width: 150px;
+          width: 200px;
           color: transparent;
           transition: .5s;
           @include tablet {
@@ -300,7 +303,7 @@
           @include tablet {
             position: absolute;
             right: 7.5%;
-            top: 45%;
+            top: 65%;
           }
           @include desktop {
             right: 7%;
@@ -309,29 +312,45 @@
       }
     /* We're here for you*/
       .here-for-you-wrapper {
-        padding: 0 8%;
+        padding: 10% 8%;
         transition: .5s;
+        background: url('../../images/here-for-you-bubbles.svg');
+        background-size: auto 100%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
         p {
-          padding: 0 8%;
+          padding: 0;
         }
       }
     /* Advice */
       .advice-wrapper {
         display: flex;
         flex-direction: column;
+        background: url('../../images/consult-bubbles.svg');
+          background-size: auto 80%;
+          background-position: left bottom;
+          background-repeat: no-repeat;
         h2 {
           display: flex;
-          background: $color__brand-yellow;
+          background: url('../../images/advice-bubbles.svg'), $color__brand-yellow;
+          background-size: auto 100%;
+          background-position: right bottom;
+          background-repeat: no-repeat;
           width: 100vw;
-          padding: 0 8%;
+          padding: 10% 8%;
           height: 150px;
           color: $color__background-body;
           align-items: center;
           font-size: 2rem;
+          margin: 0;
         }
         h3 {
-          text-align: center;
+          text-align: left;
           padding: 0 8%;
+          @include desktop{
+            margin-left: 40%;
+            padding: 0;
+          }
         }
         p {
           display: flex;
@@ -343,6 +362,18 @@
             padding: 0 20%;
           }
         }
+        ul{
+          margin: 0 50px;
+          @include desktop{
+            margin-left: 41%;
+          }
+        }
+      }
+      .contact-form-wrapper{
+          background: url('../../images/coach-contact-form-bubbles.svg');
+          background-size: auto 100%;
+          background-position: right bottom;
+          background-repeat: no-repeat;
       }
     }
   
