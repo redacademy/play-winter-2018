@@ -132,23 +132,5 @@
           }
         }
         window.addEventListener('scroll',serviceHeaderResize);
-
-    //Adding the text for the Form Thank You pop up
-
-
-    $('.wpcf7-submit').on('click', function(){
-      setTimeout(function(){
-        if($('.wpcf7-mail-sent-ok').is(':visible')){
-          $('.wpcf7-mail-sent-ok').empty().append('<div class="thank-you-container"><h2>Thank You!</h2><p>Your information package is on its way</p><a href="" id="thank-you-close-btn" class="btn orange thank-you-btn">Okay</a></div>');
-        }
-      }, 500);
-
-      
-    });
-
-
-    
-    
-    
   });
 })(jQuery);

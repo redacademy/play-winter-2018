@@ -1,7 +1,3 @@
-//making bubbles not visible outside of site content
-  body, .site-content{
-    overflow-x: hidden;
-  }
 //global bubble values
   .bubbles{
     display: block;
@@ -32,7 +28,7 @@
     height: 240px;
   }
 //bubble Colors
-  .orange-regular{
+  .orange{
     background: lighten($color__brand-orange, 10%);
   }
   .orange-light{
@@ -54,7 +50,7 @@
     background: lighten($color__brand-yellow, 30%);
   }
 
-  .purple-regular{
+  .purple{
     background: lighten($color__brand-purple, 10%);
   }
   .purple-light{

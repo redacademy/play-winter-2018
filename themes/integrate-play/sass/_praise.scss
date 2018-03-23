@@ -30,13 +30,11 @@
       margin-bottom: 50px;
       @include desktop{
         grid-area: featuredquote;
-        margin-bottom: 0;
       }
     }
     .entry-title {
-    width: 70%;
+    width: 40%;
     text-align: left;
-    margin: 20px 0;
     }
     .entry-content{
       padding: 0 8%;
@@ -117,7 +115,7 @@
       right: 30%;
     }
     .bubble-3{
-      bottom: 0%;
+      bottom: -20%;
       left: -20px;
     }
     .bubble-4{

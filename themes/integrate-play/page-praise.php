@@ -8,6 +8,11 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+			<div class="bubbles medium yellow bubble-1"></div>			
+			<div class="bubbles large orange-x-light bubble-2"></div>
+			<div class="bubbles large orange bubble-3"></div>
+			<div class="bubbles medium yellow bubble-4"></div>
+			<div class="bubbles xl orange bubble-5"></div>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -58,12 +63,7 @@ get_header(); ?>
 					
 				<?php endif?>
 			</div> <!-- Testimonial Posts-->
-			<div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>
-			<div class="bubbles medium yellow bubble-1"></div>			
-			<div class="bubbles large orange-x-light bubble-2"></div>
-			<div class="bubbles large orange-regular bubble-3"></div>
-			<div class="bubbles medium yellow bubble-4"></div>
-			<div class="bubbles xl orange-regular bubble-5"></div>	
+			<div class="contact-form-wrapper"><?php echo CFS()->get('contact_form');?>	</div>	
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

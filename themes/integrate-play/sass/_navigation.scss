@@ -8,12 +8,16 @@
 		justify-content: center;
 		align-items: center;
 		color: $color__brand-purple;
+		&:visited {
+			color: $color__brand-purple;
+		}
 		&:hover,
-		&:focus{
+		&:focus,
+		&:active {
 			color: $color__brand-orange;
 		}
 		&:focus {
-			outline: none;
+			outline: thin dotted;
 		}
 		&:hover,
 		&:active {
@@ -55,14 +59,12 @@
 			position: absolute;
 			z-index: 2;
 			right: 10px;
-			background-color: $color__brand-light-grey;
+			background-color: $color__background-body;
 			list-style: none;
 			text-transform: uppercase;
 			padding: 0px;
 			margin: 0px;
-			width: 60vw;
-			height: 90vh;
-			border-top-left-radius: 20px;
+			width: 182px;
 			@include desktop {
 				flex-direction: row;
 				align-items: flex-end;
@@ -70,11 +72,10 @@
 				top: 25px;
 				right: 50px;
 				width: 90%;
-				height: 70px;
 				justify-content: flex-end;				
 			}
 			li {
-				padding: 30px 10px;
+				padding: 10px;
 				display: flex;
 				text-align: center;
 			}
@@ -87,7 +88,7 @@
 					display: none;
 					padding: 0;
 					margin: 0;
-					top: 40px;
+					top: 30px;
 					right: 157px;
 					flex-direction: column;
 					transform-origin: top;
@@ -120,9 +121,6 @@
 		flex-direction: column;
 	}
 /* Small menu. */
-	.menu-toggle:focus{
-		outline: none;
-	}
 	.menu-toggle,
 	.main-navigation.toggled ul {
 		display: block;
@@ -165,19 +163,15 @@
 		height: 50px;
 		z-index: 3;
 		color: transparent;
-		margin-left: 30px;
-		 &:hover, &:focus, &:active {
+		 &:hover {
 			 color: transparent;
-			 outline: none;
-			 border: none;
 		 }
 		@include tablet {
 			background: url('../../images/desktop-logo.svg');
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: center;
-			max-height: 90%;
-			// margin-left: 20px;
+			height: 100px;
 			top: 0px;
 		}
 	}
@@ -231,39 +225,9 @@
 		}
 	}
 /*Services Page Content */
-<<<<<<< HEAD
 	.page-id-68 {
 			.content-area {
 				padding-top: 200px;
-=======
-.page-id-68 {
-		.content-area {
-			padding-top: 200px;
-		}
-		.main-navigation {
-			height: 200px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			transition: .5s;
-			.header-logo {
-				position: absolute;
-				left: 0px;
-				top: 26px;
-				margin-top: 20px;
-				@include tablet {
-					top: 0px;
-				}
-			}
-			.nav-menu-wrapper {
-				position: absolute;
-				top: 20px;
-				right: 0px;
-				@include desktop {
-					top: 0px;
-					width: 3000px;
-				}
->>>>>>> ca28765376d9c42fe66211c8abb02300673b476a
 			}
 			.main-navigation {
 				height: 200px;

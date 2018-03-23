@@ -21,7 +21,7 @@
         h1 {
           text-transform: none;
           position: absolute;
-          top: 10%;
+          top: 3%;
           width: 33%;
           left: 6%;
           transition: .5s;
@@ -30,7 +30,6 @@
             transition: .5s;
           }
           @include desktop {
-            top: 20%;
             font-size: 4rem;
           }
         }
@@ -55,9 +54,6 @@
           @include tablet {
             margin-top: 125px;
           }
-          @include desktop{
-            max-width: 66%;
-          }
         }
       }
     /* Ways to Play Content */
@@ -71,7 +67,7 @@
           display: flex;
           justify-content: flex-start;
           width: 100%;
-          padding: 0;
+          padding: 0 8%;
         }
         .ways-content-wrapper {
           @include desktop {
@@ -92,9 +88,6 @@
             width: 30%;
             padding: 0px;
           }
-        }
-        ul{
-          margin: 0
         }
       }
     }
@@ -172,9 +165,6 @@
         }
         @include desktop {
           margin-top: 15%;
-          p{
-            max-width: 66%;
-          }
         }
       }
     /* Highlights */
@@ -184,25 +174,17 @@
         padding: 5% 8%;
         color: $color__background-body;
         background-color: $color__services-highlights;
-        min-height: 736px;
-        height: auto;
+        height: 736px;
         transition: .5s;
-        z-index: -2;
         @include desktop {
           height: 650px;
-          background: url('../../images/purple-speaking-banner.svg'), $color__services-highlights;
-          background-size: 100%;
-          background-position: left bottom;
-          background-repeat: no-repeat;
         }
         h2 {
           margin-bottom: 5%;
           width: 220px;
-          z-index: 100;
         }
         p {
           width: 220px;
-          z-index: 100;
         }
         /* Sizzle Reel button*/
         .cfs-hyperlink {
@@ -220,15 +202,11 @@
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.36);
           transition: .5s;
           left: 39vw;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 200;
           .text {
             padding: 0 7px;
           }
           &:hover {
-            background: darken($color__brand-orange, 10%);
+            background: darken($color__brand-orange, 10%)
           }
           @include desktop {
             top: 10%;
@@ -244,13 +222,6 @@
         color: $color__background-body;
         background-color: $color__brand-orange;
         transition: .5s;
-        z-index: -2;
-        @include desktop{
-          background: url('../../images/orange-speaking-banner.svg'), $color__brand-orange;
-          background-size: 100%;
-          background-position: left top;
-          background-repeat: no-repeat;
-        }
       }
     }
   /* Coaching Content Display */
@@ -258,7 +229,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+    justify-content: center;
     /* Coaching banner*/
       .coach-banner {
         position: relative;
@@ -270,9 +241,6 @@
         
         p {
           width: 100vw;
-        }
-        P:nth-child(1){
-          margin: 0;
         }
         @include tablet {
           justify-content: space-around;
@@ -293,9 +261,9 @@
         }
         h3 {
           position: absolute;
-          top: 20%;
+          top: 2%;
           right: 9%;
-          width: 200px;
+          width: 150px;
           color: transparent;
           transition: .5s;
           @include tablet {
@@ -312,7 +280,7 @@
           @include tablet {
             position: absolute;
             right: 7.5%;
-            top: 65%;
+            top: 45%;
           }
           @include desktop {
             right: 7%;
@@ -321,48 +289,29 @@
       }
     /* We're here for you*/
       .here-for-you-wrapper {
-        padding: 10% 8%;
+        padding: 0 8%;
         transition: .5s;
-        background: url('../../images/here-for-you-bubbles.svg');
-        background-size: auto 100%;
-        background-position: right bottom;
-        background-repeat: no-repeat;
         p {
-          padding: 0;
-          @include desktop{
-            max-width: 66%;
-          }
+          padding: 0 8%;
         }
       }
     /* Advice */
       .advice-wrapper {
         display: flex;
         flex-direction: column;
-        background: url('../../images/consult-bubbles.svg');
-          background-size: auto 80%;
-          background-position: left bottom;
-          background-repeat: no-repeat;
         h2 {
           display: flex;
-          background: url('../../images/advice-bubbles.svg'), $color__brand-yellow;
-          background-size: auto 100%;
-          background-position: right bottom;
-          background-repeat: no-repeat;
+          background: $color__brand-yellow;
           width: 100vw;
-          padding: 10% 8%;
+          padding: 0 8%;
           height: 150px;
           color: $color__background-body;
           align-items: center;
           font-size: 2rem;
-          margin: 0;
         }
         h3 {
-          text-align: left;
+          text-align: center;
           padding: 0 8%;
-          @include desktop{
-            margin-left: 40%;
-            padding: 0;
-          }
         }
         p {
           display: flex;
@@ -374,73 +323,6 @@
             padding: 0 20%;
           }
         }
-        ul{
-          margin: 0 50px;
-          @include desktop{
-            margin-left: 41%;
-          }
-        }
-      }
-      .contact-form-wrapper{
-          background: url('../../images/coach-contact-form-bubbles.svg');
-          background-size: auto 100%;
-          background-position: right bottom;
-          background-repeat: no-repeat;
       }
     }
-  
-  //Bubble placement
-  .bubble-1{
-    left: 0;
-    bottom: -100%;
-  }
-  .bubble-2{
-    right: 20%;
-    bottom: -30%;
-  }
-  .bubble-3{
-    right: 0;
-    bottom: 0;
-  }
-  .bubble-4{
-    right: 40%;
-    top: 40%;
-  }
-  .bubble-5{
-    left: 20%;
-    bottom: 10%;
-  }
-  .bubble-6{
-    right: 0;
-    bottom: 10%;
-  }
-  .bubble-7{
-    right: -10%;
-    top: 10%;
-  }
-  .bubble-8{
-    right: 20%;
-    bottom: 30%;
-  }
-  .bubble-9{
-    right: 5%;
-    bottom: -10%;
-  }
-  .bubble-10{
-    left: 10%;
-    bottom: 5%;
-  }
-  .bubble-11{
-    right: 20%;
-    bottom: -20%;
-  }
-  .bubble-12{
-    right: 0;
-    bottom: 0;
-  }
-  .bubble-13{
-    right: 0;
-    top: 10%;
-  }
-  
   }

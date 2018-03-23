@@ -82,11 +82,6 @@
 //Content block 1 -- Why Play?
     .science-block-1{
       min-height: 300px;
-      p{
-        @include desktop{
-          width: 66%;
-        }
-      }
     }
 //Content block 2 -- Cognitive Benefits of Play
     .science-block-2{
@@ -149,7 +144,7 @@
     left: 20%;
   }
   .bubble-6{
-    bottom: 30%;
+    bottom: 10%;
     right: 15%;
   }
   .bubble-7{
@@ -161,8 +156,8 @@
     left: 8%;
   }
   .bubble-9{
-    bottom: -100px;;
-    right: 0;
+    bottom: 0;
+    left: -110px;
   }
   .bubble-10{
     bottom: -100px;
@@ -177,8 +172,8 @@
     }
   }
   .bubble-12{
-    bottom: 30%;
-    left: -110px;
+    bottom: 0;
+    right: -110px;
     display: none;
     @include desktop{
       display: block;

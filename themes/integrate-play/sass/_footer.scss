@@ -4,8 +4,6 @@
   background-color: $color__brand-purple;
   height: auto;
   color: $color__brand-grey;
-  margin-top: 50px;
-  padding: 50px;
 
   .widget {
     margin: 0;
@@ -15,7 +13,6 @@
       display: flex;
       height: 150px;
       justify-content: space-between;
-      padding: 0 50px;
     }
 
   .footer-nav {
@@ -32,17 +29,14 @@
     padding: 0px;
     text-transform: uppercase;
 
-    .menu-item {
-      margin: 1rem;
+    li {
+    margin: 1rem;
     }
 
     a {
       padding: 20px 10px;
       text-decoration: none;
       color: $color__brand-grey;
-      &:hover{
-        color: $color__brand-orange;
-      }
     }
   }
 
@@ -62,18 +56,13 @@
 
   .social-media {
     display: flex;
-    justify-content: center;
     color: white;
     font-size: 40px;
-    a{
+    
+    a:visited {
       color: white;
     }
-    a:visited, a:active {
-      color: white;
-    }
-    a:hover{
-      color: $color__brand-orange;
-    }
+
     i {
       margin: 1rem;
     }
@@ -87,16 +76,11 @@
   .site-info {
     text-align: center;
     font-weight: 800;
-    padding: 0 10px;
-    max-height: 100%;
+    padding: 10px;
 
     @include desktop {
       order: 1;
       margin: 0 25px;
-      p{
-        margin: 0;
-        text-align: left;
-      }
     }
 
     .footer__company {
@@ -110,22 +94,13 @@
       font-size: 1rem;
     }
     .footer__number {
-      display: none;
-      font-weight: normal;
+      display: show;
 
-      @include tablet {
-        display: block;
+      @include desktop {
+        display: none;
       }
     }
-  }
 
-  .widget_nav_menu{
-    @include desktop{
-      display: none;
-      width: 500px;
-      background: pink;
-    }
-  }
   .textwidget .custom-html-widget {
     margin: 0px;
     text-align: center;
@@ -134,30 +109,5 @@
     text-align: left;
       }
     }
-
-  .widget_text:nth-child(2){
-    @include desktop{
-      order: 2;
-      .textwidget{
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
-      .social-media{
-        margin: 0;
-      }
-    }
   }
-
-  .widget_text:nth-child(3){
-    @include desktop{
-      order: 1;
-      .textwidget{
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
-    }
-  }
-
 }
