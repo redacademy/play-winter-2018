@@ -40,6 +40,7 @@ get_header(); ?>
 
 		<div class="main-carousel">
 				<?php
+				
 					$fields = CFS()->get( 'quotes_loop' );
 					foreach ( $fields as $field ) {
 						$frontPageQuotes = $field['front_page_quotes'];
