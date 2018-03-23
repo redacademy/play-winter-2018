@@ -1,13 +1,14 @@
 //Contact us page ------- Make sure to transfer to page-templates--------
 .page-id-34{
   .content-area{
-    
+    padding: 0;
     margin: 0 auto;
     @include tablet{
-      padding-right: 5%;
-      padding-left: 5%;
+      
     }
     @include desktop{
+      padding-right: 5%;
+      padding-left: 5%;
       display: flex;
       flex-flow: row nowrap;
     }
@@ -41,6 +42,7 @@
     }
     @include desktop{
       width: 60%;
+      min-width: 320px;
     }
   }
   .icon-frame{
@@ -50,6 +52,10 @@
     border-radius: 50%;
     text-align: center;
     color: white;
+    &:hover{
+      background: $color__brand-purple;
+      transition: 1s;
+    }
   }
   .contact-form-wrapper{
     width: 100vw;
@@ -91,8 +97,8 @@
     bottom: 5%;
     left: 10%;
     @include tablet{
-      bottom: -100px;
-      left: 10%;
+      bottom: -15%;
+      left: 0%;
     }
   }
   .bubble-3{

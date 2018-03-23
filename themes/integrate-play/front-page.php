@@ -10,31 +10,39 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 			<header class="header-banner">
-				<section class="front-page-hero">
-				</section>
+
+			<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="content-container">
-					<h1>bring your team together</h1>
-					<button class="btn purple">Contact Us</button>
-				<div class="play-exerpt">
-					<p>Integrate Play serves businesses by providing tried solutions to problems in communication, collaboration, and innovation through organized Play.</p>
-				</div>
-				</div>
+						<?php the_post_thumbnail( 'full' ); ?>	
+						<div class="play-excerpt">
+							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+							<?php the_content(); ?>
+						</div>
+					</div>
+
+			<?php endwhile; // End of the loop. ?>
+
+
+
 			</header>
 
 	
 			<section class="circle-text-container">
-				<div class="btn science-circle">
-					<p>SCIENCE of PLAY</p>
-				</div>
+				<a href="http://play.van.cp.academy.red/the-science-of-play/" class="btn science-circle">
+					<h3 class="science-circle-title">Science of Play</h3>
+					<p class="science-circle-content">Discover how play works</p>
+				</a>
 
-				<div class="btn saying-circle">
-					<p>WHAT PEOPLE are SAYING</p>
-				</div>
+				<a href="http://play.van.cp.academy.red/praise/" class="btn saying-circle">
+					<h3 class="saying-circle-title ">What People Are Saying</h3>
+					<p class="saying-circle-content">Find out what people are saying about us</p>
+				</a>
 
-				<div class="btn services-circle">
-					<p>SERVICES</p>
-				</div>
+				<a href="http://play.van.cp.academy.red/services/" class="btn services-circle">
+					<h3 class="services-circle-title ">Services</h3>
+					<p class="services-circle-content">Explore how we can best serve your business needs</p>
+				</a>
 			</section>
 
 
@@ -49,11 +57,15 @@ get_header(); ?>
 				?>
 
 			<div class="carousel-cell">
-				<h2><?php echo $frontPageQuotes?></h2>
+				<div class="carousel-primary-text">
+					<i class="fas fa-quote-left"></i>
+					<p class="quote-text"><?php echo $frontPageQuotes?></p> 
+				</div>
 
-				<div>
-					<?php echo $frontPageAuthor?>
-					<?php echo $frontPageCompany?>
+				<div class= "carousel-secondary-text">
+					<p class="flickity-author-text"><?php echo $frontPageAuthor?></p>
+					<p><?php echo "," ?></p>
+					<p class="flickity-company-text"><?php echo $frontPageCompany?></p>
 				</div>
 			</div>
 
@@ -64,9 +76,9 @@ get_header(); ?>
 		</div>
 
 
-			<div class="content-container">
+			<div class="happy-clients-container">
 				<h1>Happy Clients</h1>
-			</div>
+			
 
 				<div class="happy-clients">
 				<?php
@@ -78,6 +90,7 @@ get_header(); ?>
 					}
 				?>
 				</div>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -4,7 +4,7 @@
 
 /* Posts and pages */
 .content-area {
-	padding-top: 50px; 
+	padding: 50px; 
 }
 .sticky {
 	display: block;
@@ -32,6 +32,30 @@
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
+}
+
+//blog posts
+.single{
+	.site-content{
+		@include desktop{
+			display: flex;
+			flex-flow: row nowrap;
+			.content-area{
+				width: 70%;
+				border-right: 1px solid $color__brand-grey;
+			}
+			.widget-area{
+				width: 30%;
+				padding: 50px;
+			}
+			ul{
+				margin: 0;
+			}
+			.byline{
+				font-weight: bold;
+			}
+		}
+	}
 }
 
 /* Asides */

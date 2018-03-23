@@ -7,6 +7,7 @@
     
   }
   .content-area{
+    padding: 0 50px;
     @include desktop{
       width: 69%;
       border-right: 1px solid $color__brand-grey;
@@ -14,7 +15,12 @@
       margin-top: 100px;
     }
   }
+
   .widget-area{
+    padding: 0 50px;
+    ul{
+      margin: 0;
+    }
     @include desktop{
       width: 29%;
       padding: 50px 0;
@@ -30,6 +36,7 @@
     }
   }
   article{
+    border-block-end: 1px solid $color__brand-grey;
     .entry-header{
       display: flex;
       flex-direction: column;
