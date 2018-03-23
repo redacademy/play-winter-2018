@@ -1,6 +1,14 @@
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+//Form globals
+	.wpcf7-form-control-wrap{
+		position: relative;
+	}
+	.wpcf7-not-valid-tip{
+		position: absolute;
+	}
+
 // Form -- mobile
 
 		.mobile-contact-form{
@@ -201,6 +209,39 @@
 				}
 			}
 		}
+
+//Form Pop-up
+ div.wpcf7-mail-sent-ok{
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 width: 100vw;
+	 height: 100vh;
+	 background: rgba(222, 221, 219,0.7);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 border: none;
+	 margin: 0;
+	 .thank-you-container{
+		 display: flex;
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
+		 color: white;
+		 background: $color__brand-purple;
+		 padding: 50px;
+		 border-radius: 20px;
+	 }
+	 h2{
+	 }
+	 p{
+		 width: 60%;
+		 text-align: center;
+	 }
+ }
 
 /* Fields */
 

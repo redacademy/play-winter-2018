@@ -44,7 +44,7 @@ get_header(); ?>
 				<div class="science-cfs-container"><?php echo CFS()->get('science_content_block_1');?>	</div>
 				<div class="bubbles small yellow bubble-2"></div>
 				<div class="bubbles medium yellow bubble-3"></div>
-				<div class="bubbles medium orange bubble-4"></div>
+				<div class="bubbles medium orange-regular bubble-4"></div>
 				<div class="bubbles large yellow bubble-1 "></div>
 			</div>
 
@@ -57,15 +57,15 @@ get_header(); ?>
 				<div class="bubbles xl purple-x-light bubble-6"></div>			
 				<div class="bubbles medium purple-light bubble-7"></div>
 				<div class="bubbles xl purple-light bubble-8"></div>
-				<div class="bubbles xxl purple bubble-9"></div>
+				<div class="bubbles xxl purple-regular bubble-9"></div>
 			</div>
 
 			<div class="science-block science-block-3">
 				<div class="science-cfs-container">
 					<?php echo CFS()->get('science_content_block_3');?>	
-					<div class="bubbles large purple bubble-10"></div>
+					<div class="bubbles large purple-regular bubble-10"></div>
 					<div class="bubbles xl purple-x-light bubble-11"></div>
-					<div class="bubbles xxl purple bubble-12"></div>
+					<div class="bubbles xxl purple-regular bubble-12"></div>
 				</div>
 				
 			</div>

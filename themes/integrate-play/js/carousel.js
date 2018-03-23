@@ -4,6 +4,5 @@
       cellAlign: 'left',
       contain: true,
       wrapAround: true,
-      prevNextButtons: false,
     });
 })(jQuery);

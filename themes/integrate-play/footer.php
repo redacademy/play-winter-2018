@@ -19,6 +19,6 @@
 		</footer><!-- #colophon -->
 
 	</body>
-	<?php get_sidebar('footer-sidebar'); ?>
+
 	<?php wp_footer(); ?>
 </html>
