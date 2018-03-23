@@ -12,6 +12,7 @@
     @include desktop{
       display: flex;
       flex-flow: row nowrap;
+      align-items: center;
     }
     img{
       @include desktop{
@@ -28,6 +29,10 @@
       }
       @include desktop{
         width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        min-height: 400px;
         h1{
           margin: 0;
           width: 100%;
@@ -35,7 +40,6 @@
         }
         p{
           font-size: 1.3rem;
-          // margin: 0;
           width: 100%;
         }
       }
@@ -89,11 +93,14 @@
     
     .science-circle {
       display: flex;
-      background: #ffc200;
+      background: $color__brand-yellow;
       position: absolute;
       top: 5%;
       right: 10%;
-      transition: 1s;
+      transition: 0.5s;
+      &:hover{
+        background: darken($color__brand-yellow, 15%) 
+      }
       @include desktop{
         top: auto;
         right: auto;
@@ -112,11 +119,14 @@
 
     .saying-circle {
       display: flex;
-      background:#FF5301;
+      background: $color__brand-orange;
       position: absolute;
       top: 35%;
       left: 5%;
-      transition: 1s;
+      transition: 0.5s;
+      &:hover{
+        background: darken($color__brand-orange, 15%) 
+      }
       @include desktop{
         top: 20%;
         left: 43%;
@@ -133,13 +143,16 @@
 
     .services-circle {
       display: flex;
-      background: #190A6B;
+      background: $color__brand-purple;
       width: 175px;
       height: 175px;
       position: absolute;
       bottom: 5%;
       right: 5%;
       transition: 1s;
+      &:hover{
+        background: lighten($color__brand-purple, 15%) 
+      }
       @include desktop{
         bottom: 18%;
         right: 18%;

@@ -13,7 +13,7 @@ get_header(); ?>
     <div class="workshops-wrapper">
             <div class="bubbles small yellow bubble-1"></div>			
 			<div class="bubbles medium yellow bubble-2"></div>
-			<div class="bubbles large orange bubble-3"></div>
+			<div class="bubbles large orange-regular bubble-3"></div>
         <div class="work-banner">
             <?php echo CFS()->get('workshop_banner');?>
         </div>
@@ -44,7 +44,7 @@ get_header(); ?>
             <?php echo CFS()->get('sizzle_reel_link'); ?>
             <div class="bubbles medium purple-light bubble-4"></div>			
             <div class="bubbles medium purple-x-light bubble-5"></div>
-            <div class="bubbles large purple bubble-6"></div>	
+            <div class="bubbles large purple-regular bubble-6"></div>	
             <div class="bubbles xl purple-x-light bubble-13"></div>
         </div>
 
@@ -53,9 +53,9 @@ get_header(); ?>
           <div class="bubbles large orange-x-light bubble-8"></div>			
             <div class="bubbles medium orange-light bubble-9"></div>
             <div class="bubbles xl orange-light bubble-7"></div>
-        <div class="bubbles medium orange bubble-10"></div>
+        <div class="bubbles medium orange-regular bubble-10"></div>
         <div class="bubbles small orange-light bubble-11"></div>
-        <div class="bubbles small orange bubble-12"></div>
+        <div class="bubbles small orange-regular bubble-12"></div>
         </div>
     </div>
 

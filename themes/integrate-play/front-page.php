@@ -41,7 +41,7 @@ get_header(); ?>
 
 				<a href="http://play.van.cp.academy.red/services/" class="btn services-circle">
 					<h3 class="services-circle-title ">Services</h3>
-					<p class="services-circle-content">Explore our services to see how we can best serve your business needs</p>
+					<p class="services-circle-content">Explore how we can best serve your business needs</p>
 				</a>
 			</section>
 
