@@ -58,7 +58,7 @@ get_header(); ?>
 			<div class="carousel-cell">
 				<div class="carousel-primary-text">
 					<i class="fas fa-quote-left"></i>
-					<p><?php echo $frontPageQuotes?></p>
+					<p class="quote-text"><?php echo $frontPageQuotes?></p> 
 				</div>
 
 				<div class= "carousel-secondary-text">
@@ -75,9 +75,9 @@ get_header(); ?>
 		</div>
 
 
-			<div class="content-container">
+			<div class="happy-clients-container">
 				<h1>Happy Clients</h1>
-			</div>
+			
 
 				<div class="happy-clients">
 				<?php
@@ -89,6 +89,7 @@ get_header(); ?>
 					}
 				?>
 				</div>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

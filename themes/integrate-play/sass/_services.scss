@@ -54,6 +54,9 @@
           @include tablet {
             margin-top: 125px;
           }
+          @include desktop{
+            max-width: 66%;
+          }
         }
       }
     /* Ways to Play Content */

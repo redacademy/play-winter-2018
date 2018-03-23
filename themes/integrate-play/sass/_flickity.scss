@@ -120,23 +120,36 @@ https://flickity.metafizzy.co
 
 .carousel-primary-text {
   display: flex;
+  justify-content: center;
   text-align: left;
   font-size: 1.5rem;
 
   i {
     color: $color__brand-grey;
-    margin: 2rem 0.5rem;
+    padding: 0 20px;
     font-size: 3rem;
     height: 48px;
+  }
+
+  .quote-text{
+    padding-right: 50px;
+    width: 80%;
+    font-weight: bold;
+  }
+
+  @include desktop{
+    .quote-text{
+      width: 50%;
+    }
   }
 }
 
 .carousel-secondary-text {
   display: flex;
+  justify-content: center;
   padding-right: 10px;
   width: 100vw;
   margin-right: 1rem;
-  justify-content: flex-end;
   
   p {
     margin: 0 .5rem 0 0;
@@ -144,6 +157,7 @@ https://flickity.metafizzy.co
 
   .flickity-author-text {
     margin: 0;
+    margin-left: 100px;
     width: auto;
     text-align: left;
   }
