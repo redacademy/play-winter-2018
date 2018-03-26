@@ -14,7 +14,8 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="content-container">
-						<?php the_post_thumbnail( 'full' ); ?>	
+						<div class="play-banner"><?php the_post_thumbnail( 'full' ); ?></div>
+							
 						<div class="play-excerpt">
 							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 							<?php the_content(); ?>
