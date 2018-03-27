@@ -142,24 +142,3 @@ function my_theme_archive_title( $title ) {
 }
 
 add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
-
-
-//Function to change the excerpt length
-/**
- * Filter the except length to 100 words.
- *
- * @param int $length Excerpt length.
- * @return int (Maybe) modified excerpt length.
- */
-function wpdocs_custom_excerpt_length( $length ) {
-	return 80;
-}
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
-
-//Function to change the Read More excerpt text
-function new_excerpt_more($more) {
-	global $post;
-	return '<a class="read-more" 
-	href="' . get_permalink() . '">... Read More</a>';
- }
- add_filter('excerpt_more', 'new_excerpt_more');
