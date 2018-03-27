@@ -14,10 +14,21 @@
       flex-flow: row nowrap;
       align-items: center;
     }
-    img{
+    .play-banner{
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
       @include desktop{
-        height: 100%;
-        max-width: 50%;
+        height: 400px;
+        width: 50%;
+        position: relative;
+        img{
+          object-fit: cover;
+          height: 100%;
+          left: 0;
+
+        }
+        
       }
     }
     .play-excerpt {
@@ -62,14 +73,15 @@
     display: inline-block;
     padding: 0 1rem;
     width: 100%;
-    height: 90vh;
+    height: 600px;
     position: relative;
     background: url('../../images/home-screen-bubbles.svg');
     background-attachment: fixed;
     background-size: 100%;
+    background-position: bottom;
     background-repeat: no-repeat;
     @include tablet{
-      height: 80vh;
+      height: 500px;
     }
 
     .btn {
@@ -176,6 +188,8 @@
 
 //Happy Client logos
   .happy-clients-container{
+    margin: 50px 0;
+    margin-top: 80px;
     padding: 0 50px;
     h1{
       font-size: 2.5rem;

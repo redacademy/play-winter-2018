@@ -3,8 +3,14 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
-.content-area {
-	padding: 50px; 
+.page-template-default{
+	article{
+		padding: 0 50px;
+	}
+}
+
+.site-content{
+	margin-top: 100px;
 }
 .sticky {
 	display: block;
@@ -36,8 +42,12 @@
 
 //blog posts
 .single{
+	.content-area{
+		padding: 0 50px;
+	}
 	.site-content{
 		@include desktop{
+			margin-top: 50px;
 			display: flex;
 			flex-flow: row nowrap;
 			.content-area{
