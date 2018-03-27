@@ -3,6 +3,7 @@
   .content-area{
     padding: 0;
     margin: 0 auto;
+    z-index: 1;
     @include tablet{
       
     }
@@ -59,7 +60,6 @@
   }
   .contact-form-wrapper{
     width: 100vw;
-    z-index: -100;
     @include tablet{
       margin-top: 50px;
     }
@@ -117,6 +117,7 @@
   .bubble-1{
     top: 30%;
     right: 10%;
+    z-index: 1;
   }
 }
 
