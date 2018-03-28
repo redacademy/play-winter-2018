@@ -117,8 +117,14 @@
 	}
 	// Logged in Header CSS
 	.logged-in {
-		.hfeed {
-			padding-top: 32px;
+		#wpadminbar {
+			position: fixed;
+		}
+		.main-navigation {
+			padding-top: 48px;
+			@include desktop {
+				padding-top: 20px;
+			}
 		}
 	}
 	.nav-menu-wrapper {
