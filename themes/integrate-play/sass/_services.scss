@@ -21,7 +21,7 @@
         h1 {
           text-transform: none;
           position: absolute;
-          top: 10%;
+          top: 3%;
           width: 33%;
           left: 6%;
           transition: .5s;
@@ -147,7 +147,8 @@
             display: flex;
           }
           @include desktop {
-            right: 10%;
+            right: 12%;
+            width: 200px;
           }
         }
       }
@@ -158,8 +159,8 @@
         @include tablet {
           margin: 0;
           position: absolute;
-          top: 7.5%;
-          right: 7%;
+          top: 10%;
+          right: 10%;
         }
       }
     /* International Speaker */
