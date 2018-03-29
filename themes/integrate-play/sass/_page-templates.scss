@@ -15,9 +15,6 @@
       align-items: center;
     }
     .play-banner{
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
       @include desktop{
         height: 400px;
         width: 50%;
@@ -111,7 +108,7 @@
       right: 10%;
       transition: 0.5s;
       &:hover{
-        background: darken($color__brand-yellow, 15%) 
+        background: $color__brand-orange;
       }
       @include desktop{
         top: auto;
@@ -137,7 +134,7 @@
       left: 5%;
       transition: 0.5s;
       &:hover{
-        background: darken($color__brand-orange, 15%) 
+        background: $color__brand-purple;
       }
       @include desktop{
         top: 20%;
@@ -163,7 +160,7 @@
       right: 5%;
       transition: 1s;
       &:hover{
-        background: lighten($color__brand-purple, 15%) 
+        background: $color__brand-yellow;
       }
       @include desktop{
         bottom: 18%;
