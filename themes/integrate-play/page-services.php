@@ -49,7 +49,9 @@ get_header(); ?>
         </div>
 
         <div class="keynotes">
+            <div class="text-wrapper">
           <?php echo CFS()->get('speaking_keynote_topics');?>
+            </div>
           <div class="bubbles large orange-x-light bubble-8"></div>			
             <div class="bubbles medium orange-light bubble-9"></div>
             <div class="bubbles xl orange-light bubble-7"></div>

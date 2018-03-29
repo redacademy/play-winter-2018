@@ -246,11 +246,40 @@
         background-color: $color__brand-orange;
         transition: .5s;
         z-index: -2;
+        h2 {
+          @include desktop {
+            font-size: 5rem;
+            position: absolute;
+            width: 10%;
+            left: 10%;
+            bottom: -74px;
+          }
+        }
         @include desktop{
           background: url('../../images/orange-speaking-banner.svg'), $color__brand-orange;
           background-size: 100%;
           background-position: left top;
           background-repeat: no-repeat;
+        }
+        .text-wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          margin:0;
+          @include desktop {
+            justify-content: flex-end;
+            align-items: flex-end;
+            p{ 
+              display: none;
+            }
+          }
+          .textbox-strategy,
+          .textbox-power {
+            width: 320px;
+            p {
+              display: block;
+            }
+          }
         }
       }
     }
@@ -391,57 +420,57 @@
     }
   
   //Bubble placement
-  .bubble-1{
-    left: 0;
-    bottom: -100%;
-  }
-  .bubble-2{
-    right: 20%;
-    bottom: -30%;
-  }
-  .bubble-3{
-    right: 0;
-    bottom: 0;
-  }
-  .bubble-4{
-    right: 40%;
-    top: 40%;
-  }
-  .bubble-5{
-    left: 20%;
-    bottom: 10%;
-  }
-  .bubble-6{
-    right: 0;
-    bottom: 10%;
-  }
-  .bubble-7{
-    right: -10%;
-    top: 10%;
-  }
-  .bubble-8{
-    right: 20%;
-    bottom: 30%;
-  }
-  .bubble-9{
-    right: 5%;
-    bottom: -10%;
-  }
-  .bubble-10{
-    left: 10%;
-    bottom: 5%;
-  }
-  .bubble-11{
-    right: 20%;
-    bottom: -20%;
-  }
-  .bubble-12{
-    right: 0;
-    bottom: 0;
-  }
-  .bubble-13{
-    right: 0;
-    top: 10%;
-  }
-  
-  }
+    .bubble-1{
+      left: 0;
+      bottom: -100%;
+    }
+    .bubble-2{
+      right: 20%;
+      bottom: -30%;
+    }
+    .bubble-3{
+      right: 0;
+      bottom: 0;
+    }
+    .bubble-4{
+      right: 40%;
+      top: 40%;
+    }
+    .bubble-5{
+      left: 20%;
+      bottom: 10%;
+    }
+    .bubble-6{
+      right: 0;
+      bottom: 10%;
+    }
+    .bubble-7{
+      right: -10%;
+      top: 10%;
+    }
+    .bubble-8{
+      right: 20%;
+      bottom: 30%;
+    }
+    .bubble-9{
+      right: 5%;
+      bottom: -10%;
+    }
+    .bubble-10{
+      left: 10%;
+      bottom: 5%;
+    }
+    .bubble-11{
+      right: 20%;
+      bottom: -20%;
+    }
+    .bubble-12{
+      right: 0;
+      bottom: 0;
+    }
+    .bubble-13{
+      right: 0;
+      top: 10%;
+    }
+    
+    }

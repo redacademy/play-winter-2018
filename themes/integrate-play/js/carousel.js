@@ -7,6 +7,5 @@
       wrapAround: true,
       prevNextButtons: false
     });
-  }
-)
+  })
 })(jQuery);
