@@ -4,22 +4,14 @@
   $( document ).ready(function() {
   //function to make modal contact form on mobile to appear when users click buttons
     $('.mobile-btn').on('click',function(){
-      // $('#masthead').hide();
-      // $('#colophon').hide();
       $('.testimonials').hide();
-      // $('#main').hide(); //make sure button and form are outside the #main content area
-      // $('#primary').css( 'padding', '0' );
       $('.mobile-btn').hide();
       $('.mobile-contact-form').show();
     });
 
   //This closes the modal window
     $('#close-btn').on('click',function(){
-      // $('#masthead').show();
-      // $('#colophon').show();
       $('.testimonials').show();
-      // $('#main').show();
-      // $('#primary').css( 'padding', '' );
       $('.mobile-btn').show();
       $('.mobile-contact-form').hide();
     });
@@ -30,7 +22,6 @@
     if($('body').is('.page-id-32')){
       $('.read-more').on('click', function(e){
         e.preventDefault();
-        // console.log('button works');
         $(this).parent().parent().hide();
         $(this).parent().parent().prev().show();
       })

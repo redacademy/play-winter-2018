@@ -8,4 +8,5 @@
       prevNextButtons: false
     });
   }
+)
 })(jQuery);
