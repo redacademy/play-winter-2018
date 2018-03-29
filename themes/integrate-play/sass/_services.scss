@@ -265,10 +265,10 @@
           position: relative;
           display: flex;
           flex-direction: column;
-          justify-content: flex-end;
-          align-items: flex-end;
           margin:0;
           @include desktop {
+            justify-content: flex-end;
+            align-items: flex-end;
             p{ 
               display: none;
             }
