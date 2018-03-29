@@ -246,20 +246,13 @@
         background-color: $color__brand-orange;
         transition: .5s;
         z-index: -2;
-        h2 {
-          @include desktop {
-            font-size: 5rem;
-            position: absolute;
-            width: 10%;
-            left: 10%;
-            bottom: -74px;
-          }
-        }
+
         @include desktop{
           background: url('../../images/orange-speaking-banner.svg'), $color__brand-orange;
           background-size: 100%;
           background-position: left top;
           background-repeat: no-repeat;
+          height: 650px;
         }
         .text-wrapper {
           position: relative;
@@ -267,17 +260,14 @@
           flex-direction: column;
           margin:0;
           @include desktop {
-            justify-content: flex-end;
-            align-items: flex-end;
-            p{ 
-              display: none;
-            }
-          }
-          .textbox-strategy,
-          .textbox-power {
-            width: 320px;
-            p {
-              display: block;
+            width: 40%;
+            float: right;
+            h2{
+              position: absolute;
+              top: 0;
+              left: -120%;
+              font-size: 4rem;
+              width: 40%;
             }
           }
         }
